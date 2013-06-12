@@ -1,0 +1,33 @@
+Neo: a universal object model for handling electrophysiology data in multiple formats
+
+Samuel Garcia [1], Cyril Dejean [2], Luc Estebanez [3], Domenico Guarino [3], Florent Jaillet [4], Todd Jennings [5], Yann Mahnoun [6], Robert Pröpper [7], Philipp Rautenberg [8], Chris Rodgers [9], Andrey Sobolev [8], Thomas Wachtler [8], Pierre Yger [3], Andrew P. Davison [3]
+
+[1] Centre de Recherche en Neuroscience de Lyon, CNRS UMR5292 - INSERM U1028 - Universite Claude Bernard Lyon 1
+[2] Centre de Neurosciences Integratives et Cognitives, UMR 5228 - CNRS - Université Bordeaux I - Université Bordeaux II
+[3] Unité de Neuroscience, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France
+[4] Institut de Neurosciences de la Timone, CNRS UMR 7289 - Université d’Aix-Marseille, Marseille, France
+[5] Division of Neurobiology, Department Biology II, Ludwig-Maximilians-Universität, Munich, Germany
+[6] Laboratoire de Neurosciences Intégratives et Adaptatives, CNRS UMR 6149 - Université de Provence, Marseille, France
+[7] Neural Information Processing Group, TU Berlin, Germany
+[8] G-Node, Ludwig-Maximilians-Universität, Munich, Germany
+[9] University of California, Berkeley
+
+
+In neuroscience, electrophysiological signals, whether from electroencephalography, intracellular and extracellular electrophysiology, or simulation, are acquired, analysed and visualized using a wide variety of software, much of it proprietary, developed by recording hardware manufacturers, very often written in Matlab, and increasingly written in Python. 
+
+To improve interoperability of different tools and to share data between different projects, a common representation of the core data is needed. A number of efforts have been made in this direction, including the Neuroshare project [1] for proprietary formats, and the FIND [2] and sigTOOL [3] toolboxes for Matlab. For Python, however, such a common representation has so far been missing.
+
+We have developed a Python package, Neo, for representing electrophysiology data in memory, and for reading/writing the data to/from a variety of commonly-used file formats. Neo is deliberately limited to represention of data, with no functions for data analysis or visualization, in order to be as lightweight a dependency as possible. A common package or packages for neurophysiology data analysis and visualization can then build on top of Neo. Currently Neo is used as the core representation of data in OpenElectrophy [4], SpykeViewer [5] and PyNN [6] and is also used by the G-Node portal [7].
+
+Neo implements a hierarchical data model well adapted to intracellular and extracellular electrophysiology and EEG data with support for multi-electrodes (for example tetrodes), including classes such as SpikeTrain and AnalogSignal. The Neo package also provides a set of input/output (IO) modules for various neurophysiology file formats (including Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed, EEGLab, WinWcp, Elan, Elphy, Neuroshare, TDT, ASCII, HDF5, Matlab and raw binary data). Neo builds on the standard Python package for handling numerical arrays, NumPy, adds essential metadata such as units, sampling rates, etc., and supports annotation with additional, user-defined metadata. 
+
+
+[1] http://neuroshare.sourceforge.net
+[2] http://find.bccn.uni-freiburg.de/
+[3] http://sigtool.sourceforge.net/
+[4] http://neuralensemble.org/OpenElectrophy
+[5] http://www.ni.tu-berlin.de/software/spykeviewer
+[6] http://neuralensemble.org/PyNN
+[7] http://www.g-node.org/
+
+sgarcia@olfac.univ-lyon1.fr, chris.rodgers@berkeley.edu, pierre.yger@gmail.com, yanngordon@gmail.com, luc.estebanez@unic.cnrs-gif.fr, sobolev@biologie.uni-muenchen.de, florent.jaillet@univ-amu.fr, philipp.rautenberg@g-node.org, wachtler@biologie.uni-muenchen.de, cyril.dejean@u-bordeaux1.fr, robert.proepper@gmail.com, toddrjen@gmail.com, domenico.guarino@gmail.com
