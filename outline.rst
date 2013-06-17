@@ -13,6 +13,7 @@ Introduction
   * existing tools, their limitations:
      - neuroshare
      - biosig
+     - nitime, good support for continuous data, but not for spikes. Also more integrated with analysis tools, not lightweight
   * need to have a model object that embraces complexity of data (heterogeneity, etc.)
   * open source
   
@@ -22,8 +23,9 @@ Design considerations
 
   * best practice : units and important metadata (sampling_rate, t_start, ..)
   * heterogeneity of data
-  * assymmetry of data
+  * asymmetry of data
   * scope : data objects only (no visulization or analysis methods)
+    This should be phrased not as a limitation, but rather as a design choice, so that analysis methods are not tied to a proprietary data representation
   * data can be in chunks : we need a Segment object
   * compatibility with other scientific libraries 
   * efficiency for arrays
