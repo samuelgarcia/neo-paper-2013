@@ -1,0 +1,7 @@
+*.aux
+*.bbl
+*.blg
+*.log
+.DS_Store
+*.synctex.gz
+neo_paper_2013.pdf
