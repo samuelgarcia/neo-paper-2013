@@ -39,6 +39,8 @@
 
 \newcommand{\missing}[1]{\textcolor{red}{#1}}
 \newcommand{\andrew}[1]{[\textcolor{ForestGreen}{#1}]}
+\newcommand{\samuel}[1]{[\textcolor{RubineRed}{#1}]}
+	
 
 
 % ----------------------------------------------------------------------
@@ -137,7 +139,7 @@ The third approach is to define an application programming interface (API) that 
 An advantage of this compared to the other two approaches mentioned above is that it encourages modularity in software development: the data-conversion library defines certain data structures that can then be used by developers of analysis and visualization tools, which thereby gain greater interoperability.
 A previous effort to define an API for electrophysiology data in neuroscience was taken by a consortium of recording hardware manufacturers, which in 2000 began development of the Neuroshare API \citep{neuroshare}.
 The Neuroshare API is available as a C library and as a MATLAB (The Mathworks Inc.) extension.
-These are only available for the Windows operating system, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
+These are only available for the Windows operating system \samuel{This is not completly true some manufacturers provides some linux lib}, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
 The API is rather low-level, consisting of a number of functions and low-level data structures such as numerical arrays.
 
 We have developed a novel, object-oriented API for representing electrophysiology data in memory and for reading/writing such data from/to multiple file formats.
@@ -181,6 +183,7 @@ For desirable metadata we add the further requirement that the metadata must be 
 \subsection{Structure}
 
 Experimental protocols in neuroscience are hugely diverse, and may be structured in many ways in terms of stimulus presentation, behavioural responses, pharmacological interventions. The object model should allow at least some of this structure to be represented in the relationships between data objects rather than only as metadata. At least two levels of hierarchical organisation are needed (e.g. a recording session consisting of multiple trials), but non-hierarchical cross-links are also needed.
+\samuel{Should we discuss the flexibility to have both continuous recording vs chunk recording ?}
 
 \subsection{Interoperability}
 
@@ -207,7 +210,7 @@ The data types that are represented are
 (ii) action potentials (``spikes''), characterized by their time of occurrence and, optionally, their waveforms; 
 (iii) events, each of which consists of a time of occurrence and a textual label; and 
 (iv) epochs, each of which consists of a start and end time together with a label.
-For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between flexibility and efficiency in data analysis \andrew{can we provide a more convincing/detailed reason?}.
+For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between flexibility and efficiency in data analysis \andrew{can we provide a more convincing/detailed reason?} \samuel{Unfortunatly no, the real reason was a sad backward compatibility}.
 The full list of data objects is as follows:
 
 \begin{itemize}
@@ -230,7 +233,7 @@ They contain references to data objects that cut across the simple container hie
 The grouping objects are as follows:
 
 \begin{itemize}
-\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` and \lstinline`SpikeTrain` objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
+\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` \samuel{\lstinline`SpikeTrain` are not linked by RC and and I just see that figure 1 is wrong on that} objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
 \item \lstinline`RecordingChannelGroup`: a group for associated \lstinline`RecordingChannel` objects. This has several possible uses: 
 (i) for linking several \lstinline`AnalogSignalArray` objects across several \lstinline`Segment` objects inside a \lstinline`Block`;
 (ii) for multielectrode arrays, where spikes may be recorded on more than one recording channel, and so the \lstinline`RecordingChannelGroup` can be used to associate each \lstinline`Unit` with the group of recording channels from which it was calculated;
@@ -267,7 +270,7 @@ Figure~\ref{fig:overview} provides an overview of the Neo objects and their rela
 
 Most objects, and in particular all of the data objects, have a number of \emph{required} attributes.
 These are essential metadata without which the numerical data values contained in the object cannot be interpreted.
-For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate) and the units of the signal, for example ``millivolts'' in the case of the membrane potential.
+For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate) and the units of the signal, for example ``millivolts'' in the case of the membrane potential. \samuel{you do not mention 'tstart' (also required) intentionally ?} 
 All attributes that represent physical quantities must state the units, for example, the sampling rate could be given as ``10 kHz''.
 
 In addition to the required attributes, each object has a number of \emph{suggested} attributes.
@@ -333,6 +336,7 @@ Neo objects add further checks (for example, trying to add together two \lstinli
 \missing{[Should perhaps say more about the various methods available on AnalogSignals, etc.?]}
 
 \missing{[Discuss the implementation of relationships]}
+\samuel{ isn't redoundant with  'subsection Relationships between objects' ? }
 
 \missing{[Discuss the implementation of annotations]}
 
@@ -377,9 +381,26 @@ However, given the large size of many neurophysiology datasets, it is not always
 
 \missing{[explanatation of lazy and cascade loading...]}
 
-\missing{[other things to mention: (1) file/dir/database modes, (2) memmap, (3) reverse engineering, the problem of formats that change over time, (4) the idea of Neo as a place to collect and harmonize different Python scripts for different formats from all over the web]}
+
+
+The neo.io API also take in account that a datasets do not necessary come from a single file. Some software can provide recordings in a directory or in a database. Such cases are taken in account througth the attribute \lstinline`mode` in each IO class. The behavior is change only at the instantiation:
+
+\begin{lstlisting}[style=display]
+from neo.io import MyFormat1IO, MyFormat2IO
+reader1 = MyFormat1IO(filename="myfile.dat")  # MyFormat1IO.mode = 'file'
+reader2 = MyFormat2IO(dirname="/path_to_dataset")   # MyFormat2IOmode = 'dir'
+\end{lstlisting}
+
+Some file format internaly store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduce the memory footprint and allow to acces transparently files that do fit into the entire memory.
+For implematation of file readers, a main difficulty was at the beginnigs to collect information about specification for proprietary file formats. This tedious was accomplihed with several methods (i) asking manufacturers to open theses specifications, (ii) reading code from other package (iii) reading C header files (iiii) basic reverse ingeneering with hexadecimal editors. Nowdays, manufacturers give quit easily there file specifications in users documentations.
+The main difficulty remain in the versionning of theses specifications. In general cases, the internal file format do change so much over times, but some dramatic  changes occurs making the classes non backward compatible. This has been taken in account. The \lstinline`AxonIO` implementation is a good example, two very different version of the same version can be erad transparently. Unfornuatly, this is not the case for all classes and the effort must be continued.
+
+\samuel{[other things to mention: (4) the idea of Neo as a place to collect and harmonize different Python scripts for different formats from all over the web = better in discussion no?]}
+
 
 \missing{[should perhaps go into more detail on Matlab and HDF5 formats]}
+Two of IO classes do not implement a already existing format : NeoHdf5IO and NeoMatlabIO. Both have in common to use a generic file format, respectively hdf5 and matlab than allow internal organistion in a tree. So in that classes the neo hierachical model directly to strore objects in the file. In short the organisation in the file is closed to object organisation. In that way, two new file formats are proposed. They are efficient because built on mature library (hdf5 and matlab) and quite universal. And furthermore, there implementation are generics because they are based on the object model descriptions.
+
 
 
 % ----------------------------------------------------------------------
@@ -389,6 +410,135 @@ However, given the large size of many neurophysiology datasets, it is not always
 
 %  * Recording multiple trials from multiple channels = acces by Segment or acces by Channel
 %  * Recording spikes from multiple tetrodes
+
+\subsection{Recording multiple trials from multiple channels}
+
+
+In this example we suppose that we have recorded from an 8-channel probe, and that we have recorded three trials/episodes. We therefore have a total of 8 x 3 = 24 signals, each represented by an AnalogSignal object.
+
+On Figure~\ref{fig:usecase1}, our entire dataset is contained in a Block, which in turn contains:
+\begin{itemize}
+\item 3 Segment objects, each representing data from a single trial,
+\item 1 RecordingChannelGroup, composed of 8 RecordingChannel objects.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/usecase1}
+\caption{An illustration of recording multiple trials from multiple channels.}\label{fig:usecase1} 
+\end{figure}
+
+\subsubsection{Temporal (by segment)}
+
+In this case you want to go through your data in order, perhaps because you want to correlate the neural response with the stimulus that was delivered in each segment. In this example, we’re averaging over the channels:
+
+\begin{lstlisting}[style=display]
+import numpy as np
+from matplotlib import pyplot as plt
+
+for seg in block.segments:
+    print("Analyzing segment %d" % seg.index)
+
+    siglist = seg.analogsignals
+    avg = np.mean(siglist, axis=0)
+
+    plt.figure()
+    plt.plot(avg)
+    plt.title("Peak response in segment %d: %f" % (seg.index, avg.max()))
+\end{lstlisting}
+
+\subsubsection{Spatial (by channel)}
+
+In this case you want to go through your data by channel location and average over time. Perhaps you want to see which physical location produces the strongest response, and every stimulus was the same:
+
+\begin{lstlisting}[style=display]
+# We assume that our block has only 1 RecordingChannelGroup
+rcg = block.recordingchannelgroups[0]:
+for rc in rcg.recordingchannels:
+    print("Analyzing channel %d: %s", (rc.index, rc.name))
+
+    siglist = rc.analogsignals
+    avg = np.mean(siglist, axis=0)
+
+    plt.figure()
+    plt.plot(avg)
+    plt.title("Average response on channel %d: %s' % (rc.index, rc.name)
+\end{lstlisting}
+
+
+\subsection{Recording spikes from multiple tetrodes}
+
+Here is a similar example in which we have recorded with two tetrodes and extracted spikes from the extra-cellular signals. The spike times are contained in SpikeTrain objects.
+
+On Figure~\ref{fig:usecase2},again, our data set is contained in a Block, which contains:
+
+\begin{itemize}
+\item 3 Segments (one per trial).
+\item 2 RecordingChannelGroups (one per tetrode), which contain:
+  \begin{itemize}
+  \item 4 RecordingChannels each
+  \item 2 Unit objects (= 2 neurons) for the first RecordingChannelGroup
+  \item 5 Units for the second RecordingChannelGroup.
+  \end{itemize}
+\end{itemize}
+
+In total we have 3 x 7 = 21 SpikeTrains in this Block.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/usecase2}
+\caption{An illustration of recording spikes from multiple tetrodes.}\label{fig:usecase2} 
+\end{figure}
+
+
+
+There are three ways to access the SpikeTrain data:
+\begin{itemize}
+\item by Segment
+\item by RecordingChannel
+\item by Unit
+\end{itemize}
+
+\subsubsection{By Segment}
+
+In this example, each Segment represents data from one trial, and we want a PSTH for each trial from all units combined:
+
+\begin{lstlisting}[style=display]
+for seg in block.segments:
+    print("Analyzing segment %d" % seg.index)
+    stlist = [st - st.t_start for st in seg.spiketrains]
+    plt.figure()
+    count, bins = np.histogram(stlist)
+    plt.bar(bins[:-1], count, width=bins[1] - bins[0])
+    plt.title("PSTH in segment %d" % seg.index)
+\end{lstlisting}
+
+\subsubsection{By Unit}
+
+Now we can calculate the PSTH averaged over trials for each unit, using the block.list_units property:
+
+\begin{lstlisting}[style=display]
+for unit in block.list_units:
+    stlist = [st - st.t_start for st in unit.spiketrains]
+    plt.figure()
+    count, bins = np.histogram(stlist)
+    plt.bar(bins[:-1], count, width=bins[1] - bins[0])
+    plt.title("PSTH of unit %s" % unit.name)
+\end{lstlisting}
+
+
+\subsubsection{By RecordingChannelGroup}
+Here we calculate a PSTH averaged over trials by channel location, blending all units:
+\begin{lstlisting}[style=display]
+for rcg in block.recordingchannelgroups:
+    stlist = []
+    for unit in rcg.units:
+        stlist.extend([st - st.t_start for st in unit.spiketrains])
+    plt.figure()
+    count, bins = np.histogram(stlist)
+    plt.bar(bins[:-1], count, width=bins[1] - bins[0])
+    plt.title("PSTH blend of tetrode  %s" % rcg.name)
+\end{lstlisting}
 
 
 
@@ -426,7 +576,20 @@ This has had several benefits:
 
 SpykeViewer\missing{...}
 
-OpenElectrophy \citep{Garcia2009} \missing{...}
+OpenElectrophy \citep{Garcia2009} is a graphic user interface build on top of neo. This software implement independant components:
+   (i) A SQL database management for neo object
+   (ii) Fast viewer for neo object : AnalogSignal, SpikeTrain, EventArray
+   (iii) A complete offline spikesorting tool chain
+   (iii) A timefrequency toolbox (fast multi channel wavelet scalogram plotting and  transient oscillation detection)
+The main difficulty in the spike sorting toolchain is management of data in various and complex situation : 
+   (i) The harware setup : one electrode, several independant electrode, several independant N-trode, electrode arrays
+   (ii) The protocol setup : one continuous recording, sereval chunk recording.
+   (iii) The nature of the recording : plain band signal, filtered band signal, predetected spike.
+Many spike sorting tools take in account one combinaison of theses situation because it is complex. The neo object model allow to deal with all that situation transparently in OpenElectrophy.
+
+
+
+fast viewer\missing{...}
 
 Helmholtz\missing{...}
 
