@@ -40,6 +40,7 @@
 \newcommand{\missing}[1]{\textcolor{red}{#1}}
 \newcommand{\andrew}[1]{[\textcolor{ForestGreen}{#1}]}
 \newcommand{\samuel}[1]{[\textcolor{RubineRed}{#1}]}
+\newcommand{\florent}[1]{[\textcolor{Orange}{#1}]}
 	
 
 
@@ -60,7 +61,7 @@
 \def\Address{$^{1}$Centre de Recherche en Neuroscience de Lyon, CNRS UMR5292--INSERM U1028--Universite Claude Bernard Lyon 1, Lyon, France \\
 $^{2}$Centre de Neurosciences Integratives et Cognitives, CNRS UMR 5228--Université Bordeaux I--Université Bordeaux II, Bordeaux, France \\
 $^{3}$Unité de Neurosciences, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France \\
-$^{4}$Institut de Neurosciences de la Timone, CNRS UMR 7289--Université d’Aix-Marseille, Marseille, France \\
+$^{4}$Institut de Neurosciences de la Timone UMR 7289, Aix Marseille Université, CNRS, Marseille, France \\
 $^{5}$Division of Neurobiology, Department Biology II, Ludwig-Maximilians-Universität, Munich, Germany \\
 $^{6}$Laboratoire de Neurosciences Intégratives et Adaptatives, CNRS UMR 6149--Université de Provence, Marseille, France \\
 $^{7}$Neural Information Processing Group, TU Berlin, Germany \\
@@ -173,7 +174,7 @@ It was decided that the object model should contain only classes for representin
 We distinguish essential metadata, which is required for the data to have even minimal meaning rather than just be arrays of numbers, desirable metadata, which is necessary to correctly analyse the data, and additional metadata.
 Examples of essential metadata are the sampling interval and the physical units of a recording.
 Desirable metadata might include identification of the neuron or brain area from which the recording was made, or the filter settings used.
-Additional metadata provide information that is specific to a specific user or software tool, such as which colour to use when plotting the data in a graphical interface.
+Additional metadata provide information that is specific to a user or software tool, such as which colour to use when plotting the data in a graphical interface.
 The object model should make it impossible to create data objects without essential metadata.
 For desirable and additional metadata, it should be straightforward to annotate any object. 
 Annotations should take the form either of key--value pairs or of semantic triples. 
@@ -287,7 +288,7 @@ They are intended to contain any information that may be useful in subsequent pr
 \subsection{Relationships between objects}
 
 The functions of the container and grouping objects are based on lists of references to other objects.
-For example, \lstinline`Block` has an attribute \lstinline`segments`, which is a list of references to al the \lstinline`Segment` objects contained in that \lstinline`Block`.
+For example, \lstinline`Block` has an attribute \lstinline`segments`, which is a list of references to all the \lstinline`Segment` objects contained in that \lstinline`Block`.
 Such relationships are bi-directional, for example each \lstinline`Segment` has an attribute \lstinline`block` pointing to the \lstinline`Block` within which it is contained.
 Figure~\ref{fig:relationships} shows all of these relationships.
 More detail is available in the online documentation.
@@ -359,7 +360,7 @@ There is an extensive test suite, and the project makes use of continuous integr
 %  * use memmap when possible
 %  * explanation for proprietary formats : reverse engineering + version formats problem
 
-In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source tools (e.g. Klustakwik, Elan, WinEdr) and generic file formats such as Matlab, ASCII and HDF5. 
+In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source tools (e.g. Klustakwik, Elan \florent{Elan does not seem to be open-source, it seems to be only freeware. From the website http://elan.lyon.inserm.fr you can download all kinds of binaries, but no source.}, WinEdr) and generic file formats such as Matlab, ASCII and HDF5. 
 In most cases, the proprietary formats are read-only, while the more open and generic formats support both reading and writing.
 
 The inclusion of this functionality in the Neo package has several benefits:
@@ -382,8 +383,7 @@ However, given the large size of many neurophysiology datasets, it is not always
 \missing{[explanatation of lazy and cascade loading...]}
 
 
-
-The neo.io API also take in account that a datasets do not necessary come from a single file. Some software can provide recordings in a directory or in a database. Such cases are taken in account througth the attribute \lstinline`mode` in each IO class. The behavior is change only at the instantiation:
+The neo.io API also takes into account that a dataset does not necessarily come from a single file. Some software can provide recordings in a directory or in a database. Such cases are taken into account through the attribute \lstinline`mode` in each IO class. The behaviour is changed only at the instantiation:
 
 \begin{lstlisting}[style=display]
 from neo.io import MyFormat1IO, MyFormat2IO
@@ -391,15 +391,15 @@ reader1 = MyFormat1IO(filename="myfile.dat")  # MyFormat1IO.mode = 'file'
 reader2 = MyFormat2IO(dirname="/path_to_dataset")   # MyFormat2IOmode = 'dir'
 \end{lstlisting}
 
-Some file format internaly store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduce the memory footprint and allow to acces transparently files that do fit into the entire memory.
-For implematation of file readers, a main difficulty was at the beginnigs to collect information about specification for proprietary file formats. This tedious was accomplihed with several methods (i) asking manufacturers to open theses specifications, (ii) reading code from other package (iii) reading C header files (iiii) basic reverse ingeneering with hexadecimal editors. Nowdays, manufacturers give quit easily there file specifications in users documentations.
-The main difficulty remain in the versionning of theses specifications. In general cases, the internal file format do change so much over times, but some dramatic  changes occurs making the classes non backward compatible. This has been taken in account. The \lstinline`AxonIO` implementation is a good example, two very different version of the same version can be erad transparently. Unfornuatly, this is not the case for all classes and the effort must be continued.
+Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory.
+For implementation of file readers, a main difficulty was at the beginning to collect information about specification for proprietary file formats. This tedious task was accomplished with several methods (i) asking manufacturers to open these specifications, (ii) reading code from other packages (iii) reading C header files (iiii) basic reverse engineering with hexadecimal editors. Nowadays, manufacturers give quit easily their file specifications in the user documentation.
+The main difficulty remains in the versioning of these specifications. In general cases, the internal file formats do not change so much over time, but sometimes some problematic changes occur making the classes non backward compatible. This has been taken in account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must be continued.
 
 \samuel{[other things to mention: (4) the idea of Neo as a place to collect and harmonize different Python scripts for different formats from all over the web = better in discussion no?]}
 
 
 \missing{[should perhaps go into more detail on Matlab and HDF5 formats]}
-Two of IO classes do not implement a already existing format : NeoHdf5IO and NeoMatlabIO. Both have in common to use a generic file format, respectively hdf5 and matlab than allow internal organistion in a tree. So in that classes the neo hierachical model directly to strore objects in the file. In short the organisation in the file is closed to object organisation. In that way, two new file formats are proposed. They are efficient because built on mature library (hdf5 and matlab) and quite universal. And furthermore, there implementation are generics because they are based on the object model descriptions.
+Two of the IO classes do not implement an already existing format : NeoHdf5IO and NeoMatlabIO. Both have in common to use a generic file format, respectively hdf5 and matlab that allows internal organisation of the data in a tree. So in that classes the Neo hierarchical model is directly used to store objects in the file. In short the organisation in the file is close to the Neo objects organisation. In that way, two new file formats are proposed. They are efficient because built on mature library (hdf5 and matlab) and quite universal. And furthermore, their implementation are generic because they are based on the object model descriptions.
 
 
 
@@ -470,7 +470,7 @@ for rc in rcg.recordingchannels:
 
 Here is a similar example in which we have recorded with two tetrodes and extracted spikes from the extra-cellular signals. The spike times are contained in SpikeTrain objects.
 
-On Figure~\ref{fig:usecase2},again, our data set is contained in a Block, which contains:
+On Figure~\ref{fig:usecase2}, again, our data set is contained in a Block, which contains:
 
 \begin{itemize}
 \item 3 Segments (one per trial).
@@ -515,7 +515,7 @@ for seg in block.segments:
 
 \subsubsection{By Unit}
 
-Now we can calculate the PSTH averaged over trials for each unit, using the block.list_units property:
+Now we can calculate the PSTH averaged over trials for each unit, using the block.list\_units property:
 
 \begin{lstlisting}[style=display]
 for unit in block.list_units:
@@ -567,6 +567,7 @@ PyNN \citep{Davison2009} is a Python API for simulator-independent neuronal netw
 One aspect of simulator independence is reformatting the data produced by each simulator into a common format.
 Originally, this common format was based on NumPy arrays together with a small amount of metadata, which could be saved to file in a small number of non-standard formats.
 As of version 0.8, PyNN has adopted Neo as the common format for output data.
+\florent{Do we want that the following enumeration appears on multiple lines or that it stays inline as it is currently? Note that the same question applies for the paragraph about OpenElectrophy}
 This has had several benefits:
   (i)   the hierarchical structure of Neo allows much more of the structure of the simulation experiment to be preserved;
   (ii)  a much more complete set of metadata can easily be provided;
@@ -576,17 +577,16 @@ This has had several benefits:
 
 SpykeViewer\missing{...}
 
-OpenElectrophy \citep{Garcia2009} is a graphic user interface build on top of neo. This software implement independant components:
-   (i) A SQL database management for neo object
-   (ii) Fast viewer for neo object : AnalogSignal, SpikeTrain, EventArray
-   (iii) A complete offline spikesorting tool chain
-   (iii) A timefrequency toolbox (fast multi channel wavelet scalogram plotting and  transient oscillation detection)
-The main difficulty in the spike sorting toolchain is management of data in various and complex situation : 
-   (i) The harware setup : one electrode, several independant electrode, several independant N-trode, electrode arrays
-   (ii) The protocol setup : one continuous recording, sereval chunk recording.
-   (iii) The nature of the recording : plain band signal, filtered band signal, predetected spike.
-Many spike sorting tools take in account one combinaison of theses situation because it is complex. The neo object model allow to deal with all that situation transparently in OpenElectrophy.
-
+OpenElectrophy \citep{Garcia2009} is a graphical user interface built on top of Neo. This software implements four independent components:
+   (i) a SQL database management for Neo objects;
+   (ii) a fast viewer for Neo objects : AnalogSignal, SpikeTrain, EventArray;
+   (iii) a complete offline spike sorting toolchain;
+   (iv) a time-frequency toolbox (fast multi-channel wavelet scalogram plotting and transient oscillation detection).
+The main difficulty when designing a spike sorting toolchain is the management of data in various and complex situations : 
+   (i) the hardware setup : one electrode, several independent electrodes, several independent N-trodes, electrode arrays;
+   (ii) the protocol setup : one continuous recording, several chunks of recording;
+   (iii) the nature of the recording : full band signals, filtered signals, predetected spikes.
+Many spike sorting tools take into account only one combination of these situation because it is rather complex to support all the possible combinations. The Neo object model allows to deal with all these situations transparently in OpenElectrophy.
 
 
 fast viewer\missing{...}
