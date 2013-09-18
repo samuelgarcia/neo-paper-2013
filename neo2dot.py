@@ -30,7 +30,7 @@ for c in description.class_by_name: #sorted(
     # build record
     label = "{%s | %s | %s}" % (c, necessary_attrs+'\l', recommended_attrs+'\l')
     # create the node
-    nodes[c] = pydot.Node( c, shape="Mrecord", label=label, packmode='graph' )
+    nodes[c] = pydot.Node( c, shape="Mrecord", label=label )
     #, style='filled', fillcolor='lightgrey' )
     # add the node to graph
     graph.add_node( nodes[c] )
