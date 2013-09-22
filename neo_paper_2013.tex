@@ -380,7 +380,7 @@ data = reader.read()
 
 However, given the large size of many neurophysiology datasets, it is not always desirable to load all the data into memory at once. The full interface therefore offers more fine-grained control.
 
-\missing{[explanatation of lazy and cascade loading...]}
+Lazy and cascade loading.
 
 
 The neo.io API also takes into account that a dataset does not necessarily come from a single file. Some software can provide recordings in a directory or in a database. Such cases are taken into account through the attribute \lstinline`mode` in each IO class. The behaviour is changed only at the instantiation:
@@ -392,8 +392,8 @@ reader2 = MyFormat2IO(dirname="/path_to_dataset")   # MyFormat2IOmode = 'dir'
 \end{lstlisting}
 
 Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory. \robert{I believe that this is not working because of quantities (the data is always fully read). Do we have proof that it actually works?}
-For implementation of file readers, a main difficulty was at the beginning to collect information about specification for proprietary file formats. This tedious task was accomplished with several methods (i) asking manufacturers to open these specifications, (ii) reading code from other packages (iii) reading C header files (iiii) basic reverse engineering with hexadecimal editors. Nowadays, manufacturers give quit easily their file specifications in the user documentation.
-The main difficulty remains in the versioning of these specifications. In general cases, the internal file formats do not change so much over time, but sometimes some problematic changes occur making the classes non backward compatible. This has been taken in account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must be continued.
+For the implementation of file readers, an early difficulty was collecting information about specification for proprietary file formats. This tedious task was accomplished with several methods (i) asking manufacturers to open these specifications, (ii) reading code from other packages (iii) reading C header files (iiii) basic reverse engineering with hexadecimal editors. Nowadays, many manufacturers provide their file specifications in the user documentation.
+The main difficulty remains in the versioning of these specifications. In general, the internal file formats do not change much over time, but sometimes some problematic changes occur, making the classes non backward compatible. This has been taken in account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must continue.
 
 \samuel{[other things to mention: (4) the idea of Neo as a place to collect and harmonize different Python scripts for different formats from all over the web = better in discussion no?]}
 
