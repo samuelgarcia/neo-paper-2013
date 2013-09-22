@@ -42,6 +42,7 @@
 \newcommand{\samuel}[1]{[\textcolor{RubineRed}{#1}]}
 \newcommand{\florent}[1]{[\textcolor{Orange}{#1}]}
 \newcommand{\robert}[1]{[\textcolor{RoyalBlue}{#1}]}
+\newcommand{\thomas}[1]{[\textcolor{Emerald}{TW: #1}]}
 
 
 % ----------------------------------------------------------------------
@@ -140,7 +141,7 @@ The third approach is to define an application programming interface (API) that 
 An advantage of this compared to the other two approaches mentioned above is that it encourages modularity in software development: the data-conversion library defines certain data structures that can then be used by developers of analysis and visualization tools, which thereby gain greater interoperability.
 A previous effort to define an API for electrophysiology data in neuroscience was taken by a consortium of recording hardware manufacturers, which in 2000 began development of the Neuroshare API \citep{neuroshare}.
 The Neuroshare API is available as a C library and as a MATLAB (The Mathworks Inc.) extension.
-These are only available for the Windows operating system \samuel{This is not completly true some manufacturers provides some linux lib}, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
+These are only available for the Windows operating system \samuel{This is not completly true some manufacturers provides some linux lib}\thomas{How about: For most formats, libraries are only available ...}, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
 The API is rather low-level, consisting of a number of functions and low-level data structures such as numerical arrays.
 
 We have developed a novel, object-oriented API for representing electrophysiology data in memory and for reading/writing such data from/to multiple file formats.
@@ -215,7 +216,7 @@ For each data type, the object model provides both a scalar representation (a si
 The full list of data objects is as follows:
 
 \begin{itemize}
-\item \lstinline`AnalogSignal`: a sampling of a continuous, analog signal with a fixed sampling interval.
+\item \lstinline`AnalogSignal`: a sampling\thomas{How about ``record'' instead of ``sampling''?} of a continuous, analog signal with a fixed sampling interval.
 \item \lstinline`IrregularlySampledSignal`: a sampling of a continuous analog signal with a varying sampling interval.
 \item \lstinline`AnalogSignalArray`: a sampling of a multichannel continuous analog signal with a fixed sampling interval.
 \item \lstinline`Spike`: one action potential characterized by its time and waveform.
@@ -225,7 +226,7 @@ The full list of data objects is as follows:
 \end{itemize}
 
 Container objects provide a simple hierarchical grouping of data. 
-A \lstinline`Segment` may contain any of the data object types above provided all the objects share a common time basis, i.e. they all represent data recorded at the same time without breaks in the recording. 
+A \lstinline`Segment` may contain any of the data object types above provided all the objects share a common time basis, i.e. they all represent data recorded at the same time without breaks in the recording\thomas{``without breaks ...'' might be misunderstood. Remove?}. 
 A \lstinline`Block` is the top-level container, and contains \lstinline`Segment`s and \lstinline`RecordingChannelGroup`s (see below).
 To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. 
 
@@ -566,7 +567,14 @@ simulators, and even individual scripts of scientists analysing their data.
 
 A number of projects and laboratories are using Neo\missing{... [say more about the significance of this]}
 
-G-Node\missing{...}
+The German INCF Node (G-Node) has adopted the Neo model for the representation of electrophysiological data at its data management platform (portal.g-node.org/data/).
+Purpose of the platform is to provide a centralized system for organizing and sharing of electrophysiology data.
+A major obstacle to data sharing and re-use in the field of electrophysiology is the large variety of data formats.
+The G-Node platform provides a unified way of representing electrophysiological data according to the Neo object model, as well as automated format conversion utilizing the Neo IO modules.
+Being compliant with the Neo model, the system's API achieves interoperability with other tools that use the Neo objects and facilitates integration of data access and data analysis.
+G-Node offers a python client tool that provides a front-end to the data at the G-Node data platform in terms of the Neo Python objects (Sobolev et al, this issue).
+The G-Node platform complements the Neo data representation by metadata storage using an unrestrictive format \citep{Grewe2011}, enabling extensive data annotation in a standardized way.
+
 
 PyNN \citep{Davison2009} is a Python API for simulator-independent neuronal network simulations.
 One aspect of simulator independence is reformatting the data produced by each simulator into a common format.
@@ -625,6 +633,14 @@ This distributed development effort, in which the collaboration arises informall
 \subsection{Limitations}
 \missing{* Model will change, * Performance limits, * IO everything in memory, * Objects representing analysis outputs ? Only raw data at the moment.]}
 
+\thomas{Proposal regarding ``Objects representing analysis outputs ? Only raw data at the moment'':}\\
+The development of Neo has been focusing on the representation of recorded data, as typically stored in data files during an electophysiological experiment.
+For broader use it would be desirable to also support data resulting from the processing and analysis of such data.
+Ideally, the object model should enable representing the relationship between analysis results and the original data.
+Instead of leaving the definition of corresponding objects to each user, it would make sense to extend the Neo model by a minimal set of definitions for generic scientific data along with provenance information.
+Such developments should be coordinated with the standardization efforts in the INCF Data Sharing Program \citep{Teeters2013}.
+
+
 
 \subsection{Future directions}
 
@@ -639,7 +655,9 @@ The authors declare that the research was conducted in the absence of any commer
 \section*{Acknowledgements}
 We would like to thank \missing{...}
 
-\paragraph{Funding\textcolon} This work was supported by the CNRS, the European Community (BrainScaleS project, FP7-269921), \missing{insert other funding sources}
+\paragraph{Funding\textcolon} This work was supported by the CNRS, the European Community (BrainScaleS project, FP7-269921),
+the German Federal Ministry of Education and Research (grants 01GQ0801 and 01GQ1302),
+\missing{insert other funding sources}
 
 \bibliographystyle{frontiersinSCNS&ENG}
 \bibliography{neo_paper_2013}
