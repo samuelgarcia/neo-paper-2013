@@ -379,9 +379,9 @@ data = reader.read()
 \end{lstlisting}
 
 However, given the large size of many neurophysiology datasets, it is not always desirable to load all the data into memory at once. The full interface therefore offers more fine-grained control.
-
-Lazy and cascade loading.
-
+All read functions have two optional parameters: \lstinline`cascading` and \lstinline`lazy`.
+When \lstinline`cascading` is set to false, only a single object is loaded and none of its references to other objects are populated.
+The \lstinline`lazy` parameter does not influence if linked objects are loaded, but determines the treatment of data objects: When \lstinline`lazy` is true, the numerical data is not loaded but data objects are still created, including all of their properties. This allows examining the contents of files with a substantially smaller memory footprint. IO classes can implement a method to load the full version of a lazily loaded object once the numerical data is required.
 
 The neo.io API also takes into account that a dataset does not necessarily come from a single file. Some software can provide recordings in a directory or in a database. Such cases are taken into account through the attribute \lstinline`mode` in each IO class. The behaviour is changed only at the instantiation:
 
