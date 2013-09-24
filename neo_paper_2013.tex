@@ -334,8 +334,17 @@ In summary, then, the classes for the Neo data objects all inherit from \lstinli
 Neo objects add further checks (for example, trying to add together two \lstinline`AnalogSignal`s with different sampling rates produces an exception) and further operations (for example, it is possible to slice \lstinline`AnalogSignal`s and \lstinline`SpikeTrain`s according to time as well as according to index).
 
 \missing{[We need to explain why we didn't use Pandas, nitime, or any of the other Python packages for working with time series data.]}
+Other Python packages for working with time series data do not fill the niche that Neo does. 
+The core function of Neo is data representation. 
+The pandas package (\url{http://pandas.pydata.org}) is a general toolkit for working with heterogeneous data. 
+Neo contains functionality specific for neural data analysis, such as grouping of channels by anatomical location.
+Another package, nitime (\url{http://nipy.org/nitime}), provides algorithms for time-series analysis that are tailored toward neuroscience data.
+In contrast, Neo intentionally does not provide algorithms for data analysis since this will vary widely across users.
+Overall, Neo provides functionality that is specific to neuroscience data (unlike Pandas) but not specific to particular applications within neuroscience (unlike nitime).
+This means that Neo is ideally situated to be a common format for neuroscientists, who may then analyze the data using the tools provided by other packages as desired.
 
 \missing{[Should perhaps say more about the various methods available on AnalogSignals, etc.?]}
+
 
 \missing{[Discuss the implementation of relationships]}
 \samuel{ isn't redoundant with  'subsection Relationships between objects' ? }
