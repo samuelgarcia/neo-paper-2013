@@ -1,0 +1,36 @@
+Here are the rules used when redesigning base_schematic2.svg:
+
+1) Colours:
+
+- As much as possible, use one colour per Neo object (not very easy for 
+  individual spikes...)
+
+- Use the following shades of colours:
+ - black for Block
+ - shades of grey for segments
+ - shades of blue for objects related to analog signals
+ - shades of red-orange-brown for objects related to spikes
+ - shades of purple for objects related to epochs
+ - shades of green for objects related to events
+ - pink for RecordingChannelGroup
+ 
+2) Symbolisation:
+
+- Symbolise all the Neo core objects
+
+- Inside a grouping object (= Unit, RecordingChannel, RecordingChannelGroup) or 
+  inside a container object (= Block, Segment) draw at least one item of each 
+  class that can be contained by the object 
+
+- Use doted lines to symbolise arrays
+
+- Use rectangles to symbolise container objects
+
+- Use cartouches to symbolise grouping objects 
+
+3) Text:
+
+- Use the same font (DejaVu Sans), with the same font size (16) for all the 
+  text
+
+- The font colour of a text matches the colour of the corresponding object  
