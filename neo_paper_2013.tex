@@ -93,7 +93,23 @@ $^{9}$University of California, Berkeley, CA, USA}
 
 \section{}
 % Frontiers guidelines: "As a primary goal, the abstract should render the general significance and conceptual advance of the work clearly accessible to a broad readership. References should not be cited in the abstract." "Maximum length 2000 characters".
-\missing{abstract goes here...}
+% Note: The initial version of the abstract contains 1927 characters (including spaces). The spaces must be included in the count of the maximum length of 2000 characters, see http://www.frontiersin.org/Neuroinformatics/authorguidelines#SummaryTable
+
+In neuroscience, electrophysiological signals are acquired, analysed and visualised using a wide variety of software.
+To improve interoperability of different tools and to share data between projects, a common representation of the core data is needed.
+To build this common representation, we propose a language independent hierarchical data model suitable for the representation of electrophysiological data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations.
+We specify the different considerations taken into account when designing this model and describe it in detail.
+
+Furthermore, we present the Neo package, which is an implementation of this model in Python.
+Additionally to providing objects to represent electrophysiology data in memory, this package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats (including Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed, Blackrock, Klustakwik, BrainVision, WinWcp, Elan, Elphy, Neuroshare, TDT, ASCII, HDF5, Matlab and raw binary data).
+This package is distributed under a modified BSD license and can be freely downloaded from the Neo project website.
+The Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualization, in order to be as lightweight a dependency as possible.
+Packages for neurophysiology data analysis and visualization can then build on top of Neo.
+
+To illustrate the use of the Neo package, we also present a set of common usage examples.
+
+Finally we discuss the current state of the Neo project, specifying the various projects and laboratories contributing to, using, or building on Neo.
+We also discuss the sustainability of the project, backed by its active community, as well as its limitations and future direction.
 
 \tiny
  \keyFont{ \section{Keywords:} electrophysiology, interoperability, Python, software, file formats\missing{, ...} } % minimum 5, maximum 8 keywords
