@@ -344,7 +344,11 @@ Overall, Neo provides functionality that is specific to neuroscience data (unlik
 This means that Neo is ideally situated to be a common format for neuroscientists, who may then analyze the data using the tools provided by other packages as desired.
 
 \missing{[Should perhaps say more about the various methods available on AnalogSignals, etc.?]}
-
+Because the primary function of Neo is neural data representation, the methods provided fall into two categories: 1) reading from the various formats used by hardware manufacturers; 2) linking the resulting objects in a neuroscientifically meaningful way.
+Many of the methods defined on Neo objects construct these linkages.
+The first type of linkage is spatial: AnalogSignal object may be added to RecordingChannel objects, and RecordingChannel objects added to anatomically defined RecordingChannelGroup objects.
+The second type of linkage is temporal: AnalogSignal objects also belong to a Segment object (representing a period of time), and Segment belongs to Block (representing an entire experiment).
+Once this hierarchy has been created, the user may iterate over the data in whatever way is most intuitive for the application: either temporally (trial by trial within a session) or spatially (channel by channel within the brain).
 
 \missing{[Discuss the implementation of relationships]}
 \samuel{ isn't redoundant with  'subsection Relationships between objects' ? }
