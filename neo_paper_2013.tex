@@ -601,7 +601,9 @@ of software: entire services providing data management facilities including
 electrophysiological data, local tools at the neuroscientific workbench like
 simulators, and even individual scripts of scientists analysing their data.
 
-A number of projects and laboratories are using Neo\missing{... [say more about the significance of this]}
+%\missing{... [say more about the significance of this]}
+A number of projects and laboratories are using Neo. A total of 5 differents laboratories are developping and  using dailly tools based on neo. A brief overview of theses projects is helpfull to gauge the benefit.
+
 
 The German INCF Node (G-Node) has adopted the Neo model for the representation of electrophysiological data at its data management platform (portal.g-node.org/data/).
 Purpose of the platform is to provide a centralized system for organizing and sharing of electrophysiology data.
@@ -667,7 +669,13 @@ This distributed development effort, in which the collaboration arises informall
 
 
 \subsection{Limitations}
-\missing{* Model will change, * Performance limits, * IO everything in memory, * Objects representing analysis outputs ? Only raw data at the moment.]}
+
+%\missing{* Model will change, * Performance limits, * IO everything in memory, * Objects representing analysis outputs ? Only raw data at the moment.]}
+
+Neo object model went out after discussion between several developer groups. Even this model have been design carrefully, it is far from perfect. The actual model is the outcome of an evolution, neo is now version 0.3. So the main compromise is to balance between fast change in neo to fit all new needs during building new software and slow changes to assure a stability for others software already built. New improvement are already in discussion for a futur neo 0.4. Even if it is a general issue in software developpement, this has to be take in account even more carfully because neo is the base of several projects. 
+
+Some improvement are planed for futur version. (i) The memory management for IO must be improved. Despite the lazy/cascade mechanism neo IO do not allow to load in memory only a chunk or a subset of data. (ii) The model will be simplify, in actual model some object are redundant due to duplication between scalar representation and array representation (AnalogSignal vs AnalogsignalArray) (iii) Some relationship are not efficient for querying (filtering) an obect when the dataset is  large. For instance loopin over Unit inside a Block is not straigthforward.
+
 
 \thomas{Proposal regarding ``Objects representing analysis outputs ? Only raw data at the moment'':}\\
 The development of Neo has been focusing on the representation of recorded data, as typically stored in data files during an electophysiological experiment.
