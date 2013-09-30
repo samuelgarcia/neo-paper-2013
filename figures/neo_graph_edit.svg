@@ -124,12 +124,12 @@
      inkscape:showpageshadow="false"
      showguides="true"
      inkscape:zoom="0.54615385"
-     inkscape:cx="1028.8371"
-     inkscape:cy="684.93544"
+     inkscape:cx="990.81299"
+     inkscape:cy="596.112"
      inkscape:window-x="132"
      inkscape:window-y="48"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg2">
+     inkscape:current-layer="g10079">
     <inkscape:grid
        type="xygrid"
        id="grid6529"
@@ -145,1632 +145,1634 @@
      id="g10079"
      transform="translate(-2866.4,42.8)">
     <g
-       transform="translate(1649.2127,33.3493)"
-       id="g5884">
-      <polyline
-         points="367.5,-1 456.5,-1 "
-         id="polyline5886"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
+       id="g3331">
+      <g
+         id="g5884"
+         transform="translate(1649.2127,33.3493)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5886"
+           points="367.5,-1 456.5,-1 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5888"
+           d="m 2030.7873,936.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5890"
+           points="468.5,-13 468.5,-193 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5892"
+           d="m 2042.7873,744.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5894"
+           points="456.5,-205 367.5,-205 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5896"
+           d="m 1941.7873,732.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5898"
+           points="355.5,-193 355.5,-13 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5900"
+           d="m 1929.7873,924.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text5902"
+           font-size="14.00"
+           y="749.25067"
+           x="1986.2874">SpikeTrain*</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5904"
+           points="355.5,-179 468.5,-179 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5906"
+           font-size="14.00"
+           y="775.25067"
+           x="1937.7874">times</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5908"
+           font-size="14.00"
+           y="793.25067"
+           x="1937.7874">t_start</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5910"
+           font-size="14.00"
+           y="811.25067"
+           x="1937.7874">t_stop</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5912"
+           points="355.5,-117 468.5,-117 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5914"
+           font-size="14.00"
+           y="837.25067"
+           x="1937.7874">waveforms</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5916"
+           font-size="14.00"
+           y="855.25067"
+           x="1937.7874">left_sweep</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5918"
+           font-size="14.00"
+           y="873.25067"
+           x="1937.7874">sampling_rate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5920"
+           font-size="14.00"
+           y="891.25067"
+           x="1937.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5922"
+           font-size="14.00"
+           y="909.25067"
+           x="1937.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5924"
+           font-size="14.00"
+           y="927.25067"
+           x="1937.7874">file_origin</text>
+      </g>
+      <g
+         id="g5926"
+         transform="translate(1076.9127,-26.6507)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5928"
+           points="612,-505 772,-505 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5930"
+           d="m 2346.2873,432.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5932"
+           points="784,-517 784,-679 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5934"
+           d="m 2358.2873,258.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5936"
+           points="772,-691 612,-691 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5938"
+           d="m 2186.2873,246.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5940"
+           points="600,-679 600,-517 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5942"
+           d="m 2174.2873,420.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text5944"
+           font-size="14.00"
+           y="263.25067"
+           x="2266.2874">RecordingChannelGroup</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5946"
+           points="600,-665 784,-665 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5948"
+           font-size="14.00"
+           y="289.25067"
+           x="2182.2874">times</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5950"
+           font-size="14.00"
+           y="307.25067"
+           x="2182.2874">t_start</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5952"
+           font-size="14.00"
+           y="325.25067"
+           x="2182.2874">t_stop</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline5954"
+           points="600,-603 784,-603 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5956"
+           font-size="14.00"
+           y="351.25067"
+           x="2182.2874">channel_indexes</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5958"
+           font-size="14.00"
+           y="369.25067"
+           x="2182.2874">channel_names</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5960"
+           font-size="14.00"
+           y="387.25067"
+           x="2182.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5962"
+           font-size="14.00"
+           y="405.25067"
+           x="2182.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5964"
+           font-size="14.00"
+           y="423.25067"
+           x="2182.2874">file_origin</text>
+      </g>
+      <g
+         id="g6008"
+         transform="translate(1484.1127,-65.299345)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6010"
+           points="370,-263 476,-263 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6012"
+           d="m 2050.2873,674.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6014"
+           points="488,-275 488,-419 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6016"
+           d="m 2062.2873,518.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6018"
+           points="476,-431 370,-431 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6020"
+           d="m 1944.2873,506.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6022"
+           points="358,-419 358,-275 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6024"
+           d="m 1932.2873,662.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6026"
+           font-size="14.00"
+           y="523.25073"
+           x="1997.2874">Unit</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6028"
+           points="358,-405 488,-405 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6030"
+           font-size="14.00"
+           y="549.25067"
+           x="1940.2874">time</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6032"
+           font-size="14.00"
+           y="567.25067"
+           x="1940.2874">duration</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6034"
+           font-size="14.00"
+           y="585.25067"
+           x="1940.2874">label</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6036"
+           points="358,-343 488,-343 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6038"
+           font-size="14.00"
+           y="611.25067"
+           x="1940.2874">channel_indexes</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6040"
+           font-size="14.00"
+           y="629.25067"
+           x="1940.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6042"
+           font-size="14.00"
+           y="647.25067"
+           x="1940.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6044"
+           font-size="14.00"
+           y="665.25067"
+           x="1940.2874">file_origin</text>
+      </g>
+      <g
+         id="g6050"
+         transform="translate(633.2127,-78.6507)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6052"
+           points="903.5,-281 1020.5,-281 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6054"
+           d="m 2594.7873,656.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6056"
+           points="1032.5,-293 1032.5,-401 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6058"
+           d="m 2606.7873,536.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6060"
+           points="1020.5,-413 903.5,-413 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6062"
+           d="m 2477.7873,524.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6064"
+           points="891.5,-401 891.5,-293 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6066"
+           d="m 2465.7873,644.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6068"
+           font-size="14.00"
+           y="541.25067"
+           x="2536.2874">RecordingChannel</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6070"
+           points="891.5,-387 1032.5,-387 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6072"
+           font-size="14.00"
+           y="567.25067"
+           x="2473.7874">index</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6074"
+           points="891.5,-361 1032.5,-361 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6076"
+           font-size="14.00"
+           y="593.25067"
+           x="2473.7874">coordinate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6078"
+           font-size="14.00"
+           y="611.25067"
+           x="2473.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6080"
+           font-size="14.00"
+           y="629.25067"
+           x="2473.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6082"
+           font-size="14.00"
+           y="647.25067"
+           x="2473.7874">file_origin</text>
+      </g>
+      <g
+         id="g6090"
+         transform="translate(472.4127,-2.6507)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6092"
+           points="879.5,-37 1044.5,-37 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6094"
+           d="m 2618.7873,900.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6096"
+           points="1056.5,-49 1056.5,-157 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6098"
+           d="m 2630.7873,780.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6100"
+           points="1044.5,-169 879.5,-169 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6102"
+           d="m 2453.7873,768.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6104"
+           points="867.5,-157 867.5,-49 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6106"
+           d="m 2441.7873,888.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6108"
+           font-size="14.00"
+           y="785.25067"
+           x="2536.2874">IrregularlySampledSignal</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6110"
+           points="867.5,-143 1056.5,-143 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6112"
+           font-size="14.00"
+           y="811.25067"
+           x="2449.7874">times</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6114"
+           font-size="14.00"
+           y="829.25067"
+           x="2449.7874">values</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6116"
+           points="867.5,-99 1056.5,-99 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6118"
+           font-size="14.00"
+           y="855.25067"
+           x="2449.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6120"
+           font-size="14.00"
+           y="873.25067"
+           x="2449.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6122"
+           font-size="14.00"
+           y="891.25067"
+           x="2449.7874">file_origin</text>
+      </g>
+      <g
+         id="g6124"
+         transform="translate(2268.6127,-2.6507)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6126"
+           points="11.5,-37 82.5,-37 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6128"
+           d="m 1656.7873,900.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6130"
+           points="94.5,-49 94.5,-157 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6132"
+           d="m 1668.7873,780.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6134"
+           points="82.5,-169 11.5,-169 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6136"
+           d="m 1585.7873,768.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6138"
+           points="-0.5,-157 -0.5,-49 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6140"
+           d="m 1573.7873,888.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6142"
+           font-size="14.00"
+           y="785.25067"
+           x="1621.2874">EventArray</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6144"
+           points="-0.5,-143 94.5,-143 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6146"
+           font-size="14.00"
+           y="811.25067"
+           x="1581.7874">times</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6148"
+           font-size="14.00"
+           y="829.25067"
+           x="1581.7874">labels</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6150"
+           points="-0.5,-99 94.5,-99 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6152"
+           font-size="14.00"
+           y="855.25067"
+           x="1581.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6154"
+           font-size="14.00"
+           y="873.25067"
+           x="1581.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6156"
+           font-size="14.00"
+           y="891.25067"
+           x="1581.7874">file_origin</text>
+      </g>
+      <g
+         id="g6158"
+         transform="translate(2267.7127,6.3493)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6160"
+           points="254,-28 326,-28 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6162"
+           d="m 1900.2873,909.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6164"
+           points="338,-40 338,-166 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6166"
+           d="m 1912.2873,771.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6168"
+           points="326,-178 254,-178 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6170"
+           d="m 1828.2873,759.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6172"
+           points="242,-166 242,-40 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6174"
+           d="m 1816.2873,897.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6176"
+           font-size="14.00"
+           y="776.25067"
+           x="1864.2874">EpochArray</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6178"
+           points="242,-152 338,-152 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6180"
+           font-size="14.00"
+           y="802.25067"
+           x="1824.2874">times</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6182"
+           font-size="14.00"
+           y="820.25067"
+           x="1824.2874">durations</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6184"
+           font-size="14.00"
+           y="838.25067"
+           x="1824.2874">labels</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6186"
+           points="242,-90 338,-90 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6188"
+           font-size="14.00"
+           y="864.25067"
+           x="1824.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6190"
+           font-size="14.00"
+           y="882.25067"
+           x="1824.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6192"
+           font-size="14.00"
+           y="900.25067"
+           x="1824.2874">file_origin</text>
+      </g>
+      <g
+         id="g6194"
+         transform="translate(1920.1392,6.545426)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6196"
+           points="498,-28 566,-28 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6198"
+           d="m 2140.2873,909.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6200"
+           points="578,-40 578,-166 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6202"
+           d="m 2152.2873,771.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6204"
+           points="566,-178 498,-178 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6206"
+           d="m 2072.2873,759.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6208"
+           points="486,-166 486,-40 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6210"
+           d="m 2060.2873,897.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6212"
+           font-size="14.00"
+           y="776.25067"
+           x="2106.2874">Epoch</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6214"
+           points="486,-152 578,-152 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6216"
+           font-size="14.00"
+           y="802.25067"
+           x="2068.2874">time</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6218"
+           font-size="14.00"
+           y="820.25067"
+           x="2068.2874">duration</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6220"
+           font-size="14.00"
+           y="838.25067"
+           x="2068.2874">label</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6222"
+           points="486,-90 578,-90 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6224"
+           font-size="14.00"
+           y="864.25067"
+           x="2068.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6226"
+           font-size="14.00"
+           y="882.25067"
+           x="2068.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6228"
+           font-size="14.00"
+           y="900.25067"
+           x="2068.2874">file_origin</text>
+      </g>
+      <g
+         id="g6234"
+         transform="translate(1772.2127,15.3493)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6236"
+           points="123.5,-19 212.5,-19 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6238"
+           d="m 1786.7873,918.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6240"
+           points="224.5,-31 224.5,-175 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6242"
+           d="m 1798.7873,762.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6244"
+           points="212.5,-187 123.5,-187 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6246"
+           d="m 1697.7873,750.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6248"
+           points="111.5,-175 111.5,-31 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6250"
+           d="m 1685.7873,906.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6252"
+           font-size="14.00"
+           y="767.25067"
+           x="1742.2874">Spike</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6254"
+           points="111.5,-161 224.5,-161 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6256"
+           font-size="14.00"
+           y="793.25067"
+           x="1693.7874">time</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6258"
+           points="111.5,-135 224.5,-135 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6260"
+           font-size="14.00"
+           y="819.25067"
+           x="1693.7874">waveform</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6262"
+           font-size="14.00"
+           y="837.25067"
+           x="1693.7874">left_sweep</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6264"
+           font-size="14.00"
+           y="855.25067"
+           x="1693.7874">sampling_rate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6266"
+           font-size="14.00"
+           y="873.25067"
+           x="1693.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6268"
+           font-size="14.00"
+           y="891.25067"
+           x="1693.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6270"
+           font-size="14.00"
+           y="909.25067"
+           x="1693.7874">file_origin</text>
+      </g>
+      <g
+         id="g6288"
+         transform="translate(1542.2126,-47.250671)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6290"
+           points="519.5,-245 608.5,-245 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6292"
+           d="m 2182.7873,692.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6294"
+           points="620.5,-257 620.5,-437 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6296"
+           d="m 2194.7873,500.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6298"
+           points="608.5,-449 519.5,-449 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6300"
+           d="m 2093.7873,488.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6302"
+           points="507.5,-437 507.5,-257 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6304"
+           d="m 2081.7873,680.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6306"
+           font-size="14.00"
+           y="505.2507"
+           x="2138.2874">Segment</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6308"
+           points="507.5,-423 620.5,-423 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6310"
+           font-size="14.00"
+           y="531.25067"
+           x="2089.7874">signal</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6312"
+           font-size="14.00"
+           y="549.25067"
+           x="2089.7874">sampling_rate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6314"
+           font-size="14.00"
+           y="567.25067"
+           x="2089.7874">t_start</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6316"
+           points="507.5,-361 620.5,-361 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6318"
+           font-size="14.00"
+           y="593.25067"
+           x="2089.7874">file_datetime</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6320"
+           font-size="14.00"
+           y="611.25067"
+           x="2089.7874">rec_datetime</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6322"
+           font-size="14.00"
+           y="629.25067"
+           x="2089.7874">index</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6324"
+           font-size="14.00"
+           y="647.25067"
+           x="2089.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6326"
+           font-size="14.00"
+           y="665.25067"
+           x="2089.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6328"
+           font-size="14.00"
+           y="683.25067"
+           x="2089.7874">file_origin</text>
+      </g>
+      <g
+         id="g6358"
+         transform="translate(491.7127,15.3493)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6360"
+           points="1086,-19 1178,-19 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6362"
+           d="m 2752.2873,918.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6364"
+           points="1190,-31 1190,-175 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6366"
+           d="m 2764.2873,762.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6368"
+           points="1178,-187 1086,-187 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6370"
+           d="m 2660.2873,750.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6372"
+           points="1074,-175 1074,-31 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6374"
+           d="m 2648.2873,906.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6376"
+           font-size="14.00"
+           y="767.25067"
+           x="2706.2874">AnalogSignal*</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6378"
+           points="1074,-161 1190,-161 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6380"
+           font-size="14.00"
+           y="793.25067"
+           x="2656.2874">signal</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6382"
+           font-size="14.00"
+           y="811.25067"
+           x="2656.2874">sampling_rate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6384"
+           font-size="14.00"
+           y="829.25067"
+           x="2656.2874">t_start</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6386"
+           points="1074,-99 1190,-99 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6388"
+           font-size="14.00"
+           y="855.25067"
+           x="2656.2874">channel_index</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6390"
+           font-size="14.00"
+           y="873.25067"
+           x="2656.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6392"
+           font-size="14.00"
+           y="891.25067"
+           x="2656.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6394"
+           font-size="14.00"
+           y="909.25067"
+           x="2656.2874">file_origin</text>
+      </g>
+      <g
+         id="g6408"
+         transform="translate(1567.3127,-2.6507)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6410"
+           points="608,-37 676,-37 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6412"
+           d="m 2250.2873,900.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6414"
+           points="688,-49 688,-157 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6416"
+           d="m 2262.2873,780.6507 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6418"
+           points="676,-169 608,-169 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6420"
+           d="m 2182.2873,768.6507 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6422"
+           points="596,-157 596,-49 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6424"
+           d="m 2170.2873,888.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6426"
+           font-size="14.00"
+           y="785.25067"
+           x="2216.2874">Event</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6428"
+           points="596,-143 688,-143 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6430"
+           font-size="14.00"
+           y="811.25067"
+           x="2178.2874">time</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6432"
+           font-size="14.00"
+           y="829.25067"
+           x="2178.2874">label</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6434"
+           points="596,-99 688,-99 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6436"
+           font-size="14.00"
+           y="855.25067"
+           x="2178.2874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6438"
+           font-size="14.00"
+           y="873.25067"
+           x="2178.2874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6440"
+           font-size="14.00"
+           y="891.25067"
+           x="2178.2874">file_origin</text>
+      </g>
+      <g
+         id="g6446"
+         transform="translate(1367.3409,-33.066677)">
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6448"
+           points="564.5,-731 647.5,-731 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6450"
+           d="m 2221.7873,206.6507 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6452"
+           points="659.5,-743 659.5,-905 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6454"
+           d="m 2233.7873,32.650704 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6456"
+           points="647.5,-917 564.5,-917 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6458"
+           d="m 2138.7873,20.650704 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6460"
+           points="552.5,-905 552.5,-743 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path6462"
+           d="m 2126.7873,194.6507 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text6464"
+           font-size="14.00"
+           y="37.250679"
+           x="2180.2874">Block</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6466"
+           points="552.5,-891 659.5,-891 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6468"
+           font-size="14.00"
+           y="63.250679"
+           x="2134.7874">time</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6470"
+           font-size="14.00"
+           y="81.250679"
+           x="2134.7874">label</text>
+        <polyline
+           transform="translate(1574.2873,937.6507)"
+           style="fill:none;stroke:#000000"
+           id="polyline6472"
+           points="552.5,-847 659.5,-847 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6474"
+           font-size="14.00"
+           y="107.25068"
+           x="2134.7874">file_datetime</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6476"
+           font-size="14.00"
+           y="125.25069"
+           x="2134.7874">rec_datetime</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6478"
+           font-size="14.00"
+           y="143.25069"
+           x="2134.7874">index</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6480"
+           font-size="14.00"
+           y="161.25069"
+           x="2134.7874">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6482"
+           font-size="14.00"
+           y="179.25069"
+           x="2134.7874">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6484"
+           font-size="14.00"
+           y="197.25069"
+           x="2134.7874">file_origin</text>
+      </g>
       <path
-         d="m 2030.7873,936.6507 c 6,0 12,-6 12,-12"
-         id="path5888"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="m 4600,807.5 -206.858,140"
+         id="path8669"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="468.5,-13 468.5,-193 "
-         id="polyline5890"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
+         transform="scale(0.8,0.8)"
+         sodipodi:nodetypes="cc" />
       <path
-         d="m 2042.7873,744.6507 c 0,-6 -6,-12 -12,-12"
-         id="path5892"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="456.5,-205 367.5,-205 "
-         id="polyline5894"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
+         id="path9429"
+         d="m 3680,646 -43.8848,112"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         sodipodi:nodetypes="cc" />
       <path
-         d="m 1941.7873,732.6507 c -6,0 -12,6 -12,12"
-         id="path5896"
+         sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="355.5,-193 355.5,-13 "
-         id="polyline5898"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
+         id="path9431"
+         d="m 3680,646 104.7396,112"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
       <path
-         d="m 1929.7873,924.6507 c 0,6 6,12 12,12"
-         id="path5900"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="m 3680,646 209.3735,112"
+         id="path9433"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9435"
+         d="m 3680,646 346.3343,112"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="m 3680,646 451.2752,113.15703"
+         id="path9437"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9439"
+         d="M 3680,646 3341.7588,758"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="M 3680,646 3197.5172,758"
+         id="path9441"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9443"
+         d="M 3680,646 3009.0037,758"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="M 3546.8133,174 3344,211.67568"
+         id="path9445"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9447"
+         d="M 3547.3363,174 3680,438"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9449"
+         d="m 3344,406 136,27.56266"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="m 3344,406 -2.4653,352"
+         id="path9451"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="M 3168,578.09184 3008.7924,758"
+         id="path9453"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="M 3168,577.95305 3197.4877,758"
+         id="path9455"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9457"
+         d="m 3344,406 c 0,56 -149.7588,13.17395 -173.7588,33.72465"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.2, 6.4;stroke-dashoffset:0;marker-end:none"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9459"
+         d="M 3480,609.4429 3636.333,758"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
+         d="M 3480,609.36819 3514.3461,758"
+         id="path9461"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.8, 4.8;stroke-dashoffset:0;marker-end:none"
+         d="M 3547.5347,174 C 3547.5347,313.08315 3480,320.92875 3480,440.92875"
+         id="path9463"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9465"
+         d="m 3547.3618,174 c -332.5569,3.58768 -377.7183,-48 -377.7183,264"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.8, 4.8;stroke-dashoffset:0;marker-end:none"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.2, 6.4;stroke-dashoffset:0;marker-end:none"
+         d="M 3169.4941,444.05763 C 3169.4941,388.05763 3291.2871,430 3344,406"
+         id="path9467"
+         inkscape:connector-curvature="0" />
       <text
-         x="1986.2874"
-         y="749.25067"
+         style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'"
+         id="text9849"
          font-size="14.00"
-         id="text5902"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">SpikeTrain</text>
-      <polyline
-         points="355.5,-179 468.5,-179 "
-         id="polyline5904"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
+         y="428.31293"
+         x="3256.9839">many to many</text>
       <text
-         x="1937.7874"
-         y="775.25067"
+         style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'"
+         id="text9851"
          font-size="14.00"
-         id="text5906"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">times</text>
+         y="166"
+         x="3368">property</text>
       <text
-         x="1937.7874"
-         y="793.25067"
+         x="3528"
+         y="366"
          font-size="14.00"
-         id="text5908"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_start</text>
-      <text
-         x="1937.7874"
-         y="811.25067"
-         font-size="14.00"
-         id="text5910"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_stop</text>
-      <polyline
-         points="355.5,-117 468.5,-117 "
-         id="polyline5912"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1937.7874"
-         y="837.25067"
-         font-size="14.00"
-         id="text5914"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">waveforms</text>
-      <text
-         x="1937.7874"
-         y="855.25067"
-         font-size="14.00"
-         id="text5916"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">left_sweep</text>
-      <text
-         x="1937.7874"
-         y="873.25067"
-         font-size="14.00"
-         id="text5918"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">sampling_rate</text>
-      <text
-         x="1937.7874"
-         y="891.25067"
-         font-size="14.00"
-         id="text5920"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="1937.7874"
-         y="909.25067"
-         font-size="14.00"
-         id="text5922"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="1937.7874"
-         y="927.25067"
-         font-size="14.00"
-         id="text5924"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
+         id="text9853"
+         style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'">property</text>
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 4136,758 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10053"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10055"
+         d="m 4030.4,758 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3892.8,758 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10057"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10059"
+         d="m 3788.8,758 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3640,758 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10061"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10063"
+         d="m 3518.4,758 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g3310">
+        <polyline
+           transform="matrix(1.0547026,0,0,1,2522.7235,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5968"
+           points="718,-19 838,-19 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5970"
+           d="m 3406.4,934 c 6,0 12,-6 12,-12" />
+        <polyline
+           transform="translate(2568.4,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5972"
+           points="850,-31 850,-175 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5974"
+           d="m 3418.4,778 c 0,-6 -6,-12 -12,-12" />
+        <polyline
+           transform="matrix(1.0554624,0,0,1,2522.178,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5976"
+           points="838,-187 718,-187 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5978"
+           d="m 3280,766 c -6,0 -12,6 -12,12" />
+        <polyline
+           transform="translate(2562,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5980"
+           points="706,-175 706,-31 " />
+        <path
+           style="fill:none;stroke:#000000"
+           inkscape:connector-curvature="0"
+           id="path5982"
+           d="m 3268,922 c 0,6 6,12 12,12" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           id="text5984"
+           font-size="14.00"
+           y="782.59998"
+           x="3343.2002">AnalogSignalArray*</text>
+        <polyline
+           transform="matrix(1.0444444,0,0,1,2530.6222,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5986"
+           points="706,-161 850,-161 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5988"
+           font-size="14.00"
+           y="808.59998"
+           x="3276">signal</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5990"
+           font-size="14.00"
+           y="826.59998"
+           x="3276">sampling_rate</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5992"
+           font-size="14.00"
+           y="844.59998"
+           x="3276">t_start</text>
+        <polyline
+           transform="matrix(1.0444444,0,0,1,2530.6222,953)"
+           style="fill:none;stroke:#000000"
+           id="polyline5994"
+           points="706,-99 850,-99 " />
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5996"
+           font-size="14.00"
+           y="870.59998"
+           x="3276">channel_indexes</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text5998"
+           font-size="14.00"
+           y="888.59998"
+           x="3276">name</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6000"
+           font-size="14.00"
+           y="906.59998"
+           x="3276">description</text>
+        <text
+           style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'"
+           id="text6002"
+           font-size="14.00"
+           y="924.59998"
+           x="3276">file_origin</text>
+        <path
+           inkscape:connector-curvature="0"
+           id="path10065"
+           d="m 3345.6,758 -7.7859,0.0631 3.924,6.63889 z"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path10067"
+         d="m 3201.6,758 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3012.8,758 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10069"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10071"
+         d="m 3173.4619,437.69801 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3483.8619,433.62233 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10073"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10075"
+         d="m 3683.8619,433.62233 -7.7859,0.0631 3.924,6.63889 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3347.8619,211.97652 -7.7859,0.0631 3.924,6.63889 z"
+         id="path10077"
+         inkscape:connector-curvature="0" />
     </g>
-    <g
-       transform="translate(1076.9127,-26.6507)"
-       id="g5926">
-      <polyline
-         points="612,-505 772,-505 "
-         id="polyline5928"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2346.2873,432.6507 c 6,0 12,-6 12,-12"
-         id="path5930"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="784,-517 784,-679 "
-         id="polyline5932"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2358.2873,258.6507 c 0,-6 -6,-12 -12,-12"
-         id="path5934"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="772,-691 612,-691 "
-         id="polyline5936"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2186.2873,246.6507 c -6,0 -12,6 -12,12"
-         id="path5938"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="600,-679 600,-517 "
-         id="polyline5940"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2174.2873,420.6507 c 0,6 6,12 12,12"
-         id="path5942"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2266.2874"
-         y="263.25067"
-         font-size="14.00"
-         id="text5944"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">RecordingChannelGroup</text>
-      <polyline
-         points="600,-665 784,-665 "
-         id="polyline5946"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2182.2874"
-         y="289.25067"
-         font-size="14.00"
-         id="text5948"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">times</text>
-      <text
-         x="2182.2874"
-         y="307.25067"
-         font-size="14.00"
-         id="text5950"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_start</text>
-      <text
-         x="2182.2874"
-         y="325.25067"
-         font-size="14.00"
-         id="text5952"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_stop</text>
-      <polyline
-         points="600,-603 784,-603 "
-         id="polyline5954"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2182.2874"
-         y="351.25067"
-         font-size="14.00"
-         id="text5956"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">channel_indexes</text>
-      <text
-         x="2182.2874"
-         y="369.25067"
-         font-size="14.00"
-         id="text5958"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">channel_names</text>
-      <text
-         x="2182.2874"
-         y="387.25067"
-         font-size="14.00"
-         id="text5960"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2182.2874"
-         y="405.25067"
-         font-size="14.00"
-         id="text5962"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2182.2874"
-         y="423.25067"
-         font-size="14.00"
-         id="text5964"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(987.7127,15.3493)"
-       id="g5966">
-      <polyline
-         points="718,-19 838,-19 "
-         id="polyline5968"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2412.2873,918.6507 c 6,0 12,-6 12,-12"
-         id="path5970"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="850,-31 850,-175 "
-         id="polyline5972"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2424.2873,762.6507 c 0,-6 -6,-12 -12,-12"
-         id="path5974"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="838,-187 718,-187 "
-         id="polyline5976"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2292.2873,750.6507 c -6,0 -12,6 -12,12"
-         id="path5978"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="706,-175 706,-31 "
-         id="polyline5980"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2280.2873,906.6507 c 0,6 6,12 12,12"
-         id="path5982"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2352.2874"
-         y="767.25067"
-         font-size="14.00"
-         id="text5984"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">AnalogSignalArray</text>
-      <polyline
-         points="706,-161 850,-161 "
-         id="polyline5986"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2288.2874"
-         y="793.25067"
-         font-size="14.00"
-         id="text5988"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">signal</text>
-      <text
-         x="2288.2874"
-         y="811.25067"
-         font-size="14.00"
-         id="text5990"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">sampling_rate</text>
-      <text
-         x="2288.2874"
-         y="829.25067"
-         font-size="14.00"
-         id="text5992"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_start</text>
-      <polyline
-         points="706,-99 850,-99 "
-         id="polyline5994"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2288.2874"
-         y="855.25067"
-         font-size="14.00"
-         id="text5996"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">channel_indexes</text>
-      <text
-         x="2288.2874"
-         y="873.25067"
-         font-size="14.00"
-         id="text5998"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2288.2874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6000"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2288.2874"
-         y="909.25067"
-         font-size="14.00"
-         id="text6002"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1484.1127,-65.299345)"
-       id="g6008">
-      <polyline
-         points="370,-263 476,-263 "
-         id="polyline6010"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2050.2873,674.6507 c 6,0 12,-6 12,-12"
-         id="path6012"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="488,-275 488,-419 "
-         id="polyline6014"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2062.2873,518.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6016"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="476,-431 370,-431 "
-         id="polyline6018"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1944.2873,506.6507 c -6,0 -12,6 -12,12"
-         id="path6020"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="358,-419 358,-275 "
-         id="polyline6022"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1932.2873,662.6507 c 0,6 6,12 12,12"
-         id="path6024"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="1997.2874"
-         y="523.25073"
-         font-size="14.00"
-         id="text6026"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Unit</text>
-      <polyline
-         points="358,-405 488,-405 "
-         id="polyline6028"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1940.2874"
-         y="549.25067"
-         font-size="14.00"
-         id="text6030"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">time</text>
-      <text
-         x="1940.2874"
-         y="567.25067"
-         font-size="14.00"
-         id="text6032"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">duration</text>
-      <text
-         x="1940.2874"
-         y="585.25067"
-         font-size="14.00"
-         id="text6034"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">label</text>
-      <polyline
-         points="358,-343 488,-343 "
-         id="polyline6036"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1940.2874"
-         y="611.25067"
-         font-size="14.00"
-         id="text6038"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">channel_indexes</text>
-      <text
-         x="1940.2874"
-         y="629.25067"
-         font-size="14.00"
-         id="text6040"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="1940.2874"
-         y="647.25067"
-         font-size="14.00"
-         id="text6042"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="1940.2874"
-         y="665.25067"
-         font-size="14.00"
-         id="text6044"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(633.2127,-78.6507)"
-       id="g6050">
-      <polyline
-         points="903.5,-281 1020.5,-281 "
-         id="polyline6052"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2594.7873,656.6507 c 6,0 12,-6 12,-12"
-         id="path6054"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1032.5,-293 1032.5,-401 "
-         id="polyline6056"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2606.7873,536.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6058"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1020.5,-413 903.5,-413 "
-         id="polyline6060"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2477.7873,524.6507 c -6,0 -12,6 -12,12"
-         id="path6062"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="891.5,-401 891.5,-293 "
-         id="polyline6064"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2465.7873,644.6507 c 0,6 6,12 12,12"
-         id="path6066"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2536.2874"
-         y="541.25067"
-         font-size="14.00"
-         id="text6068"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">RecordingChannel</text>
-      <polyline
-         points="891.5,-387 1032.5,-387 "
-         id="polyline6070"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2473.7874"
-         y="567.25067"
-         font-size="14.00"
-         id="text6072"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">index</text>
-      <polyline
-         points="891.5,-361 1032.5,-361 "
-         id="polyline6074"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2473.7874"
-         y="593.25067"
-         font-size="14.00"
-         id="text6076"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">coordinate</text>
-      <text
-         x="2473.7874"
-         y="611.25067"
-         font-size="14.00"
-         id="text6078"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2473.7874"
-         y="629.25067"
-         font-size="14.00"
-         id="text6080"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2473.7874"
-         y="647.25067"
-         font-size="14.00"
-         id="text6082"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(472.4127,-2.6507)"
-       id="g6090">
-      <polyline
-         points="879.5,-37 1044.5,-37 "
-         id="polyline6092"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2618.7873,900.6507 c 6,0 12,-6 12,-12"
-         id="path6094"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1056.5,-49 1056.5,-157 "
-         id="polyline6096"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2630.7873,780.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6098"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1044.5,-169 879.5,-169 "
-         id="polyline6100"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2453.7873,768.6507 c -6,0 -12,6 -12,12"
-         id="path6102"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="867.5,-157 867.5,-49 "
-         id="polyline6104"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2441.7873,888.6507 c 0,6 6,12 12,12"
-         id="path6106"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2536.2874"
-         y="785.25067"
-         font-size="14.00"
-         id="text6108"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">IrregularlySampledSignal</text>
-      <polyline
-         points="867.5,-143 1056.5,-143 "
-         id="polyline6110"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2449.7874"
-         y="811.25067"
-         font-size="14.00"
-         id="text6112"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">times</text>
-      <text
-         x="2449.7874"
-         y="829.25067"
-         font-size="14.00"
-         id="text6114"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">values</text>
-      <polyline
-         points="867.5,-99 1056.5,-99 "
-         id="polyline6116"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2449.7874"
-         y="855.25067"
-         font-size="14.00"
-         id="text6118"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2449.7874"
-         y="873.25067"
-         font-size="14.00"
-         id="text6120"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2449.7874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6122"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(2268.6127,-2.6507)"
-       id="g6124">
-      <polyline
-         points="11.5,-37 82.5,-37 "
-         id="polyline6126"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1656.7873,900.6507 c 6,0 12,-6 12,-12"
-         id="path6128"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="94.5,-49 94.5,-157 "
-         id="polyline6130"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1668.7873,780.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6132"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="82.5,-169 11.5,-169 "
-         id="polyline6134"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1585.7873,768.6507 c -6,0 -12,6 -12,12"
-         id="path6136"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="-0.5,-157 -0.5,-49 "
-         id="polyline6138"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1573.7873,888.6507 c 0,6 6,12 12,12"
-         id="path6140"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="1621.2874"
-         y="785.25067"
-         font-size="14.00"
-         id="text6142"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">EventArray</text>
-      <polyline
-         points="-0.5,-143 94.5,-143 "
-         id="polyline6144"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1581.7874"
-         y="811.25067"
-         font-size="14.00"
-         id="text6146"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">times</text>
-      <text
-         x="1581.7874"
-         y="829.25067"
-         font-size="14.00"
-         id="text6148"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">labels</text>
-      <polyline
-         points="-0.5,-99 94.5,-99 "
-         id="polyline6150"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1581.7874"
-         y="855.25067"
-         font-size="14.00"
-         id="text6152"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="1581.7874"
-         y="873.25067"
-         font-size="14.00"
-         id="text6154"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="1581.7874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6156"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(2267.7127,6.3493)"
-       id="g6158">
-      <polyline
-         points="254,-28 326,-28 "
-         id="polyline6160"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1900.2873,909.6507 c 6,0 12,-6 12,-12"
-         id="path6162"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="338,-40 338,-166 "
-         id="polyline6164"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1912.2873,771.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6166"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="326,-178 254,-178 "
-         id="polyline6168"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1828.2873,759.6507 c -6,0 -12,6 -12,12"
-         id="path6170"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="242,-166 242,-40 "
-         id="polyline6172"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1816.2873,897.6507 c 0,6 6,12 12,12"
-         id="path6174"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="1864.2874"
-         y="776.25067"
-         font-size="14.00"
-         id="text6176"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">EpochArray</text>
-      <polyline
-         points="242,-152 338,-152 "
-         id="polyline6178"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1824.2874"
-         y="802.25067"
-         font-size="14.00"
-         id="text6180"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">times</text>
-      <text
-         x="1824.2874"
-         y="820.25067"
-         font-size="14.00"
-         id="text6182"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">durations</text>
-      <text
-         x="1824.2874"
-         y="838.25067"
-         font-size="14.00"
-         id="text6184"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">labels</text>
-      <polyline
-         points="242,-90 338,-90 "
-         id="polyline6186"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1824.2874"
-         y="864.25067"
-         font-size="14.00"
-         id="text6188"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="1824.2874"
-         y="882.25067"
-         font-size="14.00"
-         id="text6190"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="1824.2874"
-         y="900.25067"
-         font-size="14.00"
-         id="text6192"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1920.1392,6.545426)"
-       id="g6194">
-      <polyline
-         points="498,-28 566,-28 "
-         id="polyline6196"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2140.2873,909.6507 c 6,0 12,-6 12,-12"
-         id="path6198"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="578,-40 578,-166 "
-         id="polyline6200"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2152.2873,771.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6202"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="566,-178 498,-178 "
-         id="polyline6204"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2072.2873,759.6507 c -6,0 -12,6 -12,12"
-         id="path6206"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="486,-166 486,-40 "
-         id="polyline6208"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2060.2873,897.6507 c 0,6 6,12 12,12"
-         id="path6210"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2106.2874"
-         y="776.25067"
-         font-size="14.00"
-         id="text6212"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Epoch</text>
-      <polyline
-         points="486,-152 578,-152 "
-         id="polyline6214"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2068.2874"
-         y="802.25067"
-         font-size="14.00"
-         id="text6216"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">time</text>
-      <text
-         x="2068.2874"
-         y="820.25067"
-         font-size="14.00"
-         id="text6218"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">duration</text>
-      <text
-         x="2068.2874"
-         y="838.25067"
-         font-size="14.00"
-         id="text6220"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">label</text>
-      <polyline
-         points="486,-90 578,-90 "
-         id="polyline6222"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2068.2874"
-         y="864.25067"
-         font-size="14.00"
-         id="text6224"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2068.2874"
-         y="882.25067"
-         font-size="14.00"
-         id="text6226"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2068.2874"
-         y="900.25067"
-         font-size="14.00"
-         id="text6228"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1772.2127,15.3493)"
-       id="g6234">
-      <polyline
-         points="123.5,-19 212.5,-19 "
-         id="polyline6236"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1786.7873,918.6507 c 6,0 12,-6 12,-12"
-         id="path6238"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="224.5,-31 224.5,-175 "
-         id="polyline6240"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1798.7873,762.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6242"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="212.5,-187 123.5,-187 "
-         id="polyline6244"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1697.7873,750.6507 c -6,0 -12,6 -12,12"
-         id="path6246"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="111.5,-175 111.5,-31 "
-         id="polyline6248"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 1685.7873,906.6507 c 0,6 6,12 12,12"
-         id="path6250"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="1742.2874"
-         y="767.25067"
-         font-size="14.00"
-         id="text6252"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Spike</text>
-      <polyline
-         points="111.5,-161 224.5,-161 "
-         id="polyline6254"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1693.7874"
-         y="793.25067"
-         font-size="14.00"
-         id="text6256"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">time</text>
-      <polyline
-         points="111.5,-135 224.5,-135 "
-         id="polyline6258"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="1693.7874"
-         y="819.25067"
-         font-size="14.00"
-         id="text6260"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">waveform</text>
-      <text
-         x="1693.7874"
-         y="837.25067"
-         font-size="14.00"
-         id="text6262"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">left_sweep</text>
-      <text
-         x="1693.7874"
-         y="855.25067"
-         font-size="14.00"
-         id="text6264"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">sampling_rate</text>
-      <text
-         x="1693.7874"
-         y="873.25067"
-         font-size="14.00"
-         id="text6266"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="1693.7874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6268"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="1693.7874"
-         y="909.25067"
-         font-size="14.00"
-         id="text6270"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1542.2126,-47.250671)"
-       id="g6288">
-      <polyline
-         points="519.5,-245 608.5,-245 "
-         id="polyline6290"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2182.7873,692.6507 c 6,0 12,-6 12,-12"
-         id="path6292"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="620.5,-257 620.5,-437 "
-         id="polyline6294"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2194.7873,500.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6296"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="608.5,-449 519.5,-449 "
-         id="polyline6298"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2093.7873,488.6507 c -6,0 -12,6 -12,12"
-         id="path6300"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="507.5,-437 507.5,-257 "
-         id="polyline6302"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2081.7873,680.6507 c 0,6 6,12 12,12"
-         id="path6304"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2138.2874"
-         y="505.2507"
-         font-size="14.00"
-         id="text6306"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Segment</text>
-      <polyline
-         points="507.5,-423 620.5,-423 "
-         id="polyline6308"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2089.7874"
-         y="531.25067"
-         font-size="14.00"
-         id="text6310"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">signal</text>
-      <text
-         x="2089.7874"
-         y="549.25067"
-         font-size="14.00"
-         id="text6312"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">sampling_rate</text>
-      <text
-         x="2089.7874"
-         y="567.25067"
-         font-size="14.00"
-         id="text6314"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_start</text>
-      <polyline
-         points="507.5,-361 620.5,-361 "
-         id="polyline6316"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2089.7874"
-         y="593.25067"
-         font-size="14.00"
-         id="text6318"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_datetime</text>
-      <text
-         x="2089.7874"
-         y="611.25067"
-         font-size="14.00"
-         id="text6320"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">rec_datetime</text>
-      <text
-         x="2089.7874"
-         y="629.25067"
-         font-size="14.00"
-         id="text6322"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">index</text>
-      <text
-         x="2089.7874"
-         y="647.25067"
-         font-size="14.00"
-         id="text6324"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2089.7874"
-         y="665.25067"
-         font-size="14.00"
-         id="text6326"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2089.7874"
-         y="683.25067"
-         font-size="14.00"
-         id="text6328"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(491.7127,15.3493)"
-       id="g6358">
-      <polyline
-         points="1086,-19 1178,-19 "
-         id="polyline6360"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2752.2873,918.6507 c 6,0 12,-6 12,-12"
-         id="path6362"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1190,-31 1190,-175 "
-         id="polyline6364"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2764.2873,762.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6366"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1178,-187 1086,-187 "
-         id="polyline6368"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2660.2873,750.6507 c -6,0 -12,6 -12,12"
-         id="path6370"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="1074,-175 1074,-31 "
-         id="polyline6372"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2648.2873,906.6507 c 0,6 6,12 12,12"
-         id="path6374"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2706.2874"
-         y="767.25067"
-         font-size="14.00"
-         id="text6376"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">AnalogSignal</text>
-      <polyline
-         points="1074,-161 1190,-161 "
-         id="polyline6378"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2656.2874"
-         y="793.25067"
-         font-size="14.00"
-         id="text6380"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">signal</text>
-      <text
-         x="2656.2874"
-         y="811.25067"
-         font-size="14.00"
-         id="text6382"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">sampling_rate</text>
-      <text
-         x="2656.2874"
-         y="829.25067"
-         font-size="14.00"
-         id="text6384"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">t_start</text>
-      <polyline
-         points="1074,-99 1190,-99 "
-         id="polyline6386"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2656.2874"
-         y="855.25067"
-         font-size="14.00"
-         id="text6388"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">channel_index</text>
-      <text
-         x="2656.2874"
-         y="873.25067"
-         font-size="14.00"
-         id="text6390"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2656.2874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6392"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2656.2874"
-         y="909.25067"
-         font-size="14.00"
-         id="text6394"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1567.3127,-2.6507)"
-       id="g6408">
-      <polyline
-         points="608,-37 676,-37 "
-         id="polyline6410"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2250.2873,900.6507 c 6,0 12,-6 12,-12"
-         id="path6412"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="688,-49 688,-157 "
-         id="polyline6414"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2262.2873,780.6507 c 0,-6 -6,-12 -12,-12"
-         id="path6416"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="676,-169 608,-169 "
-         id="polyline6418"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2182.2873,768.6507 c -6,0 -12,6 -12,12"
-         id="path6420"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="596,-157 596,-49 "
-         id="polyline6422"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2170.2873,888.6507 c 0,6 6,12 12,12"
-         id="path6424"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2216.2874"
-         y="785.25067"
-         font-size="14.00"
-         id="text6426"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Event</text>
-      <polyline
-         points="596,-143 688,-143 "
-         id="polyline6428"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2178.2874"
-         y="811.25067"
-         font-size="14.00"
-         id="text6430"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">time</text>
-      <text
-         x="2178.2874"
-         y="829.25067"
-         font-size="14.00"
-         id="text6432"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">label</text>
-      <polyline
-         points="596,-99 688,-99 "
-         id="polyline6434"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2178.2874"
-         y="855.25067"
-         font-size="14.00"
-         id="text6436"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2178.2874"
-         y="873.25067"
-         font-size="14.00"
-         id="text6438"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2178.2874"
-         y="891.25067"
-         font-size="14.00"
-         id="text6440"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <g
-       transform="translate(1367.3409,-33.066677)"
-       id="g6446">
-      <polyline
-         points="564.5,-731 647.5,-731 "
-         id="polyline6448"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2221.7873,206.6507 c 6,0 12,-6 12,-12"
-         id="path6450"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="659.5,-743 659.5,-905 "
-         id="polyline6452"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2233.7873,32.650704 c 0,-6 -6,-12 -12,-12"
-         id="path6454"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="647.5,-917 564.5,-917 "
-         id="polyline6456"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2138.7873,20.650704 c -6,0 -12,6 -12,12"
-         id="path6458"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <polyline
-         points="552.5,-905 552.5,-743 "
-         id="polyline6460"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <path
-         d="m 2126.7873,194.6507 c 0,6 6,12 12,12"
-         id="path6462"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000" />
-      <text
-         x="2180.2874"
-         y="37.250679"
-         font-size="14.00"
-         id="text6464"
-         style="font-size:12.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         sodipodi:linespacing="125%">Block</text>
-      <polyline
-         points="552.5,-891 659.5,-891 "
-         id="polyline6466"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2134.7874"
-         y="63.250679"
-         font-size="14.00"
-         id="text6468"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">time</text>
-      <text
-         x="2134.7874"
-         y="81.250679"
-         font-size="14.00"
-         id="text6470"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">label</text>
-      <polyline
-         points="552.5,-847 659.5,-847 "
-         id="polyline6472"
-         style="fill:none;stroke:#000000"
-         transform="translate(1574.2873,937.6507)" />
-      <text
-         x="2134.7874"
-         y="107.25068"
-         font-size="14.00"
-         id="text6474"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_datetime</text>
-      <text
-         x="2134.7874"
-         y="125.25069"
-         font-size="14.00"
-         id="text6476"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">rec_datetime</text>
-      <text
-         x="2134.7874"
-         y="143.25069"
-         font-size="14.00"
-         id="text6478"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">index</text>
-      <text
-         x="2134.7874"
-         y="161.25069"
-         font-size="14.00"
-         id="text6480"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">name</text>
-      <text
-         x="2134.7874"
-         y="179.25069"
-         font-size="14.00"
-         id="text6482"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">description</text>
-      <text
-         x="2134.7874"
-         y="197.25069"
-         font-size="14.00"
-         id="text6484"
-         style="font-size:14px;text-anchor:start;font-family:'Times Roman,serif'">file_origin</text>
-    </g>
-    <path
-       sodipodi:nodetypes="cc"
-       transform="scale(0.8,0.8)"
-       inkscape:connector-curvature="0"
-       id="path8669"
-       d="m 4600,807.5 -206.858,140"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="m 3680,646 -43.8848,112"
-       id="path9429"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="m 3680,646 104.7396,112"
-       id="path9431"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path9433"
-       d="m 3680,646 209.3735,112"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="m 3680,646 346.3343,112"
-       id="path9435"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path9437"
-       d="m 3680,646 451.2752,113.15703"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="M 3680,646 3341.7588,758"
-       id="path9439"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path9441"
-       d="M 3680,646 3197.5172,758"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="M 3680,646 3009.0037,758"
-       id="path9443"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path9445"
-       d="M 3546.8133,174 3344,211.67568"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="M 3547.3363,174 3680,438"
-       id="path9447"
-       inkscape:connector-curvature="0" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="m 3344,406 136,27.56266"
-       id="path9449"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path9451"
-       d="m 3344,406 -2.4653,352"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       sodipodi:nodetypes="cc" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path9453"
-       d="M 3168,578.09184 3008.7924,758"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path9455"
-       d="M 3168,577.95305 3197.4877,758"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.2, 6.4;stroke-dashoffset:0;marker-end:none"
-       d="m 3344,406 c 0,56 -149.7588,13.17395 -173.7588,33.72465"
-       id="path9457"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="M 3480,609.4429 3636.333,758"
-       id="path9459"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path9461"
-       d="M 3480,609.36819 3514.3461,758"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path9463"
-       d="M 3547.5347,174 C 3547.5347,313.08315 3480,320.92875 3480,440.92875"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.8, 4.8;stroke-dashoffset:0;marker-end:none"
-       sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.8, 4.8;stroke-dashoffset:0;marker-end:none"
-       d="m 3547.3618,174 c -332.5569,3.58768 -377.7183,-48 -377.7183,264"
-       id="path9465"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path9467"
-       d="M 3169.4941,444.05763 C 3169.4941,388.05763 3291.2871,430 3344,406"
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.2, 6.4;stroke-dashoffset:0;marker-end:none"
-       sodipodi:nodetypes="cc" />
-    <text
-       x="3256.9839"
-       y="428.31293"
-       font-size="14.00"
-       id="text9849"
-       style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'">many to many</text>
-    <text
-       x="3368"
-       y="166"
-       font-size="14.00"
-       id="text9851"
-       style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'">property</text>
-    <text
-       style="font-size:14px;text-anchor:middle;font-family:'Times Roman,serif'"
-       id="text9853"
-       font-size="14.00"
-       y="366"
-       x="3528">property</text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path10053"
-       d="m 4136,758 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4030.4,758 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10055"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10057"
-       d="m 3892.8,758 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3788.8,758 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10059"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10061"
-       d="m 3640,758 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3518.4,758 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10063"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10065"
-       d="m 3345.6,758 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3201.6,758 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10067"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10069"
-       d="m 3012.8,758 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3173.4619,437.69801 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10071"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10073"
-       d="m 3483.8619,433.62233 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3683.8619,433.62233 -7.7859,0.0631 3.924,6.63889 z"
-       id="path10075"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path10077"
-       d="m 3347.8619,211.97652 -7.7859,0.0631 3.924,6.63889 z"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
