@@ -38,10 +38,10 @@
 %% Commands for use in the editing process. If you wish to add inline comments, please pick a colour and add a new command
 
 \newcommand{\missing}[1]{\textcolor{red}{#1}}
-\newcommand{\andrew}[1]{[\textcolor{ForestGreen}{#1}]}
-\newcommand{\samuel}[1]{[\textcolor{RubineRed}{#1}]}
-\newcommand{\florent}[1]{[\textcolor{Orange}{#1}]}
-\newcommand{\robert}[1]{[\textcolor{RoyalBlue}{#1}]}
+\newcommand{\andrew}[1]{[\textcolor{ForestGreen}{AD: #1}]}
+\newcommand{\samuel}[1]{[\textcolor{RubineRed}{SG: #1}]}
+\newcommand{\florent}[1]{[\textcolor{Orange}{FJ: #1}]}
+\newcommand{\robert}[1]{[\textcolor{RoyalBlue}{RP: #1}]}
 \newcommand{\thomas}[1]{[\textcolor{Emerald}{TW: #1}]}
 \newcommand{\philipp}[1]{[\textcolor{YellowOrange}{PR: #1}]}
 
@@ -160,7 +160,7 @@ The third approach is to define an application programming interface (API) that 
 An advantage of this compared to the other two approaches mentioned above is that it encourages modularity in software development: the data-conversion library defines certain data structures that can then be used by developers of analysis and visualization tools, which thereby gain greater interoperability.
 A previous effort to define an API for electrophysiology data in neuroscience was taken by a consortium of recording hardware manufacturers, which in 2000 began development of the Neuroshare API \citep{neuroshare}.
 The Neuroshare API is available as a C library and as a MATLAB (The Mathworks Inc.) extension.
-These are only available for the Windows operating system \samuel{This is not completly true some manufacturers provides some linux lib}\thomas{How about: For most formats, libraries are only available ...}, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
+These are almost only available for the Windows operating system, and are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available.
 The API is rather low-level, consisting of a number of functions and low-level data structures such as numerical arrays.
 
 We have developed a novel, object-oriented API for representing electrophysiology data in memory and for reading/writing such data from/to multiple file formats.
@@ -204,7 +204,7 @@ For desirable metadata we add the further requirement that the metadata must be 
 \subsection{Structure}
 
 Experimental protocols in neuroscience are hugely diverse, and may be structured in many ways in terms of stimulus presentation, behavioural responses, pharmacological interventions. The object model should allow at least some of this structure to be represented in the relationships between data objects rather than only as metadata. At least two levels of hierarchical organisation are needed (e.g. a recording session consisting of multiple trials), but non-hierarchical cross-links are also needed.
-\samuel{Should we discuss the flexibility to have both continuous recording vs chunk recording ?}
+
 
 \subsection{Interoperability}
 
@@ -224,7 +224,7 @@ Electrophysiology recordings are often very large, either because recording last
 %  * enumeration of objects
 %  * relationships (one to many, many to many)
 
-The Neo object model (version 0.3) consists of \missing{N} classes, which may be divided into three types: data objects, container objects and grouping objects.
+The Neo object model (version 0.3) consists of 14 classes, which may be divided into three types: data objects, container objects and grouping objects.
 Data objects contain numerical data together with associated metadata.
 The data types that are represented are 
 (i) sampled continuous, analog signals; 
@@ -235,7 +235,7 @@ For each data type, the object model provides both a scalar representation (a si
 The full list of data objects is as follows:
 
 \begin{itemize}
-\item \lstinline`AnalogSignal`: a sampling\thomas{How about ``record'' instead of ``sampling''?} of a continuous, analog signal with a fixed sampling interval.
+\item \lstinline`AnalogSignal`: a sampling\thomas{How about ``record'' instead of ``sampling''?}\samuel{I also prefer record} of a continuous, analog signal with a fixed sampling interval.
 \item \lstinline`IrregularlySampledSignal`: a sampling of a continuous analog signal with a varying sampling interval.
 \item \lstinline`AnalogSignalArray`: a sampling of a multichannel continuous analog signal with a fixed sampling interval.
 \item \lstinline`Spike`: one action potential characterized by its time and waveform.
@@ -245,7 +245,7 @@ The full list of data objects is as follows:
 \end{itemize}
 
 Container objects provide a simple hierarchical grouping of data. 
-A \lstinline`Segment` may contain any of the data object types above provided all the objects share a common time basis, i.e. they all represent data recorded at the same time without breaks in the recording\thomas{``without breaks ...'' might be misunderstood. Remove?}. 
+A \lstinline`Segment` may contain any of the data object types above provided all the objects share a common time basis, i.e. they all represent data recorded at the same time without breaks in the recording\thomas{``without breaks ...'' might be misunderstood. Remove?}\samuel{Agree with thomas I prefer : they all represent data recorded simultaneously}. 
 A \lstinline`Block` is the top-level container, and contains \lstinline`Segment`s and \lstinline`RecordingChannelGroup`s (see below).
 To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. 
 
@@ -254,7 +254,7 @@ They contain references to data objects that cut across the simple container hie
 The grouping objects are as follows:
 
 \begin{itemize}
-\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` \samuel{\lstinline`SpikeTrain` are not linked by RC and and I just see that figure 1 is wrong on that} objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
+\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
 \item \lstinline`RecordingChannelGroup`: a group for associated \lstinline`RecordingChannel` objects. This has several possible uses: 
 (i) for linking several \lstinline`AnalogSignalArray` objects across several \lstinline`Segment` objects inside a \lstinline`Block`;
 (ii) for multielectrode arrays, where spikes may be recorded on more than one recording channel, and so the \lstinline`RecordingChannelGroup` can be used to associate each \lstinline`Unit` with the group of recording channels from which it was calculated;
@@ -291,7 +291,7 @@ Figure~\ref{fig:overview} provides an overview of the Neo objects and their rela
 
 Most objects, and in particular all of the data objects, have a number of \emph{required} attributes.
 These are essential metadata without which the numerical data values contained in the object cannot be interpreted.
-For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate) and the units of the signal, for example ``millivolts'' in the case of the membrane potential. \samuel{you do not mention 'tstart' (also required) intentionally ?} 
+For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate), the timestamp of the first sample and the units of the signal, for example ``millivolts'' in the case of the membrane potential. 
 All attributes that represent physical quantities must state the units, for example, the sampling rate could be given as ``10 kHz''.
 
 In addition to the required attributes, each object has a number of \emph{suggested} attributes.
@@ -315,8 +315,8 @@ More detail is available in the online documentation.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{figures/simple_generated_diagram.png}
-\caption{The Neo object model: the principal classes and their relationships. \missing{This is a temporary version of the figure. A better version needs to be created.}}\label{fig:relationships}
+\includegraphics[width=0.8\textwidth]{figures/neo_graph_edit_lowres.png}
+\caption{The Neo object model: the principal classes and their relationships.}\label{fig:relationships}
 \end{figure}
 
 \subsection{Implementation in Python}
@@ -352,7 +352,6 @@ It would be possible to replace it with another units package that subclasses \l
 In summary, then, the classes for the Neo data objects all inherit from \lstinline`Quantity`, and so gain checks for dimensional consistency for free, in addition to the large amount of functionality inherited from \lstinline`ndarray`.
 Neo objects add further checks (for example, trying to add together two \lstinline`AnalogSignal`s with different sampling rates produces an exception) and further operations (for example, it is possible to slice \lstinline`AnalogSignal`s and \lstinline`SpikeTrain`s according to time as well as according to index).
 
-\missing{[We need to explain why we didn't use Pandas, nitime, or any of the other Python packages for working with time series data.]}
 Other Python packages for working with time series data do not fill the niche that Neo does. 
 The core function of Neo is data representation. 
 The pandas package (\url{http://pandas.pydata.org}) is a general toolkit for working with heterogeneous data. 
@@ -393,7 +392,7 @@ There is an extensive test suite, and the project makes use of continuous integr
 %  * use memmap when possible
 %  * explanation for proprietary formats : reverse engineering + version formats problem
 
-In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source tools (e.g. Klustakwik, Elan \florent{Elan does not seem to be open-source, it seems to be only freeware. From the website http://elan.lyon.inserm.fr you can download all kinds of binaries, but no source.}, WinEdr) and generic file formats such as Matlab, ASCII and HDF5. 
+In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source tools or freely distributed (e.g. Klustakwik, Elan, WinEdr) and generic file formats such as Matlab, ASCII and HDF5. 
 In most cases, the proprietary formats are read-only, while the more open and generic formats support both reading and writing.
 
 The inclusion of this functionality in the Neo package has several benefits:
@@ -424,14 +423,12 @@ reader1 = MyFormat1IO(filename="myfile.dat")  # MyFormat1IO.mode = 'file'
 reader2 = MyFormat2IO(dirname="/path_to_dataset")   # MyFormat2IOmode = 'dir'
 \end{lstlisting}
 
-Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory. \robert{I believe that this is not working because of quantities (the data is always fully read). Do we have proof that it actually works?} \samuel{Are you sur that quantity do a copy each time ? if yes we need to remove this memmap discussion}
+Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory. \robert{I believe that this is not working because of quantities (the data is always fully read). Do we have proof that it actually works?} \samuel{Are you sur that quantity do a copy each time ? if yes we need to remove this memmap discussion} \samuel{I push a script test_memmap_and_quantiy.py that go in the way I said, no ? Am I wrong}
 For the implementation of file readers, an early difficulty was collecting information about specification for proprietary file formats. This tedious task was accomplished with several methods (i) asking manufacturers to open these specifications, (ii) reading code from other packages (iii) reading C header files (iiii) basic reverse engineering with hexadecimal editors. Nowadays, many manufacturers provide their file specifications in the user documentation.
 The main difficulty remains in the versioning of these specifications. In general, the internal file formats do not change much over time, but sometimes some problematic changes occur, making the classes non backward compatible. This has been taken in account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must continue.
 
 \samuel{[other things to mention: (4) the idea of Neo as a place to collect and harmonize different Python scripts for different formats from all over the web = better in discussion no?]}
 
-
-\missing{[should perhaps go into more detail on Matlab and HDF5 formats]}
 Two of the IO classes do not implement an already existing format : NeoHdf5IO and NeoMatlabIO. Both have in common to use a generic file format, respectively hdf5 and matlab that allows internal organisation of the data in a tree. So in that classes the Neo hierarchical model is directly used to store objects in the file. In short the organisation in the file is close to the Neo objects organisation. In that way, two new file formats are proposed. They are efficient because built on mature library (hdf5 and matlab) and quite universal. And furthermore, their implementation are generic because they are based on the object model descriptions.
 
 
