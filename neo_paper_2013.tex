@@ -56,21 +56,16 @@
 \def\articleType{Research Article}
 \def\keyFont{\fontsize{8}{11}\helveticabold }
 \def\firstAuthorLast{Garcia {et~al.}}
-\def\Authors{Samuel Garcia\,$^{1}$, Cyril Dejean\,$^{2}$, Luc
-Estebanez\,$^{3}$, Domenico Guarino\,$^{3}$, Florent Jaillet\,$^{4}$, Todd
-Jennings\,$^{5}$, Yann Mahnoun\,$^{6}$, Robert Pröpper\,$^{7}$, Philipp L. Rautenberg\,$^{8}$, Chris Rodgers\,$^{9}$, Andrey Sobolev\,$^{8}$, Thomas Wachtler\,$^{8}$, Pierre Yger\,$^{3}$ and Andrew P. Davison\,$^{3,*}$}
+\def\Authors{Samuel Garcia\,$^{1}$, Domenico Guarino\,$^{2}$, Florent Jaillet\,$^{3}$, Robert Pröpper\,$^{4}$, Philipp L. Rautenberg\,$^{5}$, Chris Rodgers\,$^{6}$, Andrey Sobolev\,$^{5}$, Thomas Wachtler\,$^{5}$, Pierre Yger\,$^{2}$ and Andrew P. Davison\,$^{2,*}$}
 
 % Frontiers guidelines: "Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
 % If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list."
 \def\Address{$^{1}$Centre de Recherche en Neuroscience de Lyon, CNRS UMR5292--INSERM U1028--Universite Claude Bernard Lyon 1, Lyon, France \\
-$^{2}$Centre de Neurosciences Integratives et Cognitives, CNRS UMR 5228--Université Bordeaux I--Université Bordeaux II, Bordeaux, France \\
-$^{3}$Unité de Neurosciences, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France \\
-$^{4}$Institut de Neurosciences de la Timone UMR 7289, Aix Marseille Université, CNRS, Marseille, France \\
-$^{5}$Division of Neurobiology, Department Biology II, Ludwig-Maximilians-Universität, Munich, Germany \\
-$^{6}$Laboratoire de Neurosciences Intégratives et Adaptatives, CNRS UMR 6149--Université de Provence, Marseille, France \\
-$^{7}$Neural Information Processing Group, TU Berlin, Germany \\
-$^{8}$G-Node, Ludwig-Maximilians-Universität, Munich, Germany \\
-$^{9}$University of California, Berkeley, CA, USA}
+$^{2}$Unité de Neurosciences, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France \\
+$^{3}$Institut de Neurosciences de la Timone UMR 7289, Aix Marseille Université, CNRS, Marseille, France \\
+$^{4}$Neural Information Processing Group, TU Berlin, Germany \\
+$^{5}$G-Node, Ludwig-Maximilians-Universität, Munich, Germany \\
+$^{6}$University of California, Berkeley, CA, USA}
 
 % Frontiers guidelines: "The Corresponding Author should be marked with an asterisk
 % Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author"
@@ -423,7 +418,7 @@ reader1 = MyFormat1IO(filename="myfile.dat")  # MyFormat1IO.mode = 'file'
 reader2 = MyFormat2IO(dirname="/path_to_dataset")   # MyFormat2IOmode = 'dir'
 \end{lstlisting}
 
-Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory. \robert{I believe that this is not working because of quantities (the data is always fully read). Do we have proof that it actually works?} \samuel{Are you sur that quantity do a copy each time ? if yes we need to remove this memmap discussion} \samuel{I push a script test_memmap_and_quantiy.py that go in the way I said, no ? Am I wrong}
+Some file formats internally store arrays in a compact continuous way. In such cases, classes implementation use the numpy.memmap mechanism. It reduces the memory footprint and allows to access transparently files that do not fit into the entire memory. \robert{I believe that this is not working because of quantities (the data is always fully read). Do we have proof that it actually works?} \samuel{Are you sur that quantity do a copy each time ? if yes we need to remove this memmap discussion} \samuel{I push a script test\_memmap\_and\_quantiy.py that go in the way I said, no? Am I wrong}
 For the implementation of file readers, an early difficulty was collecting information about specification for proprietary file formats. This tedious task was accomplished with several methods (i) asking manufacturers to open these specifications, (ii) reading code from other packages (iii) reading C header files (iiii) basic reverse engineering with hexadecimal editors. Nowadays, many manufacturers provide their file specifications in the user documentation.
 The main difficulty remains in the versioning of these specifications. In general, the internal file formats do not change much over time, but sometimes some problematic changes occur, making the classes non backward compatible. This has been taken in account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must continue.
 
@@ -704,7 +699,7 @@ capabilities.}
 The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
 \section*{Acknowledgements}
-We would like to thank \missing{...}
+We would like to thank Cyril Dejean, Luc Estebanez, Todd Jennings and Yann Mahnoun for their contributions to Neo.
 
 \paragraph{Funding\textcolon} This work was supported by the CNRS, the European Community (BrainScaleS project, FP7-269921),
 the German Federal Ministry of Education and Research (grants 01GQ0801 and 01GQ1302),
