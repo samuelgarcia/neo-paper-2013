@@ -218,7 +218,6 @@ The data types that are represented are
 (ii) action potentials (``spikes''), characterised by their time of occurrence and, optionally, their waveforms; 
 (iii) events, each of which consists of a time of occurrence and a textual label; and 
 (iv) epochs, each of which consists of a start and end time together with a label.
-For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between simplicity and efficiency in data analysis.
 The full list of data objects is as follows:
 
 \begin{itemize}
@@ -230,6 +229,8 @@ The full list of data objects is as follows:
 \item \lstinline`Event` and \lstinline`EventArray`: a time point representing an event in the data, or an array of such time points.
 \item \lstinline`Epoch` and \lstinline`EpochArray`: an interval of time representing a period of time in the data, or an array of such intervals.
 \end{itemize}
+
+For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between simplicity and efficiency in data analysis.
 
 Container objects provide a simple hierarchical grouping of data. 
 A \lstinline`Segment` may contain any of the data object types above provided all the objects share a common time basis, i.e. they represent data recorded simultaneously. 
