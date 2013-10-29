@@ -1,0 +1,70 @@
+git log --raw | grep "^Author: " | sort | uniq -c
+
+Give this:
+     69 Author: Andrew Davison <andrew.davison@unic.cnrs-gif.fr>
+     18 Author: andrey <andrey@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      4 Author: antolikjan <antolikjan@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+     60 Author: apdavison <apdavison@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+     47 Author: crodger <crodger@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+     18 Author: dguarino <domenico.guarino@gmail.com>
+      4 Author: Garcia Samuel <sam.garcia.die@gmail.com>
+      5 Author: jaillet <jaillet@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      1 Author: Jan Antolik <antolikjan@gmail.com>
+      3 Author: jnowacki <jnowacki@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+     10 Author: lestebanez <lestebanez@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      1 Author: lpezard <lpezard@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      3 Author: nfourcau <nfourcau@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+     18 Author: pierre <pierre@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      1 Author: prauten <prauten@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      7 Author: Robert Pröpper <robert.proepper@gmail.com>
+     24 Author: Robert Pröpper <robert.proepper@googlemail.com>
+      5 Author: Robert <robert.proepper@googlemail.com>
+     24 Author: Samuel Garcia <sam.garcia.die@gmail.com>
+      2 Author: Samuel Garcia <sgarcia-DellXPS13>
+      6 Author: Samuel Garcia <sgarcia@sgarcia-laptop.(none)>
+    260 Author: sgarcia <sgarcia@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      4 Author: Takafumi Arakaki <aka.tkf@gmail.com>
+     35 Author: Todd Jennings <toddrjen@gmail.com>
+      2 Author: Yaroslav Halchenko <debian@onerussian.com>
+     26 Author: ygordon <ygordon@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+      1 Author: yury <yury@acbc63fc-6c75-0410-9d68-8fa99cba188a>
+ 
+
+Missings Emails
+Todd Jennings <toddrjen@gmail.com>
+debian@onerussian.com
+aka.tkf@gmail.com
+
+
+Final list:
+Andrew  Unic
+Andrey  GNode
+antolikjan  UNic
+crodger University of California, Berkeley, CA, USA
+dguarino    Unic
+Samuel  CRNL
+jaillet INT
+lestebanez Unic
+lpezard UnivAixMarseille
+ygordon UnivAixMarseille
+pierre Unic
+Robert Pröpper  Neural Information Processing Group, TU Berlin, Berlin, Germany
+
+
+Waiting answer:
+Todd Jennings
+Yaroslav Halchenko
+Takafumi Arakaki
+
+No emails ????
+jnowacki
+prauten
+
+
+
+
+
+Comiiters = 17
+Insitution = 7
+
+
