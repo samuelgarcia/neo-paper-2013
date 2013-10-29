@@ -13,8 +13,11 @@
    height="524.40942"
    id="svg3504"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="usecase2.svg">
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="usecase2.svg"
+   inkscape:export-filename="/home/do/neo-paper-2013/figures/usecase2.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs3506">
     <clipPath
@@ -187,16 +190,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="398.46652"
-     inkscape:cy="364.45566"
+     inkscape:zoom="1.4"
+     inkscape:cx="326.66434"
+     inkscape:cy="304.8469"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="973"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="1631"
+     inkscape:window-height="1026"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3509">
@@ -206,7 +209,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -225,34 +228,34 @@
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="552.02106"
-       y="648.26093"
+       x="544.02106"
+       y="654.26093"
        id="text14156"><tspan
          sodipodi:role="line"
          id="tspan14158"
-         x="552.02106"
-         y="648.26093"
+         x="544.02106"
+         y="654.26093"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1px;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="-740.07098"
-       y="63.41914"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="-734.07098"
+       y="63.416187"
        id="text10378-4"
        transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"><tspan
          sodipodi:role="line"
-         x="-740.07098"
-         y="63.41914"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="-734.07098"
+         y="63.416187"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          id="tspan3126">Recording</tspan><tspan
          sodipodi:role="line"
-         x="-740.07098"
-         y="83.419136"
+         x="-734.07098"
+         y="83.416191"
          dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.6593653"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          id="tspan3168"><tspan
            dy="0 0 0 0 0 0 0 0 0 0 0 0 -1.6593653"
-           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
            id="tspan3170">ChannelGroup 0</tspan></tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.97528088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -398,24 +401,24 @@
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="400.05075"
-       y="648.26093"
+       x="398.05075"
+       y="654.26093"
        id="text14156-8"><tspan
          sodipodi:role="line"
          id="tspan14158-3"
-         x="400.05075"
-         y="648.26093"
+         x="398.05075"
+         y="654.26093"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="247.71103"
-       y="648.26093"
+       x="245.71103"
+       y="656.26093"
        id="text14156-7"><tspan
          sodipodi:role="line"
          id="tspan14158-9"
-         x="247.71103"
-         y="648.26093"
+         x="245.71103"
+         y="656.26093"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 0</tspan></text>
     <path
        inkscape:connector-curvature="0"
@@ -425,24 +428,24 @@
        sodipodi:nodetypes="cscccccsccc" />
     <text
        xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1px;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="-873.53064"
-       y="64.813667"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="-875.53064"
+       y="64.814651"
        id="text10378-4-7"
        transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"><tspan
          sodipodi:role="line"
-         x="-873.53064"
-         y="64.813667"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         x="-875.53064"
+         y="64.814651"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          id="tspan3126-3">Recording</tspan><tspan
          sodipodi:role="line"
-         x="-873.53064"
-         y="84.813667"
+         x="-875.53064"
+         y="84.814651"
          dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.6593653"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
          id="tspan3168-6"><tspan
            dy="0 0 0 0 0 0 0 0 0 0 0 0 -1.6593653"
-           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;stroke-width:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
            id="tspan3170-5">ChannelGroup 1</tspan></tspan></text>
     <path
        inkscape:connector-curvature="0"
@@ -1183,7 +1186,7 @@
     </g>
     <g
        id="g3671"
-       transform="translate(21.213204,694.28948)"
+       transform="translate(21.213204,692.28948)"
        style="fill:#803300;stroke:#803300;stroke-opacity:1">
       <text
          id="text10378-0-7-9"
@@ -1368,37 +1371,37 @@
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="252.19116"
-       y="807.45886"
+       y="805.45886"
        id="text5428-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5430-6"
          x="252.19116"
-         y="807.45886"
+         y="805.45886"
          style="font-size:13px">ST 0,2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="400.923"
-       y="807.45886"
+       y="805.45886"
        id="text5428-6-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5430-7-2"
          x="400.923"
-         y="807.45886"
+         y="805.45886"
          style="font-size:13px">ST 1,2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="546.40527"
-       y="807.45886"
+       y="805.45886"
        id="text5428-5-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5430-78-2"
          x="546.40527"
-         y="807.45886"
+         y="805.45886"
          style="font-size:13px">ST 2,2</tspan></text>
     <text
        xml:space="preserve"
@@ -1416,25 +1419,25 @@
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="400.79288"
-       y="843.28888"
+       y="837.28888"
        id="text5428-6-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5430-7-4"
          x="400.79288"
-         y="843.28888"
+         y="837.28888"
          style="font-size:13px">ST 1,3</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="546.27515"
-       y="843.28888"
+       y="837.28888"
        id="text5428-5-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5430-78-1"
          x="546.27515"
-         y="843.28888"
+         y="837.28888"
          style="font-size:13px">ST 2,3</tspan></text>
     <text
        xml:space="preserve"
