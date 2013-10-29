@@ -62,7 +62,7 @@
 
 % Frontiers guidelines: "Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
 % If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list."
-\def\Address{$^{1}$Centre de Recherche en Neuroscience de Lyon, CNRS UMR5292--INSERM U1028--Universite Claude Bernard Lyon 1, Lyon, France \\
+\def\Address{$^{1}$Centre de Recherche en Neuroscience de Lyon, CNRS UMR5292--INSERM U1028--Université Claude Bernard Lyon 1, Lyon, France \\
 $^{2}$Unité de Neurosciences, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France \\
 $^{3}$Institut de Neurosciences de la Timone UMR 7289, Aix Marseille Université, CNRS, Marseille, France \\
 $^{4}$Neural Information Processing Group, TU Berlin, Germany \\
@@ -94,11 +94,11 @@ $^{6}$University of California, Berkeley, CA, USA}
 
 In neuroscience, electrophysiological signals are acquired, analysed and visualised using a large number of different software tools, but exchanging data between them is difficult, due to incompatible data models and file formats.
 To improve interoperability of different tools and to share data between projects, a common representation of the core data is needed.
-As such a common representation, we propose a language independent, hierarchical object model suitable for the representation of electrophysiological data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
+As such a common representation, we propose a language-independent, hierarchical object model suitable for the representation of electrophysiological data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
 As a concrete instantiation of this object model, we have developed an open source implementation in the Python programming language, called Neo. 
 In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Neo package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats, including those produced by most of the major manufacturers of electrophysiology recording equipment and more generic formats such as the Matlab file format.
-The Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualization, in order to be as lightweight a dependency as possible.
-Software for neurophysiology data analysis and visualization built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion: there is already a burgeoning ecosystem of such tools. 
+The Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation, in order to be as lightweight a dependency as possible.
+Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion: there is already a burgeoning ecosystem of such tools. 
 We intend that Neo should become the standard base package for Python tools in neurophysiology. The object model is equally suitable for other object-oriented languages used in neuroscience, such as Java or Matlab.
 
 \tiny
@@ -122,7 +122,7 @@ We intend that Neo should become the standard base package for Python tools in n
 %     - http://pub.ist.ac.at/~schloegl/matlab/eeg/
 %     - SignalML
 %  * need to have a model object that embraces complexity of data (heterogeneity, etc.)
-%  * open source
+%  * open sourcemodellers
 
 In systems neuroscience and computational neuroscience, as in many areas of science, a considerable amount of researchers' time is spent in analysing and visualising data, using some kind of software.
 Since science aims always to push at the boundaries of knowledge, it is often the case that no single piece of software is sufficient to perform all the analyses or visualisations of interest for a particular study.
@@ -130,7 +130,7 @@ The solution is either to extend the software or to transfer data between softwa
 The former requires both programming skills and effort.
 If an entirely novel analysis method is needed, this effort is unavoidable, but if, as is often the case, the required functionality is already provided by a different software tool, transferring the data can in principle be much more efficient.
 Unfortunately, in neurophysiology there is a very wide variety of software in use, much of it proprietary and developed by recording hardware manufacturers, and with little in the way of common data formats.
-In practice, researchers spend a lot of time and effort converting data between different formats, and those with good programming skills are strongly tempted to reimplement functionality that already exists elsewhere rather than go through a tedious conversion process.
+In practice, researchers spend a lot of time and effort converting data between different formats, and those with good programming skills are strongly tempted to re-implement functionality that already exists elsewhere rather than go through a tedious conversion process.
 A reduction in the amount of effort required for neurophysiology data conversion could greatly enhance the productivity of the field and reduce duplication of effort. 
 
 Three approaches to reducing the effort of data conversion, and thereby increasing the interoperability of data analysis tools, can be envisioned.
@@ -144,7 +144,7 @@ Conversion between data formats, or reading a data file into software, can then 
 This approach was taken by \citet{Durka2004}, who developed the SignalML markup language for describing biomedical time series.
 
 The third approach is to define an application programming interface (API) that takes care of the data conversion, and implement this as a library which can be used by software developers to provide uniform access to data, independent of the file format.
-An advantage of this compared to the other two approaches mentioned above is that it encourages modularity in software development: the data-conversion library defines certain data structures which can then be used by developers of analysis and visualization tools, which thereby gain greater interoperability.
+An advantage of this compared to the other two approaches mentioned above is that it encourages modularity in software development: the data-conversion library defines certain data structures which can then be used by developers of analysis and visualisation tools, which thereby gain greater interoperability.
 A previous effort to define an API for electrophysiology data in neuroscience was undertaken by a consortium of recording hardware manufacturers, which in 2000 began development of the Neuroshare API \citep{neuroshare}.
 The Neuroshare API is available as a C library and as a MATLAB (The Mathworks Inc.) extension.
 These are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available, and most are only available for the Windows operating system.
@@ -215,7 +215,7 @@ The Neo object model consists of 14 classes, which may be divided into three typ
 Data objects contain numerical data together with associated metadata.
 The data types that are represented are 
 (i) sampled continuous, analog signals; 
-(ii) action potentials (``spikes''), characterized by their time of occurrence and, optionally, their waveforms; 
+(ii) action potentials (``spikes''), characterised by their time of occurrence and, optionally, their waveforms; 
 (iii) events, each of which consists of a time of occurrence and a textual label; and 
 (iv) epochs, each of which consists of a start and end time together with a label.
 For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between simplicity and efficiency in data analysis.
@@ -225,7 +225,7 @@ The full list of data objects is as follows:
 \item \lstinline`AnalogSignal`: a record of a continuous, analog signal with a fixed sampling interval.
 \item \lstinline`IrregularlySampledSignal`: a record of a continuous analog signal with a varying sampling interval.
 \item \lstinline`AnalogSignalArray`: a record of a multichannel continuous analog signal with a fixed sampling interval.
-\item \lstinline`Spike`: one action potential characterized by its time and waveform.
+\item \lstinline`Spike`: one action potential characterised by its time and waveform.
 \item \lstinline`SpikeTrain`: a set of action potentials (spikes) emitted by the same unit in a period of time (with optional waveforms).
 \item \lstinline`Event` and \lstinline`EventArray`: a time point representing an event in the data, or an array of such time points.
 \item \lstinline`Epoch` and \lstinline`EpochArray`: an interval of time representing a period of time in the data, or an array of such intervals.
@@ -244,8 +244,8 @@ The grouping objects are as follows:
 \item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
 \item \lstinline`RecordingChannelGroup`: a group for associated \lstinline`RecordingChannel` objects. This has several possible uses: 
 (i) for linking several \lstinline`AnalogSignalArray` objects across several \lstinline`Segment` objects inside a \lstinline`Block`;
-(ii) for multielectrode arrays, where spikes may be recorded on more than one recording channel, and so the \lstinline`RecordingChannelGroup` can be used to associate each \lstinline`Unit` with the group of recording channels from which it was calculated;
-(iii) for grouping several \lstinline`RecordingChannel` objects. There are many use cases for this. For instance, for intracellular recording, it is common to record both membrane potentials and currents at the same time, so each \lstinline`RecordingChannelGroup` may correspond to the particular property that is being recorded. For multielectrode arrays, \lstinline`RecordingChannelGroup` is used to gather all \lstinline`RecordingChannel` objects of the same array.
+(ii) for multi-electrode arrays, where spikes may be recorded on more than one recording channel, and so the \lstinline`RecordingChannelGroup` can be used to associate each \lstinline`Unit` with the group of recording channels from which it was calculated;
+(iii) for grouping several \lstinline`RecordingChannel` objects. There are many use cases for this. For instance, for intracellular recording, it is common to record both membrane potentials and currents at the same time, so each \lstinline`RecordingChannelGroup` may correspond to the particular property that is being recorded. For multi-electrode arrays, \lstinline`RecordingChannelGroup` is used to gather all \lstinline`RecordingChannel` objects of the same array.
 \item \lstinline`Unit`: a \lstinline`Unit` gathers all the \lstinline`SpikeTrain` objects within a common \lstinline`Block`, possibly across several \lstinline`Segments`, that have been emitted by the same cell. A \lstinline`Unit` is linked to the \lstinline`RecordingChannelGroup` objects from which it was detected.
 \end{itemize}
 
@@ -278,7 +278,7 @@ Figure~\ref{fig:overview} provides an overview of the Neo objects and their rela
 
 Most objects, and in particular all of the data objects, have a number of \emph{required} attributes.
 These are essential metadata without which the numerical data values contained in the object cannot be interpreted.
-For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate), the timestamp of the first sample and the units of the signal, for example ``millivolts'' in the case of the membrane potential. 
+For example, in the case of \lstinline`AnalogSignal`, the required attributes are the sampling interval (or, equivalently, the sampling rate), the time stamp of the first sample and the units of the signal, for example ``millivolts'' in the case of the membrane potential. 
 All attributes that represent physical quantities must state the units, for example, the sampling rate could be given as ``10 kHz''.
 
 In addition to the required attributes, each object has a number of \emph{suggested} attributes.
@@ -324,8 +324,8 @@ Most array operations are implemented in C or Fortran for efficiency.
 The principal choice in implementing the Neo object model in Python is whether the classes for data objects should inherit from the NumPy \lstinline`ndarray` class (a Neo class \emph{is} a NumPy array) or whether to use composition (where the Neo class has a \lstinline`data` attribute which is a NumPy array).
 Inheritance has two important advantages:
 (i) existing code that works with NumPy arrays will work with Neo data objects without modification;
-(ii) Neo objects gain most of the functionality of NumPy arrays ``for free'', i.e. we do not have to reimplement this functionality. 
-A number of operations on, and methods of, NumPy arrays have to be reimplemented or extended for Neo objects, in order to preserve the extra metadata carried by Neo objects, but these would in any case have to be implemented if taking the composition approach.
+(ii) Neo objects gain most of the functionality of NumPy arrays ``for free'', i.e. we do not have to re-implement this functionality. 
+A number of operations on, and methods of, NumPy arrays have to be re-implemented or extended for Neo objects, in order to preserve the extra metadata carried by Neo objects, but these would in any case have to be implemented if taking the composition approach.
 The principal disadvantage of the inheritance approach is complexity: creation of subclasses is one of the more difficult parts of the NumPy API.
 
 The second major choice was how to handle units.
@@ -539,42 +539,24 @@ for rcg in block.recordingchannelgroups:
 
 % Frontiers guidelines: "This section may be divided by subheadings. Discussions should cover the key findings of the study: discuss any prior art related to the subject so to place the novelty of the discovery in the appropriate context; discuss the potential short-comings and limitations on their interpretations; discuss their integration into the current understanding of the problem and how this advances the current views; speculate on the future direction of the research and freely postulate theories that could be tested in the future."
 
-%\missing{[Recap what we have shown in this paper]}:
-We have presented the Neo object model and its implementation in Python.
-We have shown how this model and the corresponding Python package are designed to allow for convenient and efficient representation of all kinds of electrophysiological data, from spikes to broadband continuous signals, with support for all common recording technologies, including multi-channel systems like tetrodes.
+We have presented here a universal, object-oriented API for handling electrophysiology data in neuroscience, and an implementation of this API in the Python programming language. 
+We have shown how this model is designed to allow for convenient and efficient representation of all kinds of electrophysiological data, from spikes to broadband continuous signals, with support for all common recording technologies, including multi-channel systems like tetrodes.
 Furthermore, we have illustrated the practical use of the Neo Python package through examples in typical real-world situations.
 
-The universality of the Neo object model for the representation of electrophysiolgical data coupled with the availability of a large set of IO modules for common file formats in the Python package makes Neo a very convenient base package to build on when developing software to manipulate, analyse or display electrophysiological data in Python.
-
+The universality of the Neo object model for the representation of electrophysiolgical data coupled with the availability of a large set of IO modules for common file formats in the Python package makes Neo a very convenient base package to build upon when developing software to manipulate, analyse or display electrophysiological data in Python.
 It thus fulfils our initial goal as a tool to facilitate data sharing and conversion, as well as software interoperability, with the hope that Neo will become the standard base package for the community of Python developers working with electrophysiological data.
 
-\missing{[Discuss how Neo relates to previous/future standardization efforts (e.g. Neuroshare, EDF, Pandora) and to alternative existing tools in the same domain (BioSig, Nitime, pandas, SignalML]}
+\subsection{Projects using Neo}
 
-%Impact : projects using neo
-%-----------------------------------------
-  
-%  * impact (major or null) depends on whether adopted or not
-%  * brief intro on sustainability (several lab and several dev)
-
-%Each dev write some lines for their project, then we can eliminate redunduancies between accounts
-
-We were able to demonstrate that Neo facilitates development of various types
-of software: entire services providing data management facilities including
-electrophysiological data, local tools at the neuroscientific workbench like
-simulators, and even individual scripts of scientists analysing their data.
-
-%\missing{... [say more about the significance of this]}
-A number of projects and laboratories are already using Neo. A total of five different laboratories are developing and using daily tools based on Neo. A brief overview of these projects is helpful to gauge the benefit.
-
+The success of the Neo project and the suitability of the object model will be determined by whether other software tools for working with neurophysiology data adopt the Neo object model and whether they gain benefits from doing so. A number of projects and laboratories are already using Neo.
 
 The German INCF Node (G-Node) has adopted the Neo model for the representation of electrophysiological data in its data management platform (\url{https://portal.g-node.org/data/}).
-The purpose of the platform is to provide a centralized system for organizing and sharing of electrophysiology data.
+The purpose of the platform is to provide a centralised system for organising and sharing of electrophysiology data.
 A major obstacle to data sharing and re-use in the field of electrophysiology is the large variety of data formats.
-The G-Node platform provides a unified way of representing electrophysiological data according to the Neo object model, as well as automated format conversion utilizing the Neo IO modules.
+The G-Node platform provides a unified way of representing electrophysiological data according to the Neo object model, as well as automated format conversion utilising the Neo IO modules.
 Being compliant with the Neo model, the system's API achieves interoperability with other tools that use the Neo objects and facilitates integration of data access and data analysis.
 G-Node offers a Python client tool that provides a front-end to the data hosted on the G-Node data platform in terms of the Neo Python objects \citep{Sobolev2014}.
-The G-Node platform complements the Neo data representation with metadata storage using an unrestrictive format \citep{Grewe2011}, enabling extensive data annotation in a standardized way.
-
+The G-Node platform complements the Neo data representation with metadata storage using an unrestrictive format \citep{Grewe2011}, enabling extensive data annotation in a standardised way.
 
 PyNN \citep{Davison2009} is a Python API for simulator-independent neuronal network simulations.
 One aspect of simulator independence is reformatting the data produced by each simulator into a common format.
@@ -584,24 +566,24 @@ This has had several benefits:
   (i)   the hierarchical structure of Neo allows much more of the structure of the simulation experiment to be preserved;
   (ii)  a much more complete set of metadata can easily be provided;
   (iii) a much wider range of file formats is now available;
-  (iv)  data recorded in biological experiments and data generated by simulations can now be analyzed and visualized with the same tools; 
+  (iv)  data recorded in biological experiments and data generated by simulations can now be analysed and visualised with the same tools; 
   (v)   reduced development effort for the PyNN development community, since a large piece of functionality has been ``out-sourced'' to Neo.
 
-Spyke Viewer \citep{Proepper2013} is a flexible and extensible graphical application for navigating, analyzing and visualizing electrophysiology data. 
-The central features of Spyke Viewer are the navigation view, filter system, and plugin architecture.
+Spyke Viewer \citep{Proepper2013} is a flexible and extensible graphical application for navigating, analyzing and visualising electrophysiology data. 
+The central features of Spyke Viewer are the navigation view, filter system, and plug-in architecture.
 Filters define data subsets of interest.
-Plugins implement data analysis algorithms or visualizations, and Spyke Viewer comes with a variety of plugins implementing common neuroscientific plots such as raster plots or correlograms.
+Plug-ins implement data analysis algorithms or visualisations, and Spyke Viewer comes with a variety of plug-ins implementing common neuroscientific plots such as raster plots or correlograms.
 Spyke Viewer uses Neo as its object model as well as for loading and exporting data. 
 The navigation view allows users to select Neo grouping and container objects, offering a common structure for the data independent of its source format.
 Filters use properties and annotations of Neo objects to define which objects are shown in the navigation view.
-Plugins operate on Neo data objects. Because of the standard data model provided by Neo, plugins work with data from many different formats. This enables Spyke Viewer users to conveniently share methods implemented in plugins.
+Plug-ins operate on Neo data objects. Because of the standard data model provided by Neo, plug-ins work with data from many different formats. This enables Spyke Viewer users to conveniently share methods implemented in plug-ins.
 
 OpenElectrophy \citep{Garcia2009} is a graphical user interface built on top of Neo. This software implements four independent components:
    (i) SQL database management for Neo objects;
    (ii) a fast viewer for Neo objects;
-   (iii) a complete offline spike sorting toolchain;
+   (iii) a complete off-line spike sorting tool-chain;
    (iv) a time-frequency toolbox (fast multi-channel wavelet scalogram plotting and transient oscillation detection).
-The main difficulty when designing a spike sorting toolchain is the management of data in various and complex situations: 
+The main difficulty when designing a spike sorting tool-chain is the management of data in various and complex situations: 
    (i) the hardware setup may use a single electrode, several independent electrodes, several independent N-trodes or electrode arrays;
    (ii) the protocol may involve one continuous recording or multiple chunks of recording;
    (iii) the nature of the recording may be full band signals, filtered signals or pre-detected spikes.
@@ -617,28 +599,59 @@ a Neo implementation that allows storing Neo objects in a relational database.
 %  * Elphy case at lab scale.
 %  * Grün lab
 
-\missing{Add a comment on interoperability, e.g. data generated by PyNN, stored in G-Node, analyzed/visualized in Spyke Viewer and OpenElectrophy.}
+As a consequence of the common use of the Neo Python package, it is now straightforward to take recorded data from experiments or simulation data generated by PyNN, store them on the G-Node data platform or in a relational database using Datajongleur, then analyse and visualise them in Spyke Viewer or OpenElectrophy, in a seamless pipeline.
+
+Although we have focused here on the advantages of Neo for tool developers, the Neo Python package is equally suitable for use by individual scientists analysing their data with their own scripts.
+
+\subsection{Related interoperability efforts}
+
+As outlined in the Introduction, there have been a number of previous efforts to solve the problem of incompatible file formats in neurophysiology and related fields, such as clinical electrophysiology.
+
+BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source library for biomedical signal processing, available for Matlab/Octave and for C/C++. 
+Python bindings can be generated from the C/C++ library using SWIG. 
+It includes support for a large number of file formats. 
+Neuroshare (\url{http://neuroshare.sourceforge.net/}) is an API that must be implemented as a library by each equipment manufacturer that wishes to support it. 
+The libraries are not in general open source, and most of them are only available for Windows. 
+NiBabel (\url{http://nipy.sourceforge.net/nibabel/}) is a Python library for accessing common neuroimaging and medical file formats -- its goals are very similar to those of Neo, but in a different domain. 
+The European Data Format (EDF and EDF+) is a standard file format for the exchange of biomedical time series data. As of 2004, about 50 companies supported EDF \citep{Kemp2004}. 
+SignalML \citep{Durka2004} is an alternative approach, defining a markup language for describing file formats so as to allow automatic conversion. 
+\citet{Kemp2004} compares EDF+ and SignalML, concluding that the SignalML approach is more flexible but that this flexibility comes at a price in terms of stability and increased effort for users.
+
+We expect that Neo will be interoperable with, and broadly complementary to these existing efforts. 
+For example, Neo already offers a \lstinline`NeuroshareIO` module for reading data files via the Neuroshare libraries, and it should be straightforward to add an IO module for EDF/EDF+. 
+The particular advantages of the Neo Python package are 
+(i) its rich object model can capture all of the complexity typically found in neurophysiology experimental protocols; 
+(ii) it is written in pure Python without any C/C++ dependencies; as such it is easy to install and highly cross-platform; 
+(iii) it focuses on neuroscience research, whereas most of the other tools cited above have a biomedical focus; 
+(iv) by using the Python programming language, users of Neo gain all of the benefits associated with that language, such as readability, increased productivity, ease of use for system integration, and access to a powerful ecosystem for scientific computing.
+
 
 \subsection{Sustainability}
 
 Neo is developed as an open, collaborative project at GitHub
 (\url{https://github.com/NeuralEnsemble/python-neo}).
 Anyone is welcome to propose and implement changes, which will then be reviewed by one or more of the other contributors, and a decision on whether to accept the changes taken by consensus.
-19 people from \missing{N} separate institutions have at some time contributed code or documentation to the Neo project;  six people from five institutions have contributed within the past twelve months.
+19 people from ten separate institutions have at some time contributed code or documentation to the Neo project;  six people from five institutions have contributed within the past twelve months.
 This distributed development effort, in which the collaboration arises informally from shared needs and interests rather than formally through grant funding, gives us confidence that Neo development is sustainable.
 
 
 \subsection{Future plans}
 
-The Neo object model was designed after discussion between a group of scientists and engineers, both developers and potential users, from several laboratories. However, even though this model was designed carefully, it is far from perfect. The current model is the outcome of an evolution, Neo is now version 0.3. So the main compromise is to balance between rapid change in Neo to fit all new needs during building new software and slow changes to ensure stability for other software already built. New improvements are already in discussion for a future Neo 0.4. Even if it is a general issue in software developpement, this has to be taken into account even more carefully because Neo is the base of several projects. 
+The Neo object model was designed after discussion between a group of scientists and engineers, both developers and potential users, from several laboratories. 
+We consider the essential elements of the object model to be stable. 
+However, as users and developers gain experience with the software, some evolution is to be expected.
+It will be necessary to find a compromise between changes to enhance usability and support new use cases, and the stability needed for a low-level library on top of which other software is built.
 
-Some improvement are planned for future versions. (i) The memory management for IO must be improved. Despite the lazy/cascade mechanism most Neo IO classes do not allow loading only a chunk or a subset of data. (ii) The model will be simplified; in the current model some objects are redundant due to duplication between scalar representation and array representation (\lstinline`AnalogSignal` and \lstinline`AnalogsignalArray`). (iii) Some relationships are not efficient for querying (filtering) an obect when the dataset is large. For instance, looping over \lstinline`Unit`s inside a \lstinline`Block` is not straigthforward.
+Among the improvements already envisaged are the following:
+(i) improved memory management for IO. Despite the lazy/cascade mechanism, most Neo IO classes do not allow loading only a chunk or a subset of data;
+(ii) some simplification of the object model, in particular merging of the scalar and array representations (e.g. \lstinline`AnalogSignal` and \lstinline`AnalogsignalArray`);
+(iii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, looping over \lstinline`Unit`s inside a \lstinline`Block` is not currently straightforward.
 
-The development of Neo has so far focused on the representation of recorded data, as typically stored in data files during an electophysiology experiment.
+The development of Neo has so far focused on the representation of recorded data, as typically stored in data files during an electrophysiology experiment.
 For broader use it would be desirable to also support data resulting from the processing and analysis of such data.
 Ideally, the object model should enable representing the relationship between analysis results and the original data.
 Instead of leaving the definition of corresponding objects to each user, it would make sense to extend the Neo model by a minimal set of definitions for generic scientific data along with provenance information.
-Such developments should be coordinated with international standardization efforts, such as those of the INCF Data Sharing Program \citep{Teeters2013}.
+Such developments should be coordinated with international standardisation efforts, such as those of the INCF Data Sharing Program \citep{Teeters2013}.
 
 % ----------------------------------------------------------------------
 \section*{Disclosure/Conflict-of-Interest Statement}
