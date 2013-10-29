@@ -49,11 +49,11 @@ lpezard UnivAixMarseille
 ygordon UnivAixMarseille
 pierre Unic
 Robert Pröpper  Neural Information Processing Group, TU Berlin, Berlin, Germany
-
+Yaroslav Halchenko  Psychological and Brain Sciences Dept.  Dartmouth College, USA
 
 Waiting answer:
 Todd Jennings
-Yaroslav Halchenko
+
 Takafumi Arakaki
 
 No emails ????
@@ -65,6 +65,6 @@ prauten
 
 
 Comiiters = 17
-Insitution = 7
+Insitution = 8
 
 
