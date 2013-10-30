@@ -99,7 +99,8 @@ To that end, we propose a language-independent hierarchical object model suitabl
 We have developed Neo, an open source implementation in the Python programming language, as a concrete instantiation of this object model.
 In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Neo package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats.
 Support is included for formats produced by most of the major manufacturers of electrophysiology recording equipment and also for more generic formats such as Matlab.
-The Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation, in order to be as lightweight a dependency as possible.
+Data representation and data analysis are conceptually separate: it is easier to write robust analysis code if it is focused on analysis and relies on an underlying package to handle data representation.
+For that reason, and also to be as lightweight as possible, the Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation.
 Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion.
 In fact, there is already a burgeoning ecosystem of such tools. 
 Our long-term goal is for Neo to become the standard base package for Python tools in neurophysiology, and for the underlying object model to be implemented in the other languages used in neuroscience, such as Java or Matlab.
