@@ -98,7 +98,7 @@ A common representation of the core data would improve interoperability and faci
 To that end, we propose a language-independent hierarchical object model suitable for representing data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
 We have developed Neo, an open source implementation in the Python programming language, as a concrete instantiation of this object model.
 In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Neo package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats.
-Support is included for formats produced by most of the major manufacturers of electrophysiology recording equipment and also for more generic formats such as Matlab.
+Support is included for formats produced by most of the major manufacturers of electrophysiology recording equipment and also for more generic formats such as MATLAB.
 Data representation and data analysis are conceptually separate: it is easier to write robust analysis code if it is focused on analysis and relies on an underlying package to handle data representation.
 For that reason, and also to be as lightweight as possible, the Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation.
 Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion.
@@ -182,7 +182,7 @@ It was decided that the object model should contain only classes for representin
 
 \subsection{Metadata}
 
-We distinguish \emph{essential} metadata, which is required for the data to have even minimal meaning rather than just be arrays of numbers, \emph{desirable metadata}, which is necessary to correctly analyse the data, and \emph{additional} metadata.
+We distinguish \emph{essential} metadata, which is required for the data to have even minimal meaning rather than just be arrays of numbers, \emph{desirable} metadata, which is necessary to correctly analyse the data, and \emph{additional} metadata.
 Examples of essential metadata are the sampling interval and the physical units of a recording.
 Desirable metadata might include identification of the neuron or brain area from which the recording was made, or the filter settings used.
 Additional metadata provide information that is specific to a particular user or software tool, such as which colour to use when plotting the data in a graphical interface.
@@ -246,12 +246,12 @@ They contain references to data objects that cut across the simple container hie
 The grouping objects are as follows:
 
 \begin{itemize}
-\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
+\item \lstinline`RecordingChannel`: links \lstinline`AnalogSignal` and \lstinline`IrregularlySampledSignal` objects that come from the same logical and/or physical channel inside a \lstinline`Block`, possibly across several \lstinline`Segment` objects.
 \item \lstinline`RecordingChannelGroup`: a group for associated \lstinline`RecordingChannel` objects. This has several possible uses: 
 (i) for linking several \lstinline`AnalogSignalArray` objects across several \lstinline`Segment` objects inside a \lstinline`Block`;
 (ii) for multi-electrode arrays, where spikes may be recorded on more than one recording channel, and so the \lstinline`RecordingChannelGroup` can be used to associate each \lstinline`Unit` with the group of recording channels from which it was calculated;
 (iii) for grouping several \lstinline`RecordingChannel` objects. There are many use cases for this. For instance, for intracellular recording, it is common to record both membrane potentials and currents at the same time, so each \lstinline`RecordingChannelGroup` may correspond to the particular property that is being recorded. For multi-electrode arrays, \lstinline`RecordingChannelGroup` is used to gather all \lstinline`RecordingChannel` objects of the same array.
-\item \lstinline`Unit`: a \lstinline`Unit` gathers all the \lstinline`SpikeTrain` objects within a common \lstinline`Block`, possibly across several \lstinline`Segments`, that have been emitted by the same cell. A \lstinline`Unit` is linked to the \lstinline`RecordingChannelGroup` objects from which it was detected.
+\item \lstinline`Unit`: a \lstinline`Unit` gathers all the \lstinline`Spike` and \lstinline`SpikeTrain` objects within a common \lstinline`Block`, possibly across several \lstinline`Segments`, that have been emitted by the same cell. A \lstinline`Unit` is linked to the \lstinline`RecordingChannelGroup` objects from which it was detected.
 \end{itemize}
 
 Another way to think of this is that container objects provide a grouping across time while grouping objects provide a grouping across space.
@@ -359,7 +359,7 @@ The second type of linkage is temporal: \lstinline`AnalogSignal` objects also be
 Typically the provided IO methods construct the linkages in this hierarchy automatically.
 The user may then iterate over the data in whichever way is most intuitive for the application: either temporally (trial by trial within a session) or spatially (channel by channel within the brain).
 
-The Neo package is available from the Python Package Index (\url{https://pypi.python.org/pypi/neo/} and as a Debian package through NeuroDebian \citep{Halchenko2012}.
+The Neo package is available from the Python Package Index (\url{https://pypi.python.org/pypi/neo/}) and as Debian and Ubuntu packages through NeuroDebian \citep{Halchenko2012}.
 The core of Neo works with both Python 2 (version 2.6 or later) and Python 3 (version 3.2 or later).
 For some file formats, only Python 2 is currently supported. At the time of writing, the latest version is 0.3.1.
 Full documentation is available online at \documentation.
@@ -378,7 +378,7 @@ There is an extensive test suite, and the project makes use of continuous integr
 %  * use memmap when possible
 %  * explanation for proprietary formats : reverse engineering + version formats problem
 
-In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source and/or freely distributed tools (e.g. Klustakwik, Elan, WinEdr) and generic file formats such as Matlab, ASCII and HDF5. 
+In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source and/or freely distributed tools (e.g. Klustakwik, Elan, WinEdr) and generic file formats such as MATLAB, ASCII and HDF5. 
 In most cases, the proprietary formats are read-only, while the more open and generic formats support both reading and writing.
 
 The inclusion of this functionality in the Neo package has several benefits:
@@ -414,7 +414,7 @@ Some file formats internally store arrays in a compact continuous way. In such c
 For the implementation of file readers, an early difficulty was collecting information about the specifications for proprietary file formats. This tedious task was accomplished using several approaches: (i) asking manufacturers to open the specifications; (ii) reading code from other packages; (iii) reading C header files; (iv) basic reverse engineering with hexadecimal editors. Nowadays, many manufacturers provide their file specifications in the user documentation.
 The main difficulty remains in the versioning of these specifications. In general, the internal file formats do not change much over time, but sometimes some problematic changes occur, making the classes non backward compatible. This has been taken into account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must continue.
 
-Two of the IO classes do not implement an already existing format: \lstinline`NeoHdf5IO` and \lstinline`NeoMatlabIO`. Both use a generic file format, respectively HDF5 and Matlab, that allows internal organisation of the data in a tree. In those classes, therefore, the Neo hierarchical model is directly used to store objects in the file. In short the organisation in the file is close to the Neo object organisation. In this way, two new file formats are proposed. They are efficient because built on mature tools (HDF5 and Matlab) and quite universal.
+Two of the IO classes do not implement an already existing format: \lstinline`NeoHdf5IO` and \lstinline`NeoMatlabIO`. Both use a generic file format, respectively HDF5 and MATLAB, that allows internal organisation of the data in a tree. In those classes, therefore, the Neo hierarchical model is directly used to store objects in the file. In short the organisation in the file is close to the Neo object organisation. In this way, two new file formats are proposed. They are efficient because built on mature tools (HDF5 and MATLAB) and quite universal.
 
 
 
@@ -470,7 +470,7 @@ for rc in rcg.recordingchannels:
 
     plt.figure()
     plt.plot(time_points, avg)
-    plt.title("Average response on channel %d: %s' % (rc.index, rc.name)
+    plt.title("Average response on channel %d: %s" % (rc.index, rc.name))
 \end{lstlisting}
 
 
@@ -612,7 +612,7 @@ Although we have focused here on the advantages of Neo for tool developers, the 
 
 As outlined in the Introduction, there have been a number of previous efforts to solve the problem of incompatible file formats in neurophysiology and related fields, such as clinical electrophysiology.
 
-BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source library for biomedical signal processing, available for Matlab/Octave and for C/C++. 
+BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source library for biomedical signal processing, available for MATLAB/Octave and for C/C++. 
 Python bindings can be generated from the C/C++ library using SWIG. 
 It includes support for a large number of file formats. 
 Neuroshare (\url{http://neuroshare.sourceforge.net/}) is an API that must be implemented as a library by each equipment manufacturer that wishes to support it. 
