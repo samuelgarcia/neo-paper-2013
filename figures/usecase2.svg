@@ -191,16 +191,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="326.66434"
-     inkscape:cy="304.8469"
+     inkscape:cx="399.25048"
+     inkscape:cy="249.41814"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1631"
-     inkscape:window-height="1026"
-     inkscape:window-x="49"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1378"
+     inkscape:window-height="984"
+     inkscape:window-x="188"
+     inkscape:window-y="60"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata3509">
     <rdf:RDF>
@@ -222,19 +222,25 @@
        style="fill:none;stroke:#000000;stroke-width:0.96880811;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect2385"
        width="115.0112"
-       height="292.05859"
+       height="292.03119"
        x="242.14244"
-       y="664.22198" />
+       y="665.84656"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="544.02106"
-       y="654.26093"
-       id="text14156"><tspan
+       y="655.20197"
+       id="text14156"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan14158"
          x="544.02106"
-         y="654.26093"
+         y="655.20197"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 2</tspan></text>
     <text
        xml:space="preserve"
@@ -242,7 +248,10 @@
        x="-734.07098"
        y="63.416187"
        id="text10378-4"
-       transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"><tspan
+       transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="-734.07098"
          y="63.416187"
@@ -261,73 +270,33 @@
        style="fill:none;stroke:#000000;stroke-width:0.97528088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect2385-6"
        width="115.0112"
-       height="295.97412"
+       height="292.02472"
        x="393.35983"
-       y="663.24103" />
+       y="665.84979"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.96880811;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect2385-3"
        width="115.0112"
-       height="292.05859"
+       height="292.03119"
        x="540.92737"
-       y="663.48346" />
+       y="665.84656"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <text
        xml:space="preserve"
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="157.03778"
-       y="689.31586"
-       id="text10378-0"><tspan
-         sodipodi:role="line"
-         x="157.03778"
-         y="689.31586"
-         id="tspan10382-8"
-         dy="0 0 -1.6593653">RC  0</tspan><tspan
-         sodipodi:role="line"
-         x="157.03778"
-         y="708.60791"
-         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.6593653"
-         id="tspan3891" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="157.23749"
-       y="723.8551"
-       id="text10378-5"><tspan
-         sodipodi:role="line"
-         x="157.23749"
-         y="723.8551"
-         id="tspan10382-6"
-         dy="0 0 -1.6593653">RC  1</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="154.84106"
-       y="758.59778"
-       id="text10378-1"><tspan
-         sodipodi:role="line"
-         x="154.84106"
-         y="758.59778"
-         id="tspan10382-1"
-         dy="0 0 -1.6593653">RC 2</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="154.68658"
-       y="793.23877"
-       id="text10378-59"><tspan
-         sodipodi:role="line"
-         x="154.68658"
-         y="793.23877"
-         id="tspan10382-84"
-         dy="0 0 -1.6593653">RC 3</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="154.50195"
+       x="153.99687"
        y="827.05005"
-       id="text10378-44"><tspan
+       id="text10378-44"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
-         x="154.50195"
+         x="153.99687"
          y="827.05005"
          id="tspan10382-4">RC 4</tspan></text>
     <text
@@ -335,7 +304,10 @@
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="154.06485"
        y="861.69104"
-       id="text10378-47"><tspan
+       id="text10378-47"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="158.9783"
          y="861.69104"
@@ -346,7 +318,10 @@
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="154.06485"
        y="896.33197"
-       id="text10378-17"><tspan
+       id="text10378-17"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="158.9783"
          y="896.33197"
@@ -357,7 +332,10 @@
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="154.06485"
        y="930.97296"
-       id="text10378-9"><tspan
+       id="text10378-9"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="158.9783"
          y="930.97296"
@@ -368,7 +346,10 @@
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="95.041687"
        y="592.18359"
-       id="text10378-0-4"><tspan
+       id="text10378-0-4"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="95.041687"
          y="592.18359"
@@ -395,44 +376,59 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.38554382px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 109.19023,674.36881 c -20.648866,32.9374 20.17293,59.49607 -9.871546,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.044486,3.44619 -10.77732,30.00486 9.871546,62.94228"
+       d="m 109.16984,674.34744 c -20.648868,32.9374 20.17293,59.49607 -9.871548,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.044488,3.44619 -10.77732,30.00486 9.871548,62.94228"
        id="path9577-0"
-       sodipodi:nodetypes="cscccccsccc" />
+       sodipodi:nodetypes="cscccccsccc"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="398.05075"
-       y="654.26093"
-       id="text14156-8"><tspan
+       y="655.20197"
+       id="text14156-8"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan14158-3"
          x="398.05075"
-         y="654.26093"
+         y="655.20197"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20.44804001px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="245.71103"
-       y="656.26093"
-       id="text14156-7"><tspan
+       y="655.20197"
+       id="text14156-7"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan14158-9"
          x="245.71103"
-         y="656.26093"
+         y="655.20197"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Segment 0</tspan></text>
     <path
        inkscape:connector-curvature="0"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.38554382px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 109.85833,811.61927 c -20.648866,32.9374 20.17293,59.49607 -9.871546,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.044486,3.44619 -10.77732,30.00486 9.871546,62.94228"
+       d="m 109.16984,811.62744 c -20.648868,32.9374 20.17293,59.49607 -9.871548,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.044488,3.44619 -10.77732,30.00486 9.871548,62.94228"
        id="path9577-0-4"
-       sodipodi:nodetypes="cscccccsccc" />
+       sodipodi:nodetypes="cscccccsccc"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <text
        xml:space="preserve"
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="-875.53064"
        y="64.814651"
        id="text10378-4-7"
-       transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"><tspan
+       transform="matrix(4.9253267e-4,-0.99999988,0.99999988,4.9253267e-4,0,0)"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="-875.53064"
          y="64.814651"
@@ -450,19 +446,28 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.38554382px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 181.2869,673.76213 c -20.64887,32.9374 20.17293,59.49607 -9.87155,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.04449,3.44619 -10.77732,30.00486 9.87155,62.94228"
+       d="m 181.16984,674.34744 c -20.64887,32.9374 20.17293,59.49607 -9.87155,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.04449,3.44619 -10.77732,30.00486 9.87155,62.94228"
        id="path9577-0-3"
-       sodipodi:nodetypes="cscccccsccc" />
+       sodipodi:nodetypes="cscccccsccc"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.38554382px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 182.00118,810.1907 c -20.64887,32.9374 20.17293,59.49607 -9.87155,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.04449,3.44619 -10.77732,30.00486 9.87155,62.94228"
+       d="m 181.16984,811.62744 c -20.64887,32.9374 20.17293,59.49607 -9.87155,62.9423 -1.17489,0.13491 -2.48425,0.28276 -3.88386,0.34579 l -0.48514,0 c -1.06289,0.0409 -2.04006,0.0691 -3.23652,0.0691 l 1.29468,0.13849 -1.29468,0.0691 c 2.22835,0 4.05081,0.13575 5.82588,0.27667 0.41623,0.0331 0.90171,0.0285 1.29462,0.0691 l 0.48513,0.0691 c 30.04449,3.44619 -10.77732,30.00486 9.87155,62.94228"
        id="path9577-0-9"
-       sodipodi:nodetypes="cscccccsccc" />
+       sodipodi:nodetypes="cscccccsccc"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <g
        id="g4579"
        style="fill:#ffcc00;stroke:#ffcc00;stroke-opacity:1"
-       transform="translate(21.213204,526.28948)">
+       transform="translate(21.213204,526.28948)"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7"
          y="186.80994"
@@ -568,7 +573,10 @@
     <g
        id="g3363"
        transform="translate(21.213204,503.56105)"
-       style="fill:#ff0e00;fill-opacity:1;stroke:#ff0e00;stroke-opacity:1">
+       style="fill:#ff0e00;fill-opacity:1;stroke:#ff0e00;stroke-opacity:1"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7-8"
          y="254.84149"
@@ -696,7 +704,10 @@
        style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:#ff9955;stroke-width:1px;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="235.07339"
        y="819.65399"
-       id="text10378-0-7-85"><tspan
+       id="text10378-0-7-85"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          x="235.07339"
          y="819.65399"
@@ -706,91 +717,145 @@
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 271.17826,808.83923 0,10.12216"
-       id="path9537-4" />
+       id="path9537-4"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 302.04059,808.83923 0,10.12216"
-       id="path9547-12" />
+       id="path9547-12"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 277.3782,808.83923 0,10.12216"
-       id="path9549-88" />
+       id="path9549-88"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 331.86367,808.83923 0,10.12216"
-       id="path9559-92" />
+       id="path9559-92"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 317.80827,808.83923 0,10.12216"
-       id="path9569-8" />
+       id="path9569-8"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 545.93038,808.83923 0,10.12216"
-       id="path9537-6-3" />
+       id="path9537-6-3"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 584.78352,808.83923 0,10.12216"
-       id="path9547-1-3" />
+       id="path9547-1-3"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 570.10965,808.83924 0,10.12214"
-       id="path9549-04-8" />
+       id="path9549-04-8"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 624.59512,808.83923 0,10.12216"
-       id="path9559-2-0" />
+       id="path9559-2-0"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 639.53678,808.83923 0,10.12216"
-       id="path9567-2-4" />
+       id="path9567-2-4"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 620.52823,808.83923 0,10.12216"
-       id="path9569-2-7" />
+       id="path9569-2-7"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 403.09613,808.83923 0,10.12216"
-       id="path9537-6-09" />
+       id="path9537-6-09"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 441.94927,808.83923 0,10.12216"
-       id="path9547-1-7" />
+       id="path9547-1-7"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 427.2754,808.83924 0,10.12214"
-       id="path9549-04-5" />
+       id="path9549-04-5"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 481.76087,808.83923 0,10.12216"
-       id="path9559-2-9" />
+       id="path9559-2-9"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 496.70253,808.83923 0,10.12216"
-       id="path9567-2-78" />
+       id="path9567-2-78"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff9955;fill-opacity:1;stroke:#ff9955;stroke-width:1.42346346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 477.69398,808.83923 0,10.12216"
-       id="path9569-2-5" />
+       id="path9569-2-5"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
     <g
        id="g3500"
        transform="translate(21.213204,524.30978)"
-       style="fill:#ff6600;stroke:#ff6600;stroke-opacity:1">
+       style="fill:#ff6600;stroke:#ff6600;stroke-opacity:1"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7-7"
          y="327.04794"
@@ -941,7 +1006,10 @@
     <g
        id="g4683"
        style="fill:#c87137;stroke:#c87137;stroke-opacity:1"
-       transform="translate(21.213204,526.28948)">
+       transform="translate(21.213204,526.28948)"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7-1"
          y="385.04446"
@@ -1086,7 +1154,10 @@
     <g
        id="g4662"
        style="fill:#d45500;fill-opacity:1;stroke:#d45500;stroke-opacity:1"
-       transform="translate(21.213204,526.28948)">
+       transform="translate(21.213204,526.28948)"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7-88"
          y="355.64572"
@@ -1187,7 +1258,10 @@
     <g
        id="g3671"
        transform="translate(21.213204,692.28948)"
-       style="fill:#803300;stroke:#803300;stroke-opacity:1">
+       style="fill:#803300;stroke:#803300;stroke-opacity:1"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
       <text
          id="text10378-0-7-9"
          y="248.56955"
@@ -1301,7 +1375,10 @@
        x="251.97217"
        y="694.78235"
        id="text5428"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430"
          x="251.97217"
@@ -1313,7 +1390,10 @@
        x="400.70401"
        y="694.78235"
        id="text5428-6"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7"
          x="400.70401"
@@ -1325,7 +1405,10 @@
        x="546.18628"
        y="694.78235"
        id="text5428-5"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78"
          x="546.18628"
@@ -1337,7 +1420,10 @@
        x="252.14038"
        y="738.73785"
        id="text5428-7"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-4"
          x="252.14038"
@@ -1349,7 +1435,10 @@
        x="400.87222"
        y="738.73785"
        id="text5428-6-3"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-7"
          x="400.87222"
@@ -1361,7 +1450,10 @@
        x="546.40527"
        y="738.73785"
        id="text5428-5-1"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-3"
          x="546.40527"
@@ -1373,7 +1465,10 @@
        x="252.19116"
        y="805.45886"
        id="text5428-9"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-6"
          x="252.19116"
@@ -1385,7 +1480,10 @@
        x="400.923"
        y="805.45886"
        id="text5428-6-4"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-2"
          x="400.923"
@@ -1397,7 +1495,10 @@
        x="546.40527"
        y="805.45886"
        id="text5428-5-0"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-2"
          x="546.40527"
@@ -1409,7 +1510,10 @@
        x="252.06104"
        y="837.28888"
        id="text5428-95"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-74"
          x="252.06104"
@@ -1421,7 +1525,10 @@
        x="400.79288"
        y="837.28888"
        id="text5428-6-6"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-4"
          x="400.79288"
@@ -1433,7 +1540,10 @@
        x="546.27515"
        y="837.28888"
        id="text5428-5-9"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-1"
          x="546.27515"
@@ -1445,7 +1555,10 @@
        x="251.90552"
        y="868.50208"
        id="text5428-2"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-3"
          x="251.90552"
@@ -1457,7 +1570,10 @@
        x="400.63736"
        y="868.50208"
        id="text5428-6-1"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-8"
          x="400.63736"
@@ -1469,7 +1585,10 @@
        x="546.11963"
        y="868.50208"
        id="text5428-5-13"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-8"
          x="546.11963"
@@ -1481,7 +1600,10 @@
        x="252.10864"
        y="900.28113"
        id="text5428-92"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-45"
          x="252.10864"
@@ -1493,7 +1615,10 @@
        x="400.84048"
        y="900.28113"
        id="text5428-6-10"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-0"
          x="400.84048"
@@ -1505,7 +1630,10 @@
        x="546.32275"
        y="900.28113"
        id="text5428-5-133"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-0"
          x="546.32275"
@@ -1517,7 +1645,10 @@
        x="251.94995"
        y="928.44366"
        id="text5428-0"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-0"
          x="251.94995"
@@ -1529,7 +1660,10 @@
        x="400.68179"
        y="928.44366"
        id="text5428-6-2"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-7-22"
          x="400.68179"
@@ -1541,11 +1675,66 @@
        x="546.16406"
        y="928.44366"
        id="text5428-5-4"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
          sodipodi:role="line"
          id="tspan5430-78-7"
          x="546.16406"
          y="928.44366"
          style="font-size:13px">ST 2,6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="153.86302"
+       y="689.26593"
+       id="text10378-44-2"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="153.86302"
+         y="689.26593"
+         id="tspan10382-4-7">RC 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="153.86302"
+       y="723.80164"
+       id="text10378-44-9"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="153.86302"
+         y="723.80164"
+         id="tspan10382-4-6">RC 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="153.41922"
+       y="758.90881"
+       id="text10378-44-95"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="153.41922"
+         y="758.90881"
+         id="tspan10382-4-5">RC 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.43365383px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="153.86302"
+       y="793.26593"
+       id="text10378-44-1"
+       inkscape:export-filename="/home/jaillet.f/sync_home/projets/neo/paper_frontier/neo-paper-2013/figures/usecase2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="153.86302"
+         y="793.26593"
+         id="tspan10382-4-56">RC 3</tspan></text>
   </g>
 </svg>
