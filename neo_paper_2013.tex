@@ -650,7 +650,7 @@ It will be necessary to find a compromise between changes to enhance usability a
 Among the improvements already envisaged are the following:
 (i) improved memory management for IO. Despite the lazy/cascade mechanism, most Neo IO classes do not allow loading only a chunk or a subset of data;
 (ii) some simplification of the object model, in particular merging of the scalar and array representations (e.g. \lstinline`AnalogSignal` and \lstinline`AnalogsignalArray`);
-(iii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, looping over \lstinline`Unit`s inside a \lstinline`Block` is not currently straightforward.
+(iii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, linking a \lstinline`SpikeTrain` with its associated \lstinline`AnalogSignal` is not currently straightforward.
 
 The development of Neo has so far focused on the representation of recorded data, as typically stored in data files during an electrophysiology experiment.
 For broader use it would be desirable to also support data resulting from the processing and analysis of such data.
