@@ -66,7 +66,7 @@
 $^{2}$Unité de Neurosciences, Information et Complexité, CNRS UPR 3293, Gif-sur-Yvette, France \\
 $^{3}$Institut de Neurosciences de la Timone UMR 7289, Aix Marseille Université, CNRS, Marseille, France \\
 $^{4}$Neural Information Processing Group, TU Berlin, Germany \\
-$^{5}$G-Node, Department Biology II, Ludwig-Maximilians-Universität M\"unchen, 82152 Planegg-Martinsried, Germany \\
+$^{5}$G-Node, Department Biology II, Ludwig-Maximilians-Universität M\"unchen, Planegg-Martinsried, Germany \\
 $^{6}$University of California, Berkeley, CA, USA}
 
 % Frontiers guidelines: "The Corresponding Author should be marked with an asterisk
@@ -308,7 +308,7 @@ More detail is available in the online documentation.
 \begin{figure}
 \centering
 \includegraphics[width=1.0\textwidth]{figures/neo_graph_lowres.png}
-\caption{The Neo object model: the principal classes and their relationships. For each class, an horizontal line separates the required attributes from the suggested attributes. The stars mark the attributes that have an associated unit.}\label{fig:relationships}
+\caption{The Neo object model: the principal classes and their relationships. For each class, a horizontal line separates the required attributes from the suggested attributes. The stars mark the attributes that have an associated unit.}\label{fig:relationships}
 \end{figure}
 
 \subsection{Implementation in Python}
@@ -414,8 +414,7 @@ Some file formats internally store arrays in a compact continuous way. In such c
 For the implementation of file readers, an early difficulty was collecting information about the specifications for proprietary file formats. This tedious task was accomplished using several approaches: (i) asking manufacturers to open the specifications; (ii) reading code from other packages; (iii) reading C header files; (iv) basic reverse engineering with hexadecimal editors. Nowadays, many manufacturers provide their file specifications in the user documentation.
 The main difficulty remains in the versioning of these specifications. In general, the internal file formats do not change much over time, but sometimes some problematic changes occur, making the classes non backward compatible. This has been taken into account for some file formats. The \lstinline`AxonIO` implementation is a good example where two very different versions of the same file format can be read transparently. Unfortunately, this is not the case for all classes and the effort must continue.
 
-Two of the IO classes do not implement an already existing format: \lstinline`NeoHdf5IO` and \lstinline`NeoMatlabIO`. Both use a generic file format, respectively HDF5 and MATLAB, that allows internal organisation of the data in a tree. In those classes, therefore, the Neo hierarchical model is directly used to store objects in the file, thus the organisation in the file is close to the Neo object organisation. In this way, two new file formats are proposed. They are efficient because built on mature tools (HDF5 and MATLAB) and quite universal.
-
+Two of the IO classes, \lstinline`NeoHdf5IO` and \lstinline`NeoMatlabIO`, use a generic file format, respectively HDF5 and MATLAB, rather than a neuroscience-specific format. Both these generic formats allow internal organisation of the data in a tree. In those classes, therefore, the Neo hierarchical model is directly used to store objects in the file, thus the organisation in the file is close to the Neo object organisation. In this way, two new file formats are proposed. They are efficient because built on mature toolsho and quite universal.
 
 
 % ----------------------------------------------------------------------
@@ -426,7 +425,7 @@ Two of the IO classes do not implement an already existing format: \lstinline`Ne
 
 In this example we suppose that we have recorded from an 8-channel probe, and that we have recorded three trials. We therefore have a total of 8 x 3 = 24 signals, each represented by an \lstinline`AnalogSignal` object.
 
-As shown in Figure~\ref{fig:usecase1}, our entire dataset is contained in a \lstinline`Block`, which in turn contains:
+As shown in Figure~\ref{fig:usecase1}, our dataset (contained in a single \lstinline`Block`, not explicitly shown) contains:
 \begin{itemize}
 \item three \lstinline`Segment` objects, each representing data from a single trial,
 \item one \lstinline`RecordingChannelGroup`, composed of eight \lstinline`RecordingChannel` objects.
@@ -435,7 +434,7 @@ As shown in Figure~\ref{fig:usecase1}, our entire dataset is contained in a \lst
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{figures/usecase1}
-\caption{An illustration of recording multiple trials from multiple channels.}\label{fig:usecase1} 
+\caption{An illustration of recording multiple trials from multiple channels.  Each Segment contains the data recorded from a single trial. The RecordingChannel objects identify the channel on which a given signal was recorded, and hence link AnalogSignal objects across trials. The RecordingChannelGroup indicates that all channels are recorded from the same 8-channel probe. All the objects shown here are contained in a single Block, which is not explicitly shown.}\label{fig:usecase1} 
 \end{figure}
 
 This information can be traversed or averaged in two different ways. The first is temporal traversal (by segment). For example, suppose you wish to correlate the overall neural response with the stimulus that was delivered in each segment. In this example, we treat each segment in turn, averaging over the channels in each:
@@ -476,7 +475,7 @@ for rc in rcg.recordingchannels:
 
 \subsection{Recording spikes from multiple tetrodes}
 
-Here is a similar example in which we have recorded with two tetrodes and extracted spikes from the extra-cellular signals. The spike times are contained in \lstinline`SpikeTrain` objects. As shown in Figure~\ref{fig:usecase2}, our data set is again contained in a \lstinline`Block`, which contains:
+Here is a similar example in which we have recorded with two tetrodes and extracted spikes from the extra-cellular signals. The spike times are contained in \lstinline`SpikeTrain` objects. As shown in Figure~\ref{fig:usecase2}, our data set (again contained in a \lstinline`Block`) contains:
 
 \begin{itemize}
 \item three \lstinline`Segment`s (one per trial).
@@ -493,7 +492,8 @@ In total we have 3 x 7 = 21 \lstinline`SpikeTrains` in this \lstinline`Block`.
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{figures/usecase2}
-\caption{An illustration of recording spikes from multiple tetrodes.}\label{fig:usecase2} 
+\caption{An illustration of recording spikes from multiple tetrodes. After spike sorting, two units have been isolated from the first tetrode, and five units from the second. The SpikeTrain objects may optionally also contain the action potential waveforms for each spike (not shown).
+}\label{fig:usecase2} 
 \end{figure}
 
 There are three ways to access the spike train data: by segment, by recording channel or by unit.
@@ -616,7 +616,7 @@ BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source li
 Python bindings can be generated from the C/C++ library using SWIG. 
 It includes support for a large number of file formats. 
 Neuroshare (\url{http://neuroshare.sourceforge.net/}) is an API that must be implemented as a library by each equipment manufacturer that wishes to support it. 
-The libraries are not in general open source, and most of them are only available for Windows. 
+The libraries are not in general open source and most of them are only available for Windows. 
 NiBabel (\url{http://nipy.sourceforge.net/nibabel/}) is a Python library for accessing common neuroimaging and medical file formats -- its goals are very similar to those of Neo, but in a different domain. 
 The European Data Format (EDF and EDF+) is a standard file format for the exchange of biomedical time series data. As of 2004, about 50 companies supported EDF \citep{Kemp2004}. 
 SignalML \citep{Durka2004} is an alternative approach, defining a markup language for describing file formats so as to allow automatic conversion. 
