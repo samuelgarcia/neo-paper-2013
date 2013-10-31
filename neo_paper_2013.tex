@@ -93,17 +93,17 @@ $^{6}$University of California, Berkeley, CA, USA}
 % Frontiers guidelines: "As a primary goal, the abstract should render the general significance and conceptual advance of the work clearly accessible to a broad readership. References should not be cited in the abstract." "Maximum length 2000 characters".
 
 Neuroscientsts use many different software tools to acquire, analyse and visualise electrophysiological signals. 
-However, incompatible data models and file formats make it difficult to exchange data between these tools, and especially between different labs.
-A common representation of the core data would improve interoperability and facilitate data-sharing between projects.
-To that end, we propose a language-independent hierarchical object model suitable for representing data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
-We have developed Neo, an open source implementation in the Python programming language, as a concrete instantiation of this object model.
+However, incompatible data models and file formats make it difficult to exchange data between these tools. 
+This reduces scientific productivity, renders potentially useful analysis methods inaccessible and impedes collaboration between labs.
+A common representation of the core data would improve interoperability and facilitate data-sharing.
+To that end, we propose here a language-independent object model suitable for representing data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
+As a concrete instantiation of this object model we have developed Neo, an open source implementation in the Python programming language.
 In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Neo package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats.
 Support is included for formats produced by most of the major manufacturers of electrophysiology recording equipment and also for more generic formats such as MATLAB.
 Data representation and data analysis are conceptually separate: it is easier to write robust analysis code if it is focused on analysis and relies on an underlying package to handle data representation.
 For that reason, and also to be as lightweight as possible, the Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation.
-Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion.
-In fact, there is already a burgeoning ecosystem of such tools. 
-Our long-term goal is for Neo to become the standard base package for Python tools in neurophysiology.
+Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion; there is already a burgeoning ecosystem of such tools. 
+We intend that Neo should become the standard base package for Python tools in neurophysiology.
 
 \tiny
  \keyFont{ \section{Keywords:} electrophysiology, interoperability, Python, software, file formats} % minimum 5, maximum 8 keywords
