@@ -81,7 +81,7 @@ $^{6}$University of California, Berkeley, CA, USA}
 \onecolumn
 \firstpage{1}
 
-\title[An object model for electrophysiology]{Neo: a universal object model for handling electrophysiology data in multiple formats}
+\title[An object model for electrophysiology]{Neo: an object model for handling electrophysiology data in multiple formats}
 \author[\firstAuthorLast ]{\Authors}
 \address{}
 \correspondance{}
@@ -96,9 +96,9 @@ Neuroscientsts use many different software tools to acquire, analyse and visuali
 However, incompatible data models and file formats make it difficult to exchange data between these tools. 
 This reduces scientific productivity, renders potentially useful analysis methods inaccessible and impedes collaboration between labs.
 A common representation of the core data would improve interoperability and facilitate data-sharing.
-To that end, we propose here a language-independent object model suitable for representing data acquired from electroencephalographic, intracellular or extracellular recordings, or generated from simulations. 
-As a concrete instantiation of this object model we have developed Neo, an open source implementation in the Python programming language.
-In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Neo package provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats.
+To that end, we propose here a language-independent object model, named ``Neo'', suitable for representing data acquired from electroencephalographic, intracellular, or extracellular recordings, or generated from simulations. 
+As a concrete instantiation of this object model we have developed an open source implementation in the Python programming language.
+In addition to representing electrophysiology data in memory for the purposes of analysis and visualisation, the Python implementation provides a set of input/output (IO) modules for reading/writing the data from/to a variety of commonly used file formats.
 Support is included for formats produced by most of the major manufacturers of electrophysiology recording equipment and also for more generic formats such as MATLAB.
 Data representation and data analysis are conceptually separate: it is easier to write robust analysis code if it is focused on analysis and relies on an underlying package to handle data representation.
 For that reason, and also to be as lightweight as possible, the Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation.
@@ -128,8 +128,7 @@ We intend that Neo should become the standard base package for Python tools in n
 %  * need to have a model object that embraces complexity of data (heterogeneity, etc.)
 %  * open sourcemodellers
 
-In systems neuroscience and computational neuroscience, as in many areas of science, a considerable amount of researchers' time is spent on analysing and visualising data, using some kind of software.
-Since science aims always to push at the boundaries of knowledge, it is often the case that no single piece of software is sufficient to perform all the analyses or visualisations of interest for a particular study.
+Neuroscience research relies on specialised software to analyse and visualise data, but often no single piece of software is sufficient to meet all the needs of a particular study.
 The solution is either to extend the software or to transfer data between software tools.
 The former requires both programming skills and effort.
 If an entirely novel analysis method is needed, this effort is unavoidable, but if, as is often the case, the required functionality is already provided by a different software tool, transferring the data can in principle be much more efficient.
@@ -178,7 +177,7 @@ Starting with the basic requirement that the object model should allow the repre
 
 \subsection{Scope}
 
-It was decided that the object model should contain only classes for representing data and for reading/writing data from/to files or databases. Further, the behaviour of these objects should allow only basic manipulations such as rearranging datasets or extracting sub-sets. In particular, we wished to specifically exclude visualisation or analysis methods, even such simple ones as taking the mean. The motivation for this was to keep Neo as minimal as possible. In our experience developing open-source software, small, focused libraries are much more likely to see widespread uptake.
+It was decided that the object model should contain only classes for representing electrophysiology data and for reading/writing such data from/to files or databases. Further, the behaviour of these objects should allow only basic manipulations such as rearranging datasets or extracting sub-sets. In particular, we wished to specifically exclude visualisation or analysis methods, even such simple ones as taking the mean. The motivation for this was to keep Neo as minimal as possible. In our experience developing open-source software, small, focused libraries are much more likely to see widespread uptake. In future, we expect to extend the object model to support other data types closely-related to electrophysiology, such as calcium imaging and behavioural data, but these were not included in the initial design so as to avoid diluting our efforts.
 
 \subsection{Metadata}
 
@@ -194,7 +193,7 @@ For desirable metadata we add the further requirement that the metadata must be 
 
 \subsection{Structure}
 
-Experimental protocols in neuroscience are hugely diverse, and may be structured in many ways in terms of stimulus presentation, behavioural responses, pharmacological interventions. The object model should allow at least the structure related to the electrophysiological recordings to be represented in the relationships between data objects rather than only as metadata. At least two levels of hierarchical organisation are needed (e.g. a recording session consisting of multiple trials, or a multi-electrode recording with multiple channels), but non-hierarchical cross-links are also needed.
+Experimental protocols in neuroscience are hugely diverse, and may be structured in many ways in terms of stimulus presentation, behavioural responses, and pharmacological interventions. The object model should allow at least the structure related to the electrophysiological recordings to be represented in the relationships between data objects rather than only as metadata. At least two levels of hierarchical organisation are needed (e.g. a recording session consisting of multiple trials, or a multi-electrode recording with multiple channels), but non-hierarchical cross-links are also needed.
 
 
 \subsection{Interoperability}
@@ -237,9 +236,9 @@ The full list of data objects is as follows:
 For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between simplicity and efficiency in data analysis. For example, when working with single-electrode data, using the scalar objects is simpler and produces code that is easier to understand, without having to deal with array indexing. For electrode-array or EEG data on the other hand, using NumPy-like arrays is much more efficient than using lists of objects.
 
 Container objects provide a simple hierarchical grouping of data. 
-A \lstinline`Segment` may contain any of the data object types provided all the objects share a common time basis, i.e. they represent data recorded simultaneously. 
+A \lstinline`Segment` may contain any of the data object types provided all the objects share a common clock, i.e. they represent data recorded at the same time, although the sampling interval, onset and duration of recording may differ between data objects.
 A \lstinline`Block` is the top-level container, and contains \lstinline`Segment`s and \lstinline`RecordingChannelGroup`s (see below).
-To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. 
+To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. Deeper or more complex hierarchies are not supported directly by Neo, but it would be straightforward for a user to define a higher-level object to contain multiple blocks. Many of the Neo input/output modules (see below) support storage of multiple \lstinline`Block` objects.
 
 Grouping objects express the relationships between data objects, such as which signals were recorded on which electrodes, which spike trains were obtained from which membrane potential signals, etc.
 They contain references to data objects that cut across the simple container hierarchy.
@@ -254,7 +253,7 @@ The grouping objects are as follows:
 (iii) for grouping several \lstinline`RecordingChannel` objects. There are multiple use cases for this. For instance, for intracellular recording, it is common to record both membrane potentials and currents at the same time, so each \lstinline`RecordingChannelGroup` may correspond to the particular property that is being recorded. For multi-electrode arrays, \lstinline`RecordingChannelGroup` is used to gather all \lstinline`RecordingChannel` objects of the same array.
 \end{itemize}
 
-Another way to think of this organisation is that container objects provide a grouping across time while grouping objects provide a grouping across space.
+Another way to think of this organisation is that container objects group data that were acquired at the same time, while grouping objects group data that were recorded from the same channel, array, location, etc. 
 Figure~\ref{fig:overview} provides an overview of the Neo objects and their relationships.
 
 
@@ -331,7 +330,7 @@ Inheritance has two important advantages:
 (i) existing code that works with NumPy arrays will work with Neo data objects without modification;
 (ii) Neo objects gain most of the functionality of NumPy arrays ``for free'', i.e. we do not have to re-implement this functionality. 
 A number of operations on, and methods of, NumPy arrays have to be re-implemented or extended for Neo objects, in order to preserve the extra metadata carried by Neo objects, but these would in any case have to be implemented if taking the composition approach.
-The principal disadvantage of the inheritance approach is complexity: creation of subclasses is one of the more difficult parts of the NumPy API.
+The principal disadvantage of the inheritance approach is complexity: creation of subclasses is one of the more difficult parts of the NumPy API. After weighing up these considerations, we chose to use inheritance.
 
 The second major choice was how to represent the measurement units of the data.
 Several Python packages are available for handling units and physical quantities in Python.
@@ -341,14 +340,14 @@ This means that trying to add a \lstinline`Quantity` array with dimensions of vo
 The particular choice of Quantities is not limiting.
 It would be possible to replace it with another units package that subclasses \lstinline`ndarray`, such as Pint (\url{http://pint.readthedocs.org/}), without changing the Neo interface.
 
-In summary, then, the classes for the Neo data objects all inherit from \lstinline`Quantity`, and so gain checks for dimensional consistency for free, in addition to the large amount of functionality inherited from \lstinline`ndarray`.
+In summary, the classes for the Neo data objects all inherit from \lstinline`Quantity`, and so gain checks for dimensional consistency for free, in addition to the large amount of functionality inherited from \lstinline`ndarray`.
 Neo objects add further checks (for example, trying to add together two \lstinline`AnalogSignal`s with different sampling rates produces an exception) and further operations (for example, it is possible to slice \lstinline`AnalogSignal`s and \lstinline`SpikeTrain`s according to time as well as according to index).
 
 Other Python packages for working with time series data do not fill the niche that Neo does. 
 The core function of Neo is data representation. 
 The Pandas package (\url{http://pandas.pydata.org}) is a general toolkit for working with heterogeneous data. 
 Neo contains functionality specific for neural data analysis, such as grouping of channels by anatomical location.
-Another package, nitime (\url{http://nipy.org/nitime}), provides algorithms for time-series analysis that are tailored toward neuroscience data.
+Another package, nitime (\url{http://nipy.org/nitime}), provides algorithms for time-series analysis that are tailored toward neuroimaging data.
 In contrast, Neo intentionally does not provide algorithms for data analysis since this will vary widely across users.
 Overall, Neo provides functionality that is specific to neuroscience data (unlike Pandas) but not specific to particular applications within neuroscience (unlike nitime).
 This means that Neo is ideally situated to be a common format for neuroscientists, who may then analyse the data using the tools provided by other packages as desired.
@@ -381,8 +380,8 @@ There is an extensive test suite, and the project makes use of continuous integr
 In addition to implementing the Neo object model as a Python API, the Neo Python package also provides a set of input/output (IO) modules for various neurophysiology file formats, including proprietary formats (e.g. Plexon, Spike2, NeuroExplorer, Axon, AlphaOmega, Micromed and Tucker-Davis), the formats used by various open-source and/or freely distributed tools (e.g. Klustakwik, Elan, WinEdr) and generic file formats such as MATLAB, ASCII and HDF5. 
 In most cases, the proprietary formats are read-only, while the more open and generic formats support both reading and writing.
 
-The inclusion of this functionality in the Neo package has several benefits:
-(i) it demonstrates the universality of the object model, which is able to represent the data from all of these different file formats;
+The inclusion of support for multiple file formats in the Neo package has several benefits:
+(i) it demonstrates the universality of the object model, which is able to represent the data from all of these different formats;
 (ii) it is an important part of realising our goal of improving interoperability of different tools and the ease of sharing data between different projects;
 (iii) it provides an immediate benefit to users, thus driving uptake of the Neo software;
 (iv) tool developers can use Neo as a basis and immediately gain the benefit of supporting multiple file formats, without them having to implement such support themselves.
@@ -605,8 +604,15 @@ a Neo implementation that allows storing Neo objects in a relational database.
 %  * Grün lab
 
 As a consequence of the common use of the Neo Python package, it is now straightforward to take recorded data from experiments or simulation data generated by PyNN, store them on the G-Node data platform or in a relational database using Datajongleur, then analyse and visualise them in Spyke Viewer or OpenElectrophy, in a seamless pipeline.
-
 Although we have focused in this section on the advantages of Neo for tool developers, the Neo Python package is equally suitable for use by individual scientists analysing their data with their own scripts.
+
+
+\subsection{Flexibility and extensibility of the object model}
+
+The Neo object model has been designed to be as general as possible while still retaining the ability to clearly represent data objects and express the relationships between them in a way that is natural for neuroscientists. Nevertheless, many experiments in neuroscience combine electrophysiology recordings with recording of other types of data, such as temperature and position in space, and with sensory stimuli. Many such data types are straightforward to represent using the Neo object model. For example, temperature, the angle of a trackball, or an auditory stimulus can all naturally be stored in an  \lstinline`AnalogSignal`, while a \lstinline`SpikeTrain` could be adapted to represent transients (time of occurrence plus waveform) in calcium imaging data.
+
+For data that don't naturally fit into the current objects, it is possible for a user to define their own classes that interact with the Neo objects. For example, with calcium imaging data, a user could define their own class to represent the image series, then use  \lstinline`AnalogSignal` to represent the time course of activity within a region of interest. To store such mixed data, either two separate files can be used, or, with the HDF5 format, both data types can be stored in a single file, using the \lstinline`NeoHdf5IO` class to automatically store the time-series data and using an HDF5 library directly to store the imaging data.
+
 
 \subsection{Related interoperability efforts}
 
@@ -623,7 +629,7 @@ SignalML \citep{Durka2004} is an alternative approach, defining a markup languag
 \citet{Kemp2004} compares EDF+ and SignalML, concluding that the SignalML approach is more flexible but that this flexibility comes at a price in terms of stability and increased effort for users.
 
 We expect that Neo will be interoperable with, and broadly complementary to these existing efforts. 
-For example, Neo already offers a \lstinline`NeuroshareIO` module for reading data files via the Neuroshare libraries, and it should be straightforward to add an IO module for EDF/EDF+. 
+For example, Neo already offers a \lstinline`NeuroshareIO` module for reading data files via the Neuroshare libraries, and it should be straightforward to add IO modules for EDF/EDF+ and the HDF5-based standard file format being developed by the INCF.
 The particular advantages of the Neo Python package are 
 (i) its rich object model can capture all of the complexity typically found in neurophysiology experimental protocols; 
 (ii) it is written in pure Python without any C/C++ dependencies; as such it is easy to install and highly cross-platform; 
@@ -650,7 +656,8 @@ It will be necessary to find a compromise between changes to enhance usability a
 Among the improvements already envisaged are the following:
 (i) improved memory management for IO. Despite the lazy/cascade mechanism, most Neo IO classes do not allow loading only a chunk or a subset of data;
 (ii) some simplification of the object model, in particular merging of the scalar and array representations (e.g. \lstinline`AnalogSignal` and \lstinline`AnalogsignalArray`);
-(iii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, linking a \lstinline`SpikeTrain` with its associated \lstinline`AnalogSignal` is not currently straightforward.
+(iii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, linking a \lstinline`SpikeTrain` with its associated \lstinline`AnalogSignal` is not currently straightforward;
+(iv) addition of an image sequence object, to support calcium- and voltage-sensitive-dye imaging experiments, which are closely related to electrophysiology.
 
 The development of Neo has so far focused on the representation of recorded data, as typically stored in data files during an electrophysiology experiment.
 For broader use it would be desirable to also support data resulting from the processing and analysis of such data.
@@ -664,7 +671,7 @@ Such developments should be coordinated with international standardisation effor
 The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
 \section*{Acknowledgements}
-We would like to thank Cyril Dejean, Luc Estebanez, Todd Jennings and Yann Mahnoun for their contributions to Neo.
+We would like to thank Cyril Dejean, Luc Estebanez, Yann Mahnoun and especially Todd Jennings for their contributions to Neo. We would like to thank the reviewers for comments and suggestions that greatly improved the manuscript.
 
 \paragraph{Funding\textcolon} This work was supported by the CNRS, the European Community (BrainScaleS project, FP7-269921), the German Federal Ministry of Education and Research (grants 01GQ0801 and 01GQ1302) and the Deutsche Forschungsgemeinschaft (GRK 1589/1).
 \bibliographystyle{frontiersinSCNS&ENG}
