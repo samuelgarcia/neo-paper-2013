@@ -236,7 +236,7 @@ The full list of data objects is as follows:
 For each data type, the object model provides both a scalar representation (a single instance of a data item, for example, \lstinline`AnalogSignal` and \lstinline`Spike`) and an array representation (e.g., \lstinline`AnalogSignalArray` and \lstinline`SpikeTrain`) in order to provide a choice between simplicity and efficiency in data analysis. For example, when working with single-electrode data, using the scalar objects is simpler and produces code that is easier to understand, without having to deal with array indexing. For electrode-array or EEG data on the other hand, using NumPy-like arrays is much more efficient than using lists of objects.
 
 Container objects provide a simple hierarchical grouping of data. 
-A \lstinline`Segment` may contain any of the data object types provided all the objects share a common clock, i.e. they represent data recorded at the same time, although the sampling interval, onset and duration of recording may differ between data objects. 
+A \lstinline`Segment` may contain any of the data object types provided all the objects share a common clock, i.e. they represent data recorded at the same time, although the sampling interval, onset and duration of recording may differ between data objects.
 A \lstinline`Block` is the top-level container, and contains \lstinline`Segment`s and \lstinline`RecordingChannelGroup`s (see below).
 To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. Deeper or more complex hierarchies are not supported directly by Neo, but it would be straightforward for a user to define a higher-level object to contain multiple blocks. Many of the Neo input/output modules (see below) support storage of multiple \lstinline`Block` objects.
 
@@ -459,7 +459,7 @@ The second alternative is spatial traversal of the data (by channel), with avera
 # We assume that our block has only 1 RecordingChannelGroup
 rcg = block.recordingchannelgroups[0]
 for rc in rcg.recordingchannels:
-    print("Analysing channel %d: %s", (rc.index, rc.name))
+    print("Analysing channel %d: %s" % (rc.index, rc.name))
 
     siglist = rc.analogsignals
     time_points = siglist[0].times
@@ -467,7 +467,7 @@ for rc in rcg.recordingchannels:
 
     plt.figure()
     plt.plot(time_points, avg)
-    plt.title("Average response on channel %d: %s" % (rc.index, rc.name))
+    plt.title("Average response on channel %d" % rc.index)
 \end{lstlisting}
 
 
@@ -503,7 +503,7 @@ In this example, each \lstinline`Segment` represents data from one trial, and we
 for seg in block.segments:
     print("Analysing segment %d" % seg.index)
     stlist = [st - st.t_start for st in seg.spiketrains]
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
     plt.title("PSTH in segment %d" % seg.index)
@@ -515,7 +515,7 @@ Now we can calculate the PSTH averaged over trials for each unit:
 \begin{lstlisting}[style=display]
 for unit in block.list_units:
     stlist = [st - st.t_start for st in unit.spiketrains]
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
     plt.title("PSTH of unit %s" % unit.name)
@@ -529,10 +529,10 @@ for rcg in block.recordingchannelgroups:
     stlist = []
     for unit in rcg.units:
         stlist.extend([st - st.t_start for st in unit.spiketrains])
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
-    plt.title("PSTH blend of tetrode  %s" % rcg.name)
+    plt.title("PSTH blend of tetrode %s" % rcg.name)
 \end{lstlisting}
 
 
