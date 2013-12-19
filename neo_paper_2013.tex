@@ -450,7 +450,7 @@ for seg in block.segments:
     avg = np.mean(siglist, axis=0)
     
     plt.figure()
-    plt.plot(time_points.magnitude, avg)
+    plt.plot(time_points, avg)
     plt.title("Peak response in segment %d: %f" % (seg.index, avg.max()))
 \end{lstlisting}
 
@@ -467,7 +467,7 @@ for rc in rcg.recordingchannels:
     avg = np.mean(siglist, axis=0)
     
     plt.figure()
-    plt.plot(time_points.magnitude, avg)
+    plt.plot(time_points, avg)
     plt.title("Average response on channel %d" % rc.index)
 \end{lstlisting}
 
