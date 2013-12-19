@@ -78,7 +78,7 @@ for seg in block.segments:
     avg = np.mean(siglist, axis=0)
     
     plt.figure()
-    plt.plot(time_points.magnitude, avg)
+    plt.plot(time_points, avg)
     plt.title("Peak response in segment %d: %f" % (seg.index, avg.max()))
 
 # The second alternative is spatial traversal of the data (by channel), with 
@@ -95,7 +95,7 @@ for rc in rcg.recordingchannels:
     avg = np.mean(siglist, axis=0)
     
     plt.figure()
-    plt.plot(time_points.magnitude, avg)
+    plt.plot(time_points, avg)
     plt.title("Average response on channel %d" % rc.index)
 
 # There are three ways to access the spike train data: by segment, 
