@@ -444,13 +444,13 @@ from matplotlib import pyplot as plt
 
 for seg in block.segments:
     print("Analysing segment %d" % seg.index)
-
+    
     siglist = seg.analogsignals
     time_points = siglist[0].times
     avg = np.mean(siglist, axis=0)
-
+    
     plt.figure()
-    plt.plot(time_points, avg)
+    plt.plot(time_points.magnitude, avg)
     plt.title("Peak response in segment %d: %f" % (seg.index, avg.max()))
 \end{lstlisting}
 
@@ -460,15 +460,15 @@ The second alternative is spatial traversal of the data (by channel), with avera
 # We assume that our block has only 1 RecordingChannelGroup
 rcg = block.recordingchannelgroups[0]
 for rc in rcg.recordingchannels:
-    print("Analysing channel %d: %s", (rc.index, rc.name))
-
+    print("Analysing channel %d: %s" % (rc.index, rc.name))
+    
     siglist = rc.analogsignals
     time_points = siglist[0].times
     avg = np.mean(siglist, axis=0)
-
+    
     plt.figure()
-    plt.plot(time_points, avg)
-    plt.title("Average response on channel %d: %s" % (rc.index, rc.name))
+    plt.plot(time_points.magnitude, avg)
+    plt.title("Average response on channel %d" % rc.index)
 \end{lstlisting}
 
 
@@ -504,7 +504,7 @@ In this example, each \lstinline`Segment` represents data from one trial, and we
 for seg in block.segments:
     print("Analysing segment %d" % seg.index)
     stlist = [st - st.t_start for st in seg.spiketrains]
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
     plt.title("PSTH in segment %d" % seg.index)
@@ -516,7 +516,7 @@ Now we can calculate the PSTH averaged over trials for each unit:
 \begin{lstlisting}[style=display]
 for unit in block.list_units:
     stlist = [st - st.t_start for st in unit.spiketrains]
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
     plt.title("PSTH of unit %s" % unit.name)
@@ -530,10 +530,10 @@ for rcg in block.recordingchannelgroups:
     stlist = []
     for unit in rcg.units:
         stlist.extend([st - st.t_start for st in unit.spiketrains])
-    count, bins = np.histogram(stlist)
+    count, bins = np.histogram(np.hstack(stlist))
     plt.figure()
     plt.bar(bins[:-1], count, width=bins[1] - bins[0])
-    plt.title("PSTH blend of tetrode  %s" % rcg.name)
+    plt.title("PSTH blend of tetrode %s" % rcg.name)
 \end{lstlisting}
 
 
