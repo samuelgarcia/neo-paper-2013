@@ -92,7 +92,7 @@ $^{6}$University of California, Berkeley, CA, USA}
 \begin{abstract}
 % Frontiers guidelines: "As a primary goal, the abstract should render the general significance and conceptual advance of the work clearly accessible to a broad readership. References should not be cited in the abstract." "Maximum length 2000 characters".
 
-Neuroscientsts use many different software tools to acquire, analyse and visualise electrophysiological signals. 
+Neuroscientists use many different software tools to acquire, analyse and visualise electrophysiological signals. 
 However, incompatible data models and file formats make it difficult to exchange data between these tools. 
 This reduces scientific productivity, renders potentially useful analysis methods inaccessible and impedes collaboration between labs.
 A common representation of the core data would improve interoperability and facilitate data-sharing.
@@ -103,7 +103,7 @@ Support is included for formats produced by most of the major manufacturers of e
 Data representation and data analysis are conceptually separate: it is easier to write robust analysis code if it is focused on analysis and relies on an underlying package to handle data representation.
 For that reason, and also to be as lightweight as possible, the Neo object model and the associated Python package are deliberately limited to representation of data, with no functions for data analysis or visualisation.
 Software for neurophysiology data analysis and visualisation built on top of Neo automatically gains the benefits of interoperability, easier data sharing and automatic format conversion; there is already a burgeoning ecosystem of such tools. 
-We intend that Neo should become the standard base package for Python tools in neurophysiology.
+We intend that Neo should become the standard basis for Python tools in neurophysiology.
 
 \tiny
  \keyFont{ \section{Keywords:} electrophysiology, interoperability, Python, software, file formats} % minimum 5, maximum 8 keywords
@@ -151,14 +151,14 @@ An advantage of this compared to the other two approaches mentioned above is tha
 A previous effort to define an API for electrophysiology data in neuroscience was undertaken by a consortium of recording hardware manufacturers, which in 2000 began development of the Neuroshare API \citep{neuroshare}.
 The Neuroshare API is available as a C library and as a MATLAB (The Mathworks Inc.) extension.
 These are distributed as compiled dynamic-link libraries (DLLs), one per manufacturer; the source code is generally not available, and most are only available for the Windows operating system.
-The API is rather low-level, consisting of a number of functions and low-level data structures such as numerical arrays. BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source library for biomedical signal processing (EEG, ECG, etc.), available for MATLAB/Octave and for C/C++, which includes support for a large number of biomedical file formats.
+The API is rather low-level, consisting of a number of functions and low-level data structures such as numerical arrays. BioSig (\url{http://biosig.sourceforge.net/}) is a cross-platform open source library for biomedical signal processing (EEG, ECG, etc.), available for MATLAB/Octave and for C/C++ (with wrappers for Python), which includes support for a large number of biomedical file formats.
 
 We have developed a novel, object-oriented API for representing electrophysiology data in memory and for reading/writing such data from/to multiple file formats.
 The Neo (from \emph{N}euroscience \emph{E}lectrophysiology \emph{O}bjects) API is defined as an object model, and is intended to be able to represent any electrophysiology dataset, from \latin{in vitro} patch-clamp recordings through multi-electrode array recordings to EEG.
 We have implemented the Neo object model as a cross-platform, open-source Python package, but it should be possible to implement it in any object-oriented programming language.
 An object-oriented API is a natural fit for neuroscience data, and in particular makes it easier to encapsulate data and the associated metadata, hence preserving the information about the experimental context that is needed to correctly interpret and analyse the data.
 
-The principal goal of developing Neo is to improve the interoperability of software for working with electrophysiology data. Such interoperability includes the exchange of data objects between software tools in memory as well as via the filesystem. The existence of a Neo implementation in a given language means, for example, that one scientist or research group can develop a library for electrophysiology data analysis and another a library for visualization of such data, then a third scientist can easily combine both libraries in his/her own workflow, without having to worry about plumbing the tools together, taking care of correct metadata conversion, etc. By having an object model that is shared across programming languages, we hope to make conversion of data analysis routines between languages more straightforward.
+The principal goal of developing Neo is to improve the interoperability of software for working with electrophysiology data. Such interoperability includes the exchange of data objects between software tools in memory as well as via the filesystem. The existence of a Neo implementation in a given language means, for example, that one scientist or research group can develop a library for electrophysiology data analysis and another a library for visualisation of such data, then a third scientist can easily combine both libraries in his/her own workflow, without having to worry about plumbing the tools together, taking care of correct metadata conversion, etc. By having an object model that is shared across programming languages, we hope to make conversion of data analysis routines between languages more straightforward.
 
 In this article we describe the considerations which led to the design of the API, we describe the object model and its Python implementation, then give some examples of using the Neo Python package in real-world situations. Finally, we discuss the advantages and disadvantages of the Neo approach with respect to the other approaches to data sharing and software interoperability mentioned above, and outline possible future directions.
 
@@ -240,7 +240,7 @@ For each data type, the object model provides both a scalar representation (a si
 Container objects provide a simple hierarchical grouping of data. 
 A \lstinline`Segment` may contain any of the data object types provided all the objects share a common clock, i.e. they represent data recorded at the same time, although the sampling interval, onset and duration of recording may differ between data objects.
 A \lstinline`Block` is the top-level container, and contains \lstinline`Segment`s and \lstinline`RecordingChannelGroup`s (see below).
-To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. Deeper or more complex hierarchies are not supported directly by Neo, but it would be straightforward for a user to define a higher-level object to contain multiple blocks. Many of the Neo input/output modules (see below) support storage of multiple \lstinline`Block` objects.
+To illustrate this further, in the common experimental paradigm of running multiple trials, i.e., presenting the same stimulus multiple times, the data from each trial would be stored in a \lstinline`Segment`, and all the \lstinline`Segment`s stored in a single \lstinline`Block`. Deeper or more complex hierarchies are not supported directly by Neo, but it would be straightforward for a user to define a higher-level object to contain multiple blocks. Some of the Neo input/output modules (see below) support storage of multiple \lstinline`Block` objects.
 
 Grouping objects express the relationships between data objects, such as which signals were recorded on which electrodes, which spike trains were obtained from which membrane potential signals, etc.
 They contain references to data objects that cut across the simple container hierarchy. Another way to think of this organisation is that ``container'' objects group data that were acquired at the same time, while ``grouping'' objects group data that were recorded from the same channel, array, location, etc. 
