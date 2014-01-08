@@ -444,6 +444,8 @@ This information can be traversed or averaged in two different ways. The first i
 import numpy as np
 from matplotlib import pyplot as plt
 
+# We assume that the variable "block" has been previously loaded from file
+
 for seg in block.segments:
     print("Analysing segment %d" % seg.index)
 
@@ -538,7 +540,7 @@ for rcg in block.recordingchannelgroups:
     plt.title("PSTH blend of tetrode %s" % rcg.name)
 \end{lstlisting}
 
-
+The code samples shown here are extracted from a complete example script available in the Neo source code distribution, see \url{https://github.com/NeuralEnsemble/python-neo/blob/frontiers/examples/generated_data.py}.
 
 % ----------------------------------------------------------------------
 \section{Discussion}
@@ -628,7 +630,7 @@ The libraries are not in general open source and most of them are only available
 NiBabel (\url{http://nipy.sourceforge.net/nibabel/}) is a Python library for accessing common neuroimaging and medical file formats -- its goals are very similar to those of Neo, but in a different domain. 
 In the biomedical domain there are a large number of file formats for storage of biomedical time series data 
 \citep[ECG, EEG, etc.; reviewed in][]{Schloegl2010}, some of which are international standards and others quasi-standards due to widespread uptake. An example of the latter is the European Data Format (EDF and EDF+) which was supported by about 50 companies as of 2004 \citep{Kemp2004}. The GDF format \citep{Schloegl2006} is a more recent development that addresses many of the limitations of earlier formats.
-SignalML \citep{Durka2004} is an alternative approach, defining a markup language for describing file formats so as to allow automatic conversion. 
+SignalML \citep{Durka2004} is an alternative approach, defining a markup language for describing file formats so as to allow automatic conversion.
 \citet{Kemp2004} compares EDF+ and SignalML, concluding that the SignalML approach is more flexible but that this flexibility comes at a price in terms of stability and increased effort for users.
 
 We expect that Neo will be interoperable with, and broadly complementary to these existing efforts. 
@@ -663,6 +665,11 @@ Among the improvements already envisaged are the following:
 We also plan a number of improvements to the Python implementation:
 (i) improved memory management for IO. Despite the lazy/cascade mechanism, most Neo IO classes do not allow loading only a chunk or a subset of data;
 (ii) efficiency improvements. Some relationships are not efficient for querying (filtering) an object when the dataset is large. For instance, linking a \lstinline`SpikeTrain` with its associated \lstinline`AnalogSignal` is not currently straightforward.
+
+The object model is intended to be implementable in other languages besides Python.
+We have concentrated our initial efforts on one language in order to build up a critical mass of code to support the object model.
+An important future direction will be reaching out to users of other languages, such as MATLAB, and providing support for the object model.
+To this end, we have created documentation for using Neo-structured data in MATLAB at \url{http://pythonhosted.org/neo/io.html#neo.io.NeoMatlabIO}.
 
 The development of the Neo object model has so far focused on the representation of recorded data, as typically stored in data files during an electrophysiology experiment.
 For broader use it would be desirable to also support data resulting from the processing and analysis of such data.
